@@ -1,0 +1,5840 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: src/test/resources/features/ApiGet/ApiGetVVCC.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Cucumber Reports</td>
+      <td>17 ago 2023, 16:22</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">src/test/resources/features/ApiGet/ApiGetVVCC.feature</td>
+          <td      class="passed"    >24</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">24</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="7567075700">7.567</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3529933524.html">@consultaVVCC</a>
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">src/test/resources/features/ApiGet/ApiGetVVCC.feature</span>
+
+
+</div>
+
+        <div class="description indention">consulta tc</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">4.929</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def token = call read('token.feature')</span>
+
+  <span class="lead-duration duration">2.792</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">src/test/resources/features/ApiGet/token.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url domainToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>16:22:01.504 Se realiza la ejecuci&oacute;n en ambiente:  cert 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">path '/utils/atlas-security/jwt/zconnect'</span>
+
+  <span class="lead-duration duration">0.035</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">headers {'client_id':'cc62369a-f970-4045-9119-7bebaecbfa78','client_secret':'90848163-6a2b-4be7-b783-844efed97443','resource-uri':'/cards/credit-card/v3/credit-cards','http-method':'GET','expiration':'3600000'}</span>
+
+  <span class="lead-duration duration">0.073</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">2.016</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">def authToken = response;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print 'Se capturo el token: ', authToken</span>
+
+  <span class="lead-duration duration">0.010</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>16:22:06.127 [print] Se capturo el token:  eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJDQV9HQVRFV0FZIiwiYXVkIjoiemNlZWNlciIsImFwcENvZGUiOiJZNSIsImV4cCI6MTY5NTkwNzMyNSwiaW50ZXJjZXB0VXJsTWFwIjpbeyJwYXR0ZXJuIjoiXC8qKiJ9LHsicGF0dGVybiI6IlwvY2FyZHNcL2NyZWRpdC1jYXJkXC8qKiJ9LHsicGF0dGVybiI6IlwvYmFsYW5jZXNcL2NyZWRpdC1jYXJkXC8qKiJ9LHsicGF0dGVybiI6IlwvYmFsYW5jZXNcL2NyZWRpdC1jYXJkXC8qKiJ9LHsicGF0dGVybiI6IlwvY2FyZHNcL2NyZWRpdC1jYXJkLW9yZGVyXC8qKiJ9LHsicGF0dGVybiI6IlwvY2FyZHNcL2NyZWRpdC1jYXJkLW1hbmFnZW1lbnRcLyoqIn0seyJwYXR0ZXJuIjoiXC9jYXJkc1wvY3JlZGl0LWNhcmQtb3BlcmF0aW9uYWxcLyoqIn0seyJwYXR0ZXJuIjoiXC92cGx1XC92djI4XC8qKiJ9LHsicGF0dGVybiI6IlwvdnBsdVwvdnYyOVwvKioifSx7InBhdHRlcm4iOiJcL3ZwbHVcL3Z2Y2NcLyoqIn0seyJwYXR0ZXJuIjoiXC92cGx1XC92dmF0XC8qKiJ9LHsicGF0dGVybiI6IlwvdnBsdVwvdnZhY1wvKioifSx7InBhdHRlcm4iOiJcL3ZwbHVcL3Z2YmxcLyoqIn0seyJwYXR0ZXJuIjoiXC92cGx1XC92dnR2XC8qKiJ9LHsicGF0dGVybiI6IlwvdnBsdVwvdnYyN1wvKioifSx7InBhdHRlcm4iOiJcL3ZwbHVcL3Z2ZGZcLyoqIn0seyJwYXR0ZXJuIjoiXC92cGx1XC92dmNlXC8qKiJ9XX0.awBVP0UcrUlss3ej0Xnro2fTKj3e7nrztaKXy0DvTURgaN4ey1bTSULjMuSpUHDRH0trWK_2hKLZ8IT5MocvRZmk81MRJk-XtZ8i7W17ip4OD75LULDJVRNeCxlP67u0VFhBxQIlDsQsbwDhGcNHRZpcoOzDws43xu3fQvlhhxxbIC906E28RcCHbwnKopJq0xSYq_v_TVqxURQOfH0N_eIboGs0ysrdnWH8ckE93TS4gIBcSvJsVWxO_8BcO1ctxxmZCzJ8_OE0_voraBtMmtU2tggtVSGduCSXQ4NHzbBxGMVgFSj8Y_F-2MaHgq4DRt6L0-qIwXkpzpwC7Egdyg 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3529933524.html">@consultaVVCC</a>
+</div>
+
+
+  <span class="lead-duration duration">2.638</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">consultar datos de una tc</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-5" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-6">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-6" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url domainConsultaVVCC</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path '/bs-credit-card-v3/cards/credit-card/v3/credit-cards'</span>
+
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param personCic = 06821034</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">headers {'Request-ID':'823d329d-a311-44d6-9481-d8de84f5db80','app-code':'Y5','app-name':'AVPL','agency-code':'077','guild-client':'S','branch-office-code':'310','client-code':'2','user-code':'0U99999','org-code':'1','opn-number':'00000001','opn-code':'13','request-date':'2022-03-24T16:02:07.766-0500','caller-name':'postman','riskAnalyzer':'test','authserver':'CA','Cache-Control':'no-cache','Ocp-Apim-Subscription-Key':'3a927b31cf514a24b90e74357793802e'}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def token2 = token.authToken</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Authorization = 'Bearer ' + token2</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">1.755</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def respuesta = response;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'CIC: ',06821034</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>16:22:07.919 [print] CIC:  6821034 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def listtype = karate.jsonPath(response,&quot;$..creditAccountInformation..creditAccountId&quot;)</span>
+
+  <span class="lead-duration duration">0.656</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'listtype',listtype</span>
+
+  <span class="lead-duration duration">0.012</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>16:22:08.588 [print] listtype [
+  &quot; 0000377889501924006&quot;,
+  &quot; 0000377890513009000&quot;,
+  &quot; 0000377890513009000&quot;,
+  &quot; 0000377890514745008&quot;,
+  &quot; 0000377890514818003&quot;,
+  &quot; 0000377892504980009&quot;,
+  &quot; 0000377892504981007&quot;,
+  &quot; 0000377892505081005&quot;,
+  &quot; 0000377892505081005&quot;,
+  &quot; 0000377894504259004&quot;,
+  &quot; 0000377897504170006&quot;,
+  &quot; 0000377897504171004&quot;,
+  &quot; 0000377898502218003&quot;,
+  &quot; 0000377898502240007&quot;,
+  &quot; 0004021600090641006&quot;,
+  &quot; 0004021600091655005&quot;,
+  &quot; 0004021600091656003&quot;,
+  &quot; 0004280820096005230&quot;,
+  &quot; 0004280830091386006&quot;,
+  &quot; 0004280830091822000&quot;,
+  &quot; 0004280830092699001&quot;,
+  &quot; 0004634010094856007&quot;,
+  &quot; 0004634010094856007&quot;,
+  &quot; 0004634010094858003&quot;,
+  &quot; 0004634010094931008&quot;,
+  &quot; 0004634010094976003&quot;,
+  &quot; 0004634010094977001&quot;,
+  &quot; 0004634010094977001&quot;,
+  &quot; 0004634020096762293&quot;,
+  &quot; 0004634030092534000&quot;
+]
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def size = karate.sizeOf(listtype)</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'Numero Total de Cuentas: ',size</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>16:22:08.597 [print] Numero Total de Cuentas:  30 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'Informacion de mi consulta: ', respuesta</span>
+
+  <span class="lead-duration duration">0.178</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>16:22:08.773 [print] Informacion de mi consulta:  [
+  {
+    &quot;creditCardId&quot;: &quot;0000377889501924014&quot;,
+    &quot;activationRequired&quot;: false,
+    &quot;expirationDate&quot;: &quot;2021-09-30&quot;,
+    &quot;blockingType&quot;: {
+      &quot;code&quot;: &quot;I&quot;,
+      &quot;description&quot;: &quot;ANULADA X COB.&quot;
+    },
+    &quot;seedGenerationSchema&quot;: {
+      &quot;code&quot;: &quot;3&quot;,
+      &quot;description&quot;: &quot;DIFERENTE AL NUMERO DE CUENTA&quot;
+    },
+    &quot;creditAccountInformation&quot;: {
+      &quot;creditAccountId&quot;: &quot; 0000377889501924006&quot;,
+      &quot;openingDate&quot;: &quot;2018-09-25&quot;,
+      &quot;status&quot;: {
+        &quot;code&quot;: &quot;D&quot;,
+        &quot;description&quot;: &quot;DORMIDA&quot;
+      },
+      &quot;baseCurrency&quot;: {
+        &quot;code&quot;: &quot;PEN&quot;
+      },
+      &quot;creditLine&quot;: {
+        &quot;lineAmount&quot;: 20000
+      },
+      &quot;product&quot;: {
+        &quot;logoCode&quot;: &quot;770&quot;,
+        &quot;brand&quot;: {
+          &quot;code&quot;: &quot;A&quot;,
+          &quot;description&quot;: &quot;AMEX&quot;
+        }
+      },
+      &quot;penInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0,
+          &quot;creditLineAvailableAmount&quot;: 20000
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 17.18,
+            &quot;cashWithdrawalRate&quot;: 60.1,
+            &quot;installmentBuyingRate&quot;: 17.18
+          }
+        }
+      },
+      &quot;usdInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 21.99,
+            &quot;cashWithdrawalRate&quot;: 26.68,
+            &quot;installmentBuyingRate&quot;: 21.99
+          }
+        }
+      }
+    },
+    &quot;creditCardType&quot;: {
+      &quot;code&quot;: &quot;F&quot;,
+      &quot;description&quot;: &quot;DEL STOCK&quot;
+    },
+    &quot;creditCardHolderType&quot;: {
+      &quot;code&quot;: &quot;1&quot;,
+      &quot;description&quot;: &quot;TITULAR&quot;
+    },
+    &quot;blockedDate&quot;: &quot;2020-09-25&quot;
+  },
+  {
+    &quot;creditCardId&quot;: &quot;0000377890513009018&quot;,
+    &quot;activationRequired&quot;: false,
+    &quot;expirationDate&quot;: &quot;2023-06-30&quot;,
+    &quot;blockingType&quot;: {
+      &quot;code&quot;: &quot;J&quot;,
+      &quot;description&quot;: &quot;SOL. CL C/DEUDA&quot;
+    },
+    &quot;seedGenerationSchema&quot;: {
+      &quot;code&quot;: &quot;3&quot;,
+      &quot;description&quot;: &quot;DIFERENTE AL NUMERO DE CUENTA&quot;
+    },
+    &quot;creditAccountInformation&quot;: {
+      &quot;creditAccountId&quot;: &quot; 0000377890513009000&quot;,
+      &quot;openingDate&quot;: &quot;2018-06-12&quot;,
+      &quot;status&quot;: {
+        &quot;code&quot;: &quot;D&quot;,
+        &quot;description&quot;: &quot;DORMIDA&quot;
+      },
+      &quot;baseCurrency&quot;: {
+        &quot;code&quot;: &quot;PEN&quot;
+      },
+      &quot;creditLine&quot;: {
+        &quot;lineAmount&quot;: 23000
+      },
+      &quot;product&quot;: {
+        &quot;logoCode&quot;: &quot;750&quot;,
+        &quot;brand&quot;: {
+          &quot;code&quot;: &quot;A&quot;,
+          &quot;description&quot;: &quot;AMEX&quot;
+        }
+      },
+      &quot;penInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0,
+          &quot;creditLineAvailableAmount&quot;: 26450
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 9
+              },
+              {
+                &quot;rangeNumber&quot;: 9
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 34.33,
+            &quot;cashWithdrawalRate&quot;: 138.18,
+            &quot;installmentBuyingRate&quot;: 138.18
+          }
+        }
+      },
+      &quot;usdInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 34.33,
+            &quot;cashWithdrawalRate&quot;: 66.0,
+            &quot;installmentBuyingRate&quot;: 138.18
+          }
+        }
+      }
+    },
+    &quot;creditCardType&quot;: {
+      &quot;code&quot;: &quot;F&quot;,
+      &quot;description&quot;: &quot;DEL STOCK&quot;
+    },
+    &quot;creditCardHolderType&quot;: {
+      &quot;code&quot;: &quot;1&quot;,
+      &quot;description&quot;: &quot;TITULAR&quot;
+    },
+    &quot;blockedDate&quot;: &quot;2018-12-18&quot;
+  },
+  {
+    &quot;creditCardId&quot;: &quot;0000377890513009208&quot;,
+    &quot;activationRequired&quot;: false,
+    &quot;expirationDate&quot;: &quot;2023-06-30&quot;,
+    &quot;blockingType&quot;: {
+      &quot;code&quot;: &quot;J&quot;,
+      &quot;description&quot;: &quot;SOL. CL C/DEUDA&quot;
+    },
+    &quot;seedGenerationSchema&quot;: {
+      &quot;code&quot;: &quot;3&quot;,
+      &quot;description&quot;: &quot;DIFERENTE AL NUMERO DE CUENTA&quot;
+    },
+    &quot;creditAccountInformation&quot;: {
+      &quot;creditAccountId&quot;: &quot; 0000377890513009000&quot;,
+      &quot;openingDate&quot;: &quot;2018-06-12&quot;,
+      &quot;status&quot;: {
+        &quot;code&quot;: &quot;D&quot;,
+        &quot;description&quot;: &quot;DORMIDA&quot;
+      },
+      &quot;baseCurrency&quot;: {
+        &quot;code&quot;: &quot;PEN&quot;
+      },
+      &quot;creditLine&quot;: {
+        &quot;lineAmount&quot;: 23000
+      },
+      &quot;product&quot;: {
+        &quot;logoCode&quot;: &quot;750&quot;,
+        &quot;brand&quot;: {
+          &quot;code&quot;: &quot;A&quot;,
+          &quot;description&quot;: &quot;AMEX&quot;
+        }
+      },
+      &quot;penInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0,
+          &quot;creditLineAvailableAmount&quot;: 26450
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 9
+              },
+              {
+                &quot;rangeNumber&quot;: 9
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 34.33,
+            &quot;cashWithdrawalRate&quot;: 138.18,
+            &quot;installmentBuyingRate&quot;: 138.18
+          }
+        }
+      },
+      &quot;usdInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 34.33,
+            &quot;cashWithdrawalRate&quot;: 66.0,
+            &quot;installmentBuyingRate&quot;: 138.18
+          }
+        }
+      }
+    },
+    &quot;creditCardType&quot;: {
+      &quot;code&quot;: &quot;F&quot;,
+      &quot;description&quot;: &quot;DEL STOCK&quot;
+    },
+    &quot;creditCardHolderType&quot;: {
+      &quot;code&quot;: &quot;0&quot;,
+      &quot;description&quot;: &quot;ADICIONAL&quot;
+    },
+    &quot;blockedDate&quot;: &quot;2018-12-18&quot;
+  },
+  {
+    &quot;creditCardId&quot;: &quot;0000377890514745016&quot;,
+    &quot;activationRequired&quot;: false,
+    &quot;expirationDate&quot;: &quot;2021-09-30&quot;,
+    &quot;blockingType&quot;: {
+      &quot;code&quot;: &quot;I&quot;,
+      &quot;description&quot;: &quot;ANULADA X COB.&quot;
+    },
+    &quot;seedGenerationSchema&quot;: {
+      &quot;code&quot;: &quot;3&quot;,
+      &quot;description&quot;: &quot;DIFERENTE AL NUMERO DE CUENTA&quot;
+    },
+    &quot;creditAccountInformation&quot;: {
+      &quot;creditAccountId&quot;: &quot; 0000377890514745008&quot;,
+      &quot;openingDate&quot;: &quot;2018-09-25&quot;,
+      &quot;status&quot;: {
+        &quot;code&quot;: &quot;D&quot;,
+        &quot;description&quot;: &quot;DORMIDA&quot;
+      },
+      &quot;baseCurrency&quot;: {
+        &quot;code&quot;: &quot;PEN&quot;
+      },
+      &quot;creditLine&quot;: {
+        &quot;lineAmount&quot;: 21000
+      },
+      &quot;product&quot;: {
+        &quot;logoCode&quot;: &quot;750&quot;,
+        &quot;brand&quot;: {
+          &quot;code&quot;: &quot;A&quot;,
+          &quot;description&quot;: &quot;AMEX&quot;
+        }
+      },
+      &quot;penInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0,
+          &quot;creditLineAvailableAmount&quot;: 24150
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 9
+              },
+              {
+                &quot;rangeNumber&quot;: 9
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 12.55,
+            &quot;cashWithdrawalRate&quot;: 138.18,
+            &quot;installmentBuyingRate&quot;: 12.55
+          }
+        }
+      },
+      &quot;usdInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 9
+              },
+              {
+                &quot;rangeNumber&quot;: 9
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 12.55,
+            &quot;cashWithdrawalRate&quot;: 66.0,
+            &quot;installmentBuyingRate&quot;: 12.55
+          }
+        }
+      }
+    },
+    &quot;creditCardType&quot;: {
+      &quot;code&quot;: &quot;F&quot;,
+      &quot;description&quot;: &quot;DEL STOCK&quot;
+    },
+    &quot;creditCardHolderType&quot;: {
+      &quot;code&quot;: &quot;1&quot;,
+      &quot;description&quot;: &quot;TITULAR&quot;
+    },
+    &quot;blockedDate&quot;: &quot;2020-03-25&quot;
+  },
+  {
+    &quot;creditCardId&quot;: &quot;0000377890514818011&quot;,
+    &quot;activationRequired&quot;: false,
+    &quot;expirationDate&quot;: &quot;2021-11-30&quot;,
+    &quot;blockingType&quot;: {
+      &quot;code&quot;: &quot;E&quot;,
+      &quot;description&quot;: &quot;CAST O VENDIDA&quot;
+    },
+    &quot;seedGenerationSchema&quot;: {
+      &quot;code&quot;: &quot;3&quot;,
+      &quot;description&quot;: &quot;DIFERENTE AL NUMERO DE CUENTA&quot;
+    },
+    &quot;creditAccountInformation&quot;: {
+      &quot;creditAccountId&quot;: &quot; 0000377890514818003&quot;,
+      &quot;openingDate&quot;: &quot;2018-11-28&quot;,
+      &quot;status&quot;: {
+        &quot;code&quot;: &quot;D&quot;,
+        &quot;description&quot;: &quot;DORMIDA&quot;
+      },
+      &quot;baseCurrency&quot;: {
+        &quot;code&quot;: &quot;PEN&quot;
+      },
+      &quot;creditLine&quot;: {
+        &quot;lineAmount&quot;: 20000
+      },
+      &quot;product&quot;: {
+        &quot;logoCode&quot;: &quot;750&quot;,
+        &quot;brand&quot;: {
+          &quot;code&quot;: &quot;A&quot;,
+          &quot;description&quot;: &quot;AMEX&quot;
+        }
+      },
+      &quot;penInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;E&quot;,
+          &quot;description&quot;: &quot;CAST O VENDIDA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0,
+          &quot;creditLineAvailableAmount&quot;: 22993
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 8
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 12.55,
+            &quot;cashWithdrawalRate&quot;: 138.18,
+            &quot;installmentBuyingRate&quot;: 12.55
+          }
+        }
+      },
+      &quot;usdInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;E&quot;,
+          &quot;description&quot;: &quot;CAST O VENDIDA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 6.3
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 9
+              },
+              {
+                &quot;rangeNumber&quot;: 9
+              },
+              {
+                &quot;rangeNumber&quot;: 9
+              },
+              {
+                &quot;rangeNumber&quot;: 9
+              },
+              {
+                &quot;rangeNumber&quot;: 9
+              },
+              {
+                &quot;rangeNumber&quot;: 9
+              },
+              {
+                &quot;rangeNumber&quot;: 9
+              },
+              {
+                &quot;rangeNumber&quot;: 9
+              },
+              {
+                &quot;rangeNumber&quot;: 9
+              },
+              {
+                &quot;rangeNumber&quot;: 9
+              },
+              {
+                &quot;rangeNumber&quot;: 9
+              },
+              {
+                &quot;rangeNumber&quot;: 8
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 12.55,
+            &quot;cashWithdrawalRate&quot;: 66.0,
+            &quot;installmentBuyingRate&quot;: 12.55
+          }
+        }
+      }
+    },
+    &quot;creditCardType&quot;: {
+      &quot;code&quot;: &quot;F&quot;,
+      &quot;description&quot;: &quot;DEL STOCK&quot;
+    },
+    &quot;creditCardHolderType&quot;: {
+      &quot;code&quot;: &quot;1&quot;,
+      &quot;description&quot;: &quot;TITULAR&quot;
+    },
+    &quot;blockedDate&quot;: &quot;2020-02-25&quot;
+  },
+  {
+    &quot;creditCardId&quot;: &quot;0000377892504980017&quot;,
+    &quot;activationRequired&quot;: false,
+    &quot;expirationDate&quot;: &quot;2023-06-30&quot;,
+    &quot;blockingType&quot;: {
+      &quot;code&quot;: &quot;B&quot;,
+      &quot;description&quot;: &quot;CANJE DE TJTA&quot;
+    },
+    &quot;seedGenerationSchema&quot;: {
+      &quot;code&quot;: &quot;3&quot;,
+      &quot;description&quot;: &quot;DIFERENTE AL NUMERO DE CUENTA&quot;
+    },
+    &quot;creditAccountInformation&quot;: {
+      &quot;creditAccountId&quot;: &quot; 0000377892504980009&quot;,
+      &quot;openingDate&quot;: &quot;2018-06-12&quot;,
+      &quot;status&quot;: {
+        &quot;code&quot;: &quot;F&quot;,
+        &quot;description&quot;: &quot;FRAUDE&quot;
+      },
+      &quot;baseCurrency&quot;: {
+        &quot;code&quot;: &quot;PEN&quot;
+      },
+      &quot;creditLine&quot;: {
+        &quot;lineAmount&quot;: 0
+      },
+      &quot;product&quot;: {
+        &quot;logoCode&quot;: &quot;765&quot;,
+        &quot;brand&quot;: {
+          &quot;code&quot;: &quot;A&quot;,
+          &quot;description&quot;: &quot;AMEX&quot;
+        }
+      },
+      &quot;penInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;B&quot;,
+          &quot;description&quot;: &quot;CANJE DE TJTA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0,
+          &quot;creditLineAvailableAmount&quot;: 0
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 34.33,
+            &quot;cashWithdrawalRate&quot;: 138.18,
+            &quot;installmentBuyingRate&quot;: 138.18
+          }
+        }
+      },
+      &quot;usdInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;B&quot;,
+          &quot;description&quot;: &quot;CANJE DE TJTA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 34.33,
+            &quot;cashWithdrawalRate&quot;: 66.0,
+            &quot;installmentBuyingRate&quot;: 138.18
+          }
+        }
+      }
+    },
+    &quot;creditCardType&quot;: {
+      &quot;code&quot;: &quot;F&quot;,
+      &quot;description&quot;: &quot;DEL STOCK&quot;
+    },
+    &quot;creditCardHolderType&quot;: {
+      &quot;code&quot;: &quot;1&quot;,
+      &quot;description&quot;: &quot;TITULAR&quot;
+    },
+    &quot;blockedDate&quot;: &quot;2018-09-24&quot;
+  },
+  {
+    &quot;creditCardId&quot;: &quot;0000377892504981015&quot;,
+    &quot;activationRequired&quot;: false,
+    &quot;expirationDate&quot;: &quot;2023-06-30&quot;,
+    &quot;blockingType&quot;: {
+      &quot;code&quot;: &quot;B&quot;,
+      &quot;description&quot;: &quot;CANJE DE TJTA&quot;
+    },
+    &quot;seedGenerationSchema&quot;: {
+      &quot;code&quot;: &quot;3&quot;,
+      &quot;description&quot;: &quot;DIFERENTE AL NUMERO DE CUENTA&quot;
+    },
+    &quot;creditAccountInformation&quot;: {
+      &quot;creditAccountId&quot;: &quot; 0000377892504981007&quot;,
+      &quot;openingDate&quot;: &quot;2018-06-12&quot;,
+      &quot;status&quot;: {
+        &quot;code&quot;: &quot;T&quot;,
+        &quot;description&quot;: &quot;TRANSFERIDA&quot;
+      },
+      &quot;baseCurrency&quot;: {
+        &quot;code&quot;: &quot;PEN&quot;
+      },
+      &quot;creditLine&quot;: {
+        &quot;lineAmount&quot;: 0
+      },
+      &quot;product&quot;: {
+        &quot;logoCode&quot;: &quot;765&quot;,
+        &quot;brand&quot;: {
+          &quot;code&quot;: &quot;A&quot;,
+          &quot;description&quot;: &quot;AMEX&quot;
+        }
+      },
+      &quot;penInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;B&quot;,
+          &quot;description&quot;: &quot;CANJE DE TJTA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0,
+          &quot;creditLineAvailableAmount&quot;: 0
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 34.33,
+            &quot;cashWithdrawalRate&quot;: 138.18,
+            &quot;installmentBuyingRate&quot;: 138.18
+          }
+        }
+      },
+      &quot;usdInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;B&quot;,
+          &quot;description&quot;: &quot;CANJE DE TJTA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 34.33,
+            &quot;cashWithdrawalRate&quot;: 66.0,
+            &quot;installmentBuyingRate&quot;: 138.18
+          }
+        }
+      }
+    },
+    &quot;creditCardType&quot;: {
+      &quot;code&quot;: &quot;F&quot;,
+      &quot;description&quot;: &quot;DEL STOCK&quot;
+    },
+    &quot;creditCardHolderType&quot;: {
+      &quot;code&quot;: &quot;1&quot;,
+      &quot;description&quot;: &quot;TITULAR&quot;
+    },
+    &quot;blockedDate&quot;: &quot;2018-09-24&quot;
+  },
+  {
+    &quot;creditCardId&quot;: &quot;0000377892505081013&quot;,
+    &quot;activationRequired&quot;: false,
+    &quot;expirationDate&quot;: &quot;2021-12-31&quot;,
+    &quot;blockingType&quot;: {
+      &quot;code&quot;: &quot;X&quot;,
+      &quot;description&quot;: &quot;ROBO&quot;
+    },
+    &quot;seedGenerationSchema&quot;: {
+      &quot;code&quot;: &quot;3&quot;,
+      &quot;description&quot;: &quot;DIFERENTE AL NUMERO DE CUENTA&quot;
+    },
+    &quot;creditAccountInformation&quot;: {
+      &quot;creditAccountId&quot;: &quot; 0000377892505081005&quot;,
+      &quot;openingDate&quot;: &quot;2018-12-06&quot;,
+      &quot;status&quot;: {
+        &quot;code&quot;: &quot;D&quot;,
+        &quot;description&quot;: &quot;DORMIDA&quot;
+      },
+      &quot;baseCurrency&quot;: {
+        &quot;code&quot;: &quot;PEN&quot;
+      },
+      &quot;creditLine&quot;: {
+        &quot;lineAmount&quot;: 20000
+      },
+      &quot;product&quot;: {
+        &quot;logoCode&quot;: &quot;765&quot;,
+        &quot;brand&quot;: {
+          &quot;code&quot;: &quot;A&quot;,
+          &quot;description&quot;: &quot;AMEX&quot;
+        }
+      },
+      &quot;penInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0,
+          &quot;creditLineAvailableAmount&quot;: 24000
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 5
+              },
+              {
+                &quot;rangeNumber&quot;: 5
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 34.33,
+            &quot;cashWithdrawalRate&quot;: 138.18,
+            &quot;installmentBuyingRate&quot;: 138.18
+          }
+        }
+      },
+      &quot;usdInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 34.33,
+            &quot;cashWithdrawalRate&quot;: 66.0,
+            &quot;installmentBuyingRate&quot;: 138.18
+          }
+        }
+      }
+    },
+    &quot;creditCardType&quot;: {
+      &quot;code&quot;: &quot;F&quot;,
+      &quot;description&quot;: &quot;DEL STOCK&quot;
+    },
+    &quot;creditCardHolderType&quot;: {
+      &quot;code&quot;: &quot;1&quot;,
+      &quot;description&quot;: &quot;TITULAR&quot;
+    },
+    &quot;blockedDate&quot;: &quot;2019-06-06&quot;
+  },
+  {
+    &quot;creditCardId&quot;: &quot;0000377892505081153&quot;,
+    &quot;activationRequired&quot;: false,
+    &quot;expirationDate&quot;: &quot;2021-12-31&quot;,
+    &quot;blockingType&quot;: {
+      &quot;code&quot;: &quot;I&quot;,
+      &quot;description&quot;: &quot;ANULADA X COB.&quot;
+    },
+    &quot;seedGenerationSchema&quot;: {
+      &quot;code&quot;: &quot;3&quot;,
+      &quot;description&quot;: &quot;DIFERENTE AL NUMERO DE CUENTA&quot;
+    },
+    &quot;creditAccountInformation&quot;: {
+      &quot;creditAccountId&quot;: &quot; 0000377892505081005&quot;,
+      &quot;openingDate&quot;: &quot;2018-12-06&quot;,
+      &quot;status&quot;: {
+        &quot;code&quot;: &quot;D&quot;,
+        &quot;description&quot;: &quot;DORMIDA&quot;
+      },
+      &quot;baseCurrency&quot;: {
+        &quot;code&quot;: &quot;PEN&quot;
+      },
+      &quot;creditLine&quot;: {
+        &quot;lineAmount&quot;: 20000
+      },
+      &quot;product&quot;: {
+        &quot;logoCode&quot;: &quot;765&quot;,
+        &quot;brand&quot;: {
+          &quot;code&quot;: &quot;A&quot;,
+          &quot;description&quot;: &quot;AMEX&quot;
+        }
+      },
+      &quot;penInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0,
+          &quot;creditLineAvailableAmount&quot;: 24000
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 5
+              },
+              {
+                &quot;rangeNumber&quot;: 5
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 34.33,
+            &quot;cashWithdrawalRate&quot;: 138.18,
+            &quot;installmentBuyingRate&quot;: 138.18
+          }
+        }
+      },
+      &quot;usdInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 34.33,
+            &quot;cashWithdrawalRate&quot;: 66.0,
+            &quot;installmentBuyingRate&quot;: 138.18
+          }
+        }
+      }
+    },
+    &quot;creditCardType&quot;: {
+      &quot;code&quot;: &quot;F&quot;,
+      &quot;description&quot;: &quot;DEL STOCK&quot;
+    },
+    &quot;creditCardHolderType&quot;: {
+      &quot;code&quot;: &quot;1&quot;,
+      &quot;description&quot;: &quot;TITULAR&quot;
+    },
+    &quot;blockedDate&quot;: &quot;2021-12-16&quot;
+  },
+  {
+    &quot;creditCardId&quot;: &quot;0000377894504259012&quot;,
+    &quot;activationRequired&quot;: true,
+    &quot;expirationDate&quot;: &quot;2021-09-30&quot;,
+    &quot;seedGenerationSchema&quot;: {
+      &quot;code&quot;: &quot;3&quot;,
+      &quot;description&quot;: &quot;DIFERENTE AL NUMERO DE CUENTA&quot;
+    },
+    &quot;creditAccountInformation&quot;: {
+      &quot;creditAccountId&quot;: &quot; 0000377894504259004&quot;,
+      &quot;openingDate&quot;: &quot;2018-09-25&quot;,
+      &quot;status&quot;: {
+        &quot;code&quot;: &quot;D&quot;,
+        &quot;description&quot;: &quot;DORMIDA&quot;
+      },
+      &quot;baseCurrency&quot;: {
+        &quot;code&quot;: &quot;PEN&quot;
+      },
+      &quot;creditLine&quot;: {
+        &quot;lineAmount&quot;: 21000
+      },
+      &quot;product&quot;: {
+        &quot;logoCode&quot;: &quot;730&quot;,
+        &quot;brand&quot;: {
+          &quot;code&quot;: &quot;A&quot;,
+          &quot;description&quot;: &quot;AMEX&quot;
+        }
+      },
+      &quot;penInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;Z&quot;,
+          &quot;description&quot;: &quot;A SOLIC CLIENTE&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0,
+          &quot;creditLineAvailableAmount&quot;: 21000
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 26.68,
+            &quot;cashWithdrawalRate&quot;: 26.68,
+            &quot;installmentBuyingRate&quot;: 26.68
+          }
+        }
+      },
+      &quot;usdInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;A&quot;,
+          &quot;description&quot;: &quot;UPGRADE&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 26.68,
+            &quot;cashWithdrawalRate&quot;: 26.68,
+            &quot;installmentBuyingRate&quot;: 26.68
+          }
+        }
+      }
+    },
+    &quot;creditCardType&quot;: {
+      &quot;code&quot;: &quot;F&quot;,
+      &quot;description&quot;: &quot;DEL STOCK&quot;
+    },
+    &quot;creditCardHolderType&quot;: {
+      &quot;code&quot;: &quot;1&quot;,
+      &quot;description&quot;: &quot;TITULAR&quot;
+    }
+  },
+  {
+    &quot;creditCardId&quot;: &quot;0000377897504170014&quot;,
+    &quot;activationRequired&quot;: false,
+    &quot;expirationDate&quot;: &quot;2021-09-30&quot;,
+    &quot;blockingType&quot;: {
+      &quot;code&quot;: &quot;I&quot;,
+      &quot;description&quot;: &quot;ANULADA X COB.&quot;
+    },
+    &quot;seedGenerationSchema&quot;: {
+      &quot;code&quot;: &quot;3&quot;,
+      &quot;description&quot;: &quot;DIFERENTE AL NUMERO DE CUENTA&quot;
+    },
+    &quot;creditAccountInformation&quot;: {
+      &quot;creditAccountId&quot;: &quot; 0000377897504170006&quot;,
+      &quot;openingDate&quot;: &quot;2018-09-25&quot;,
+      &quot;status&quot;: {
+        &quot;code&quot;: &quot;D&quot;,
+        &quot;description&quot;: &quot;DORMIDA&quot;
+      },
+      &quot;baseCurrency&quot;: {
+        &quot;code&quot;: &quot;PEN&quot;
+      },
+      &quot;creditLine&quot;: {
+        &quot;lineAmount&quot;: 1000
+      },
+      &quot;product&quot;: {
+        &quot;logoCode&quot;: &quot;710&quot;,
+        &quot;brand&quot;: {
+          &quot;code&quot;: &quot;A&quot;,
+          &quot;description&quot;: &quot;AMEX&quot;
+        }
+      },
+      &quot;penInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0,
+          &quot;creditLineAvailableAmount&quot;: 1200
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 9
+              },
+              {
+                &quot;rangeNumber&quot;: 9
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 34.33,
+            &quot;cashWithdrawalRate&quot;: 138.18,
+            &quot;installmentBuyingRate&quot;: 138.18
+          }
+        }
+      },
+      &quot;usdInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 34.33,
+            &quot;cashWithdrawalRate&quot;: 138.18,
+            &quot;installmentBuyingRate&quot;: 138.18
+          }
+        }
+      }
+    },
+    &quot;creditCardType&quot;: {
+      &quot;code&quot;: &quot;F&quot;,
+      &quot;description&quot;: &quot;DEL STOCK&quot;
+    },
+    &quot;creditCardHolderType&quot;: {
+      &quot;code&quot;: &quot;1&quot;,
+      &quot;description&quot;: &quot;TITULAR&quot;
+    },
+    &quot;blockedDate&quot;: &quot;2020-10-27&quot;
+  },
+  {
+    &quot;creditCardId&quot;: &quot;0000377897504171012&quot;,
+    &quot;activationRequired&quot;: false,
+    &quot;expirationDate&quot;: &quot;2021-09-30&quot;,
+    &quot;blockingType&quot;: {
+      &quot;code&quot;: &quot;I&quot;,
+      &quot;description&quot;: &quot;ANULADA X COB.&quot;
+    },
+    &quot;seedGenerationSchema&quot;: {
+      &quot;code&quot;: &quot;3&quot;,
+      &quot;description&quot;: &quot;DIFERENTE AL NUMERO DE CUENTA&quot;
+    },
+    &quot;creditAccountInformation&quot;: {
+      &quot;creditAccountId&quot;: &quot; 0000377897504171004&quot;,
+      &quot;openingDate&quot;: &quot;2018-09-25&quot;,
+      &quot;status&quot;: {
+        &quot;code&quot;: &quot;D&quot;,
+        &quot;description&quot;: &quot;DORMIDA&quot;
+      },
+      &quot;baseCurrency&quot;: {
+        &quot;code&quot;: &quot;PEN&quot;
+      },
+      &quot;creditLine&quot;: {
+        &quot;lineAmount&quot;: 10000
+      },
+      &quot;product&quot;: {
+        &quot;logoCode&quot;: &quot;710&quot;,
+        &quot;brand&quot;: {
+          &quot;code&quot;: &quot;A&quot;,
+          &quot;description&quot;: &quot;AMEX&quot;
+        }
+      },
+      &quot;penInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0,
+          &quot;creditLineAvailableAmount&quot;: 12000
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 34.33,
+            &quot;cashWithdrawalRate&quot;: 138.18,
+            &quot;installmentBuyingRate&quot;: 138.18
+          }
+        }
+      },
+      &quot;usdInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 34.33,
+            &quot;cashWithdrawalRate&quot;: 138.18,
+            &quot;installmentBuyingRate&quot;: 138.18
+          }
+        }
+      }
+    },
+    &quot;creditCardType&quot;: {
+      &quot;code&quot;: &quot;F&quot;,
+      &quot;description&quot;: &quot;DEL STOCK&quot;
+    },
+    &quot;creditCardHolderType&quot;: {
+      &quot;code&quot;: &quot;1&quot;,
+      &quot;description&quot;: &quot;TITULAR&quot;
+    },
+    &quot;blockedDate&quot;: &quot;2020-09-25&quot;
+  },
+  {
+    &quot;creditCardId&quot;: &quot;0000377898502218011&quot;,
+    &quot;activationRequired&quot;: true,
+    &quot;expirationDate&quot;: &quot;2023-06-30&quot;,
+    &quot;blockingType&quot;: {
+      &quot;code&quot;: &quot;I&quot;,
+      &quot;description&quot;: &quot;ANULADA X COB.&quot;
+    },
+    &quot;seedGenerationSchema&quot;: {
+      &quot;code&quot;: &quot;3&quot;,
+      &quot;description&quot;: &quot;DIFERENTE AL NUMERO DE CUENTA&quot;
+    },
+    &quot;creditAccountInformation&quot;: {
+      &quot;creditAccountId&quot;: &quot; 0000377898502218003&quot;,
+      &quot;openingDate&quot;: &quot;2018-06-12&quot;,
+      &quot;status&quot;: {
+        &quot;code&quot;: &quot;D&quot;,
+        &quot;description&quot;: &quot;DORMIDA&quot;
+      },
+      &quot;baseCurrency&quot;: {
+        &quot;code&quot;: &quot;PEN&quot;
+      },
+      &quot;creditLine&quot;: {
+        &quot;lineAmount&quot;: 15500
+      },
+      &quot;product&quot;: {
+        &quot;logoCode&quot;: &quot;735&quot;,
+        &quot;brand&quot;: {
+          &quot;code&quot;: &quot;A&quot;,
+          &quot;description&quot;: &quot;AMEX&quot;
+        }
+      },
+      &quot;penInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0,
+          &quot;creditLineAvailableAmount&quot;: 18600
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 9
+              },
+              {
+                &quot;rangeNumber&quot;: 9
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 21.7,
+            &quot;cashWithdrawalRate&quot;: 60.1,
+            &quot;installmentBuyingRate&quot;: 21.7
+          }
+        }
+      },
+      &quot;usdInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 21.7,
+            &quot;cashWithdrawalRate&quot;: 60.1,
+            &quot;installmentBuyingRate&quot;: 21.7
+          }
+        }
+      }
+    },
+    &quot;creditCardType&quot;: {
+      &quot;code&quot;: &quot;F&quot;,
+      &quot;description&quot;: &quot;DEL STOCK&quot;
+    },
+    &quot;creditCardHolderType&quot;: {
+      &quot;code&quot;: &quot;1&quot;,
+      &quot;description&quot;: &quot;TITULAR&quot;
+    },
+    &quot;blockedDate&quot;: &quot;2020-03-17&quot;
+  },
+  {
+    &quot;creditCardId&quot;: &quot;0000377898502240015&quot;,
+    &quot;activationRequired&quot;: false,
+    &quot;expirationDate&quot;: &quot;2021-09-30&quot;,
+    &quot;blockingType&quot;: {
+      &quot;code&quot;: &quot;I&quot;,
+      &quot;description&quot;: &quot;ANULADA X COB.&quot;
+    },
+    &quot;seedGenerationSchema&quot;: {
+      &quot;code&quot;: &quot;3&quot;,
+      &quot;description&quot;: &quot;DIFERENTE AL NUMERO DE CUENTA&quot;
+    },
+    &quot;creditAccountInformation&quot;: {
+      &quot;creditAccountId&quot;: &quot; 0000377898502240007&quot;,
+      &quot;openingDate&quot;: &quot;2018-09-25&quot;,
+      &quot;status&quot;: {
+        &quot;code&quot;: &quot;D&quot;,
+        &quot;description&quot;: &quot;DORMIDA&quot;
+      },
+      &quot;baseCurrency&quot;: {
+        &quot;code&quot;: &quot;PEN&quot;
+      },
+      &quot;creditLine&quot;: {
+        &quot;lineAmount&quot;: 20000
+      },
+      &quot;product&quot;: {
+        &quot;logoCode&quot;: &quot;735&quot;,
+        &quot;brand&quot;: {
+          &quot;code&quot;: &quot;A&quot;,
+          &quot;description&quot;: &quot;AMEX&quot;
+        }
+      },
+      &quot;penInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0,
+          &quot;creditLineAvailableAmount&quot;: 24000
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 21.7,
+            &quot;cashWithdrawalRate&quot;: 60.1,
+            &quot;installmentBuyingRate&quot;: 21.7
+          }
+        }
+      },
+      &quot;usdInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 21.7,
+            &quot;cashWithdrawalRate&quot;: 60.1,
+            &quot;installmentBuyingRate&quot;: 21.7
+          }
+        }
+      }
+    },
+    &quot;creditCardType&quot;: {
+      &quot;code&quot;: &quot;F&quot;,
+      &quot;description&quot;: &quot;DEL STOCK&quot;
+    },
+    &quot;creditCardHolderType&quot;: {
+      &quot;code&quot;: &quot;1&quot;,
+      &quot;description&quot;: &quot;TITULAR&quot;
+    },
+    &quot;blockedDate&quot;: &quot;2020-10-16&quot;
+  },
+  {
+    &quot;creditCardId&quot;: &quot;0004021600390074338&quot;,
+    &quot;activationRequired&quot;: false,
+    &quot;expirationDate&quot;: &quot;2025-09-30&quot;,
+    &quot;seedGenerationSchema&quot;: {
+      &quot;code&quot;: &quot;3&quot;,
+      &quot;description&quot;: &quot;DIFERENTE AL NUMERO DE CUENTA&quot;
+    },
+    &quot;creditAccountInformation&quot;: {
+      &quot;creditAccountId&quot;: &quot; 0004021600090641006&quot;,
+      &quot;openingDate&quot;: &quot;2018-06-08&quot;,
+      &quot;status&quot;: {
+        &quot;code&quot;: &quot;A&quot;,
+        &quot;description&quot;: &quot;ACTIVA&quot;
+      },
+      &quot;baseCurrency&quot;: {
+        &quot;code&quot;: &quot;PEN&quot;
+      },
+      &quot;creditLine&quot;: {
+        &quot;lineAmount&quot;: 1500
+      },
+      &quot;product&quot;: {
+        &quot;logoCode&quot;: &quot;251&quot;,
+        &quot;brand&quot;: {
+          &quot;code&quot;: &quot;V&quot;,
+          &quot;description&quot;: &quot;VISA&quot;
+        }
+      },
+      &quot;penInformation&quot;: {
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 1.29,
+          &quot;creditLineAvailableAmount&quot;: 1647
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 1
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              },
+              {
+                &quot;rangeNumber&quot;: 2
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 42.41,
+            &quot;cashWithdrawalRate&quot;: 138.18,
+            &quot;installmentBuyingRate&quot;: 81.5
+          }
+        }
+      },
+      &quot;usdInformation&quot;: {
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 75.87
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 1
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              },
+              {
+                &quot;rangeNumber&quot;: 2
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 42.41,
+            &quot;cashWithdrawalRate&quot;: 66.0,
+            &quot;installmentBuyingRate&quot;: 66.0
+          }
+        }
+      }
+    },
+    &quot;creditCardType&quot;: {
+      &quot;code&quot;: &quot;F&quot;,
+      &quot;description&quot;: &quot;DEL STOCK&quot;
+    },
+    &quot;creditCardHolderType&quot;: {
+      &quot;code&quot;: &quot;1&quot;,
+      &quot;description&quot;: &quot;TITULAR&quot;
+    }
+  },
+  {
+    &quot;creditCardId&quot;: &quot;0004021600091655013&quot;,
+    &quot;activationRequired&quot;: false,
+    &quot;expirationDate&quot;: &quot;2021-09-30&quot;,
+    &quot;blockingType&quot;: {
+      &quot;code&quot;: &quot;I&quot;,
+      &quot;description&quot;: &quot;ANULADA X COB.&quot;
+    },
+    &quot;seedGenerationSchema&quot;: {
+      &quot;code&quot;: &quot;3&quot;,
+      &quot;description&quot;: &quot;DIFERENTE AL NUMERO DE CUENTA&quot;
+    },
+    &quot;creditAccountInformation&quot;: {
+      &quot;creditAccountId&quot;: &quot; 0004021600091655005&quot;,
+      &quot;openingDate&quot;: &quot;2018-09-25&quot;,
+      &quot;status&quot;: {
+        &quot;code&quot;: &quot;D&quot;,
+        &quot;description&quot;: &quot;DORMIDA&quot;
+      },
+      &quot;baseCurrency&quot;: {
+        &quot;code&quot;: &quot;PEN&quot;
+      },
+      &quot;creditLine&quot;: {
+        &quot;lineAmount&quot;: 20000
+      },
+      &quot;product&quot;: {
+        &quot;logoCode&quot;: &quot;251&quot;,
+        &quot;brand&quot;: {
+          &quot;code&quot;: &quot;V&quot;,
+          &quot;description&quot;: &quot;VISA&quot;
+        }
+      },
+      &quot;penInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0,
+          &quot;creditLineAvailableAmount&quot;: 23000
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 42.41,
+            &quot;cashWithdrawalRate&quot;: 138.18,
+            &quot;installmentBuyingRate&quot;: 81.5
+          }
+        }
+      },
+      &quot;usdInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 42.41,
+            &quot;cashWithdrawalRate&quot;: 66.0,
+            &quot;installmentBuyingRate&quot;: 66.0
+          }
+        }
+      }
+    },
+    &quot;creditCardType&quot;: {
+      &quot;code&quot;: &quot;F&quot;,
+      &quot;description&quot;: &quot;DEL STOCK&quot;
+    },
+    &quot;creditCardHolderType&quot;: {
+      &quot;code&quot;: &quot;1&quot;,
+      &quot;description&quot;: &quot;TITULAR&quot;
+    },
+    &quot;blockedDate&quot;: &quot;2019-12-20&quot;
+  },
+  {
+    &quot;creditCardId&quot;: &quot;0004021600091656011&quot;,
+    &quot;activationRequired&quot;: false,
+    &quot;expirationDate&quot;: &quot;2021-09-30&quot;,
+    &quot;blockingType&quot;: {
+      &quot;code&quot;: &quot;I&quot;,
+      &quot;description&quot;: &quot;ANULADA X COB.&quot;
+    },
+    &quot;seedGenerationSchema&quot;: {
+      &quot;code&quot;: &quot;3&quot;,
+      &quot;description&quot;: &quot;DIFERENTE AL NUMERO DE CUENTA&quot;
+    },
+    &quot;creditAccountInformation&quot;: {
+      &quot;creditAccountId&quot;: &quot; 0004021600091656003&quot;,
+      &quot;openingDate&quot;: &quot;2018-09-26&quot;,
+      &quot;status&quot;: {
+        &quot;code&quot;: &quot;D&quot;,
+        &quot;description&quot;: &quot;DORMIDA&quot;
+      },
+      &quot;baseCurrency&quot;: {
+        &quot;code&quot;: &quot;PEN&quot;
+      },
+      &quot;creditLine&quot;: {
+        &quot;lineAmount&quot;: 20000
+      },
+      &quot;product&quot;: {
+        &quot;logoCode&quot;: &quot;251&quot;,
+        &quot;brand&quot;: {
+          &quot;code&quot;: &quot;V&quot;,
+          &quot;description&quot;: &quot;VISA&quot;
+        }
+      },
+      &quot;penInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0,
+          &quot;creditLineAvailableAmount&quot;: 23000
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 42.41,
+            &quot;cashWithdrawalRate&quot;: 138.18,
+            &quot;installmentBuyingRate&quot;: 81.5
+          }
+        }
+      },
+      &quot;usdInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 42.41,
+            &quot;cashWithdrawalRate&quot;: 66.0,
+            &quot;installmentBuyingRate&quot;: 66.0
+          }
+        }
+      }
+    },
+    &quot;creditCardType&quot;: {
+      &quot;code&quot;: &quot;F&quot;,
+      &quot;description&quot;: &quot;DEL STOCK&quot;
+    },
+    &quot;creditCardHolderType&quot;: {
+      &quot;code&quot;: &quot;1&quot;,
+      &quot;description&quot;: &quot;TITULAR&quot;
+    },
+    &quot;blockedDate&quot;: &quot;2019-12-20&quot;
+  },
+  {
+    &quot;creditCardId&quot;: &quot;0004280820096005016&quot;,
+    &quot;activationRequired&quot;: true,
+    &quot;expirationDate&quot;: &quot;2021-06-30&quot;,
+    &quot;blockingType&quot;: {
+      &quot;code&quot;: &quot;Z&quot;,
+      &quot;description&quot;: &quot;A SOLIC CLIENTE&quot;
+    },
+    &quot;seedGenerationSchema&quot;: {
+      &quot;code&quot;: &quot;3&quot;,
+      &quot;description&quot;: &quot;DIFERENTE AL NUMERO DE CUENTA&quot;
+    },
+    &quot;creditAccountInformation&quot;: {
+      &quot;creditAccountId&quot;: &quot; 0004280820096005230&quot;,
+      &quot;openingDate&quot;: &quot;2018-06-12&quot;,
+      &quot;status&quot;: {
+        &quot;code&quot;: &quot;D&quot;,
+        &quot;description&quot;: &quot;DORMIDA&quot;
+      },
+      &quot;baseCurrency&quot;: {
+        &quot;code&quot;: &quot;PEN&quot;
+      },
+      &quot;creditLine&quot;: {
+        &quot;lineAmount&quot;: 20000
+      },
+      &quot;product&quot;: {
+        &quot;logoCode&quot;: &quot;436&quot;,
+        &quot;brand&quot;: {
+          &quot;code&quot;: &quot;V&quot;,
+          &quot;description&quot;: &quot;VISA&quot;
+        }
+      },
+      &quot;penInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;Z&quot;,
+          &quot;description&quot;: &quot;A SOLIC CLIENTE&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0,
+          &quot;creditLineAvailableAmount&quot;: 24400
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 9
+              },
+              {
+                &quot;rangeNumber&quot;: 9
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 26.0,
+            &quot;cashWithdrawalRate&quot;: 79.75,
+            &quot;installmentBuyingRate&quot;: 26.0
+          }
+        }
+      },
+      &quot;usdInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;A&quot;,
+          &quot;description&quot;: &quot;UPGRADE&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 26.0,
+            &quot;cashWithdrawalRate&quot;: 66.0,
+            &quot;installmentBuyingRate&quot;: 26.0
+          }
+        }
+      }
+    },
+    &quot;creditCardType&quot;: {
+      &quot;code&quot;: &quot;F&quot;,
+      &quot;description&quot;: &quot;DEL STOCK&quot;
+    },
+    &quot;creditCardHolderType&quot;: {
+      &quot;code&quot;: &quot;1&quot;,
+      &quot;description&quot;: &quot;TITULAR&quot;
+    },
+    &quot;blockedDate&quot;: &quot;2020-03-17&quot;
+  },
+  {
+    &quot;creditCardId&quot;: &quot;0004280830091386014&quot;,
+    &quot;activationRequired&quot;: true,
+    &quot;expirationDate&quot;: &quot;2023-06-30&quot;,
+    &quot;blockingType&quot;: {
+      &quot;code&quot;: &quot;B&quot;,
+      &quot;description&quot;: &quot;CANJE DE TJTA&quot;
+    },
+    &quot;seedGenerationSchema&quot;: {
+      &quot;code&quot;: &quot;3&quot;,
+      &quot;description&quot;: &quot;DIFERENTE AL NUMERO DE CUENTA&quot;
+    },
+    &quot;creditAccountInformation&quot;: {
+      &quot;creditAccountId&quot;: &quot; 0004280830091386006&quot;,
+      &quot;openingDate&quot;: &quot;2018-06-12&quot;,
+      &quot;status&quot;: {
+        &quot;code&quot;: &quot;T&quot;,
+        &quot;description&quot;: &quot;TRANSFERIDA&quot;
+      },
+      &quot;baseCurrency&quot;: {
+        &quot;code&quot;: &quot;PEN&quot;
+      },
+      &quot;creditLine&quot;: {
+        &quot;lineAmount&quot;: 0
+      },
+      &quot;product&quot;: {
+        &quot;logoCode&quot;: &quot;401&quot;,
+        &quot;brand&quot;: {
+          &quot;code&quot;: &quot;V&quot;,
+          &quot;description&quot;: &quot;VISA&quot;
+        }
+      },
+      &quot;penInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;B&quot;,
+          &quot;description&quot;: &quot;CANJE DE TJTA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0,
+          &quot;creditLineAvailableAmount&quot;: 0
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 21.27,
+            &quot;cashWithdrawalRate&quot;: 60.1,
+            &quot;installmentBuyingRate&quot;: 21.27
+          }
+        }
+      },
+      &quot;usdInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;B&quot;,
+          &quot;description&quot;: &quot;CANJE DE TJTA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 21.27,
+            &quot;cashWithdrawalRate&quot;: 60.1,
+            &quot;installmentBuyingRate&quot;: 21.27
+          }
+        }
+      }
+    },
+    &quot;creditCardType&quot;: {
+      &quot;code&quot;: &quot;F&quot;,
+      &quot;description&quot;: &quot;DEL STOCK&quot;
+    },
+    &quot;creditCardHolderType&quot;: {
+      &quot;code&quot;: &quot;1&quot;,
+      &quot;description&quot;: &quot;TITULAR&quot;
+    },
+    &quot;blockedDate&quot;: &quot;2019-01-14&quot;
+  },
+  {
+    &quot;creditCardId&quot;: &quot;0004280830091822018&quot;,
+    &quot;activationRequired&quot;: false,
+    &quot;expirationDate&quot;: &quot;2021-12-31&quot;,
+    &quot;blockingType&quot;: {
+      &quot;code&quot;: &quot;I&quot;,
+      &quot;description&quot;: &quot;ANULADA X COB.&quot;
+    },
+    &quot;seedGenerationSchema&quot;: {
+      &quot;code&quot;: &quot;3&quot;,
+      &quot;description&quot;: &quot;DIFERENTE AL NUMERO DE CUENTA&quot;
+    },
+    &quot;creditAccountInformation&quot;: {
+      &quot;creditAccountId&quot;: &quot; 0004280830091822000&quot;,
+      &quot;openingDate&quot;: &quot;2018-12-05&quot;,
+      &quot;status&quot;: {
+        &quot;code&quot;: &quot;D&quot;,
+        &quot;description&quot;: &quot;DORMIDA&quot;
+      },
+      &quot;baseCurrency&quot;: {
+        &quot;code&quot;: &quot;PEN&quot;
+      },
+      &quot;creditLine&quot;: {
+        &quot;lineAmount&quot;: 20000
+      },
+      &quot;product&quot;: {
+        &quot;logoCode&quot;: &quot;401&quot;,
+        &quot;brand&quot;: {
+          &quot;code&quot;: &quot;V&quot;,
+          &quot;description&quot;: &quot;VISA&quot;
+        }
+      },
+      &quot;penInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0,
+          &quot;creditLineAvailableAmount&quot;: 24000
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 21.27,
+            &quot;cashWithdrawalRate&quot;: 60.1,
+            &quot;installmentBuyingRate&quot;: 21.27
+          }
+        }
+      },
+      &quot;usdInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 21.27,
+            &quot;cashWithdrawalRate&quot;: 60.1,
+            &quot;installmentBuyingRate&quot;: 21.27
+          }
+        }
+      }
+    },
+    &quot;creditCardType&quot;: {
+      &quot;code&quot;: &quot;F&quot;,
+      &quot;description&quot;: &quot;DEL STOCK&quot;
+    },
+    &quot;creditCardHolderType&quot;: {
+      &quot;code&quot;: &quot;1&quot;,
+      &quot;description&quot;: &quot;TITULAR&quot;
+    },
+    &quot;blockedDate&quot;: &quot;2020-03-06&quot;
+  },
+  {
+    &quot;creditCardId&quot;: &quot;0004280830092699019&quot;,
+    &quot;activationRequired&quot;: false,
+    &quot;expirationDate&quot;: &quot;2023-06-30&quot;,
+    &quot;blockingType&quot;: {
+      &quot;code&quot;: &quot;I&quot;,
+      &quot;description&quot;: &quot;ANULADA X COB.&quot;
+    },
+    &quot;seedGenerationSchema&quot;: {
+      &quot;code&quot;: &quot;3&quot;,
+      &quot;description&quot;: &quot;DIFERENTE AL NUMERO DE CUENTA&quot;
+    },
+    &quot;creditAccountInformation&quot;: {
+      &quot;creditAccountId&quot;: &quot; 0004280830092699001&quot;,
+      &quot;openingDate&quot;: &quot;2018-06-12&quot;,
+      &quot;status&quot;: {
+        &quot;code&quot;: &quot;D&quot;,
+        &quot;description&quot;: &quot;DORMIDA&quot;
+      },
+      &quot;baseCurrency&quot;: {
+        &quot;code&quot;: &quot;PEN&quot;
+      },
+      &quot;creditLine&quot;: {
+        &quot;lineAmount&quot;: 15000
+      },
+      &quot;product&quot;: {
+        &quot;logoCode&quot;: &quot;401&quot;,
+        &quot;brand&quot;: {
+          &quot;code&quot;: &quot;V&quot;,
+          &quot;description&quot;: &quot;VISA&quot;
+        }
+      },
+      &quot;penInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0,
+          &quot;creditLineAvailableAmount&quot;: 18000
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 9
+              },
+              {
+                &quot;rangeNumber&quot;: 9
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 21.27,
+            &quot;cashWithdrawalRate&quot;: 60.1,
+            &quot;installmentBuyingRate&quot;: 21.27
+          }
+        }
+      },
+      &quot;usdInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 21.27,
+            &quot;cashWithdrawalRate&quot;: 60.1,
+            &quot;installmentBuyingRate&quot;: 21.27
+          }
+        }
+      }
+    },
+    &quot;creditCardType&quot;: {
+      &quot;code&quot;: &quot;F&quot;,
+      &quot;description&quot;: &quot;DEL STOCK&quot;
+    },
+    &quot;creditCardHolderType&quot;: {
+      &quot;code&quot;: &quot;1&quot;,
+      &quot;description&quot;: &quot;TITULAR&quot;
+    },
+    &quot;blockedDate&quot;: &quot;2020-03-16&quot;
+  },
+  {
+    &quot;creditCardId&quot;: &quot;0004634010094856015&quot;,
+    &quot;activationRequired&quot;: false,
+    &quot;expirationDate&quot;: &quot;2021-06-30&quot;,
+    &quot;blockingType&quot;: {
+      &quot;code&quot;: &quot;X&quot;,
+      &quot;description&quot;: &quot;ROBO&quot;
+    },
+    &quot;seedGenerationSchema&quot;: {
+      &quot;code&quot;: &quot;3&quot;,
+      &quot;description&quot;: &quot;DIFERENTE AL NUMERO DE CUENTA&quot;
+    },
+    &quot;creditAccountInformation&quot;: {
+      &quot;creditAccountId&quot;: &quot; 0004634010094856007&quot;,
+      &quot;openingDate&quot;: &quot;2018-06-12&quot;,
+      &quot;status&quot;: {
+        &quot;code&quot;: &quot;D&quot;,
+        &quot;description&quot;: &quot;DORMIDA&quot;
+      },
+      &quot;baseCurrency&quot;: {
+        &quot;code&quot;: &quot;PEN&quot;
+      },
+      &quot;creditLine&quot;: {
+        &quot;lineAmount&quot;: 20000
+      },
+      &quot;product&quot;: {
+        &quot;logoCode&quot;: &quot;205&quot;,
+        &quot;brand&quot;: {
+          &quot;code&quot;: &quot;V&quot;,
+          &quot;description&quot;: &quot;VISA&quot;
+        }
+      },
+      &quot;penInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0,
+          &quot;creditLineAvailableAmount&quot;: 24600
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 9
+              },
+              {
+                &quot;rangeNumber&quot;: 9
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 42.41,
+            &quot;cashWithdrawalRate&quot;: 138.18,
+            &quot;installmentBuyingRate&quot;: 42.41
+          }
+        }
+      },
+      &quot;usdInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 42.41,
+            &quot;cashWithdrawalRate&quot;: 66.0,
+            &quot;installmentBuyingRate&quot;: 42.41
+          }
+        }
+      }
+    },
+    &quot;creditCardType&quot;: {
+      &quot;code&quot;: &quot;F&quot;,
+      &quot;description&quot;: &quot;DEL STOCK&quot;
+    },
+    &quot;creditCardHolderType&quot;: {
+      &quot;code&quot;: &quot;1&quot;,
+      &quot;description&quot;: &quot;TITULAR&quot;
+    },
+    &quot;blockedDate&quot;: &quot;2019-03-26&quot;
+  },
+  {
+    &quot;creditCardId&quot;: &quot;0004634010094856023&quot;,
+    &quot;activationRequired&quot;: false,
+    &quot;expirationDate&quot;: &quot;2021-06-30&quot;,
+    &quot;blockingType&quot;: {
+      &quot;code&quot;: &quot;I&quot;,
+      &quot;description&quot;: &quot;ANULADA X COB.&quot;
+    },
+    &quot;seedGenerationSchema&quot;: {
+      &quot;code&quot;: &quot;3&quot;,
+      &quot;description&quot;: &quot;DIFERENTE AL NUMERO DE CUENTA&quot;
+    },
+    &quot;creditAccountInformation&quot;: {
+      &quot;creditAccountId&quot;: &quot; 0004634010094856007&quot;,
+      &quot;openingDate&quot;: &quot;2018-06-12&quot;,
+      &quot;status&quot;: {
+        &quot;code&quot;: &quot;D&quot;,
+        &quot;description&quot;: &quot;DORMIDA&quot;
+      },
+      &quot;baseCurrency&quot;: {
+        &quot;code&quot;: &quot;PEN&quot;
+      },
+      &quot;creditLine&quot;: {
+        &quot;lineAmount&quot;: 20000
+      },
+      &quot;product&quot;: {
+        &quot;logoCode&quot;: &quot;205&quot;,
+        &quot;brand&quot;: {
+          &quot;code&quot;: &quot;V&quot;,
+          &quot;description&quot;: &quot;VISA&quot;
+        }
+      },
+      &quot;penInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0,
+          &quot;creditLineAvailableAmount&quot;: 24600
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 9
+              },
+              {
+                &quot;rangeNumber&quot;: 9
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 42.41,
+            &quot;cashWithdrawalRate&quot;: 138.18,
+            &quot;installmentBuyingRate&quot;: 42.41
+          }
+        }
+      },
+      &quot;usdInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 42.41,
+            &quot;cashWithdrawalRate&quot;: 66.0,
+            &quot;installmentBuyingRate&quot;: 42.41
+          }
+        }
+      }
+    },
+    &quot;creditCardType&quot;: {
+      &quot;code&quot;: &quot;F&quot;,
+      &quot;description&quot;: &quot;DEL STOCK&quot;
+    },
+    &quot;creditCardHolderType&quot;: {
+      &quot;code&quot;: &quot;1&quot;,
+      &quot;description&quot;: &quot;TITULAR&quot;
+    },
+    &quot;blockedDate&quot;: &quot;2020-03-26&quot;
+  },
+  {
+    &quot;creditCardId&quot;: &quot;0004634010094858011&quot;,
+    &quot;activationRequired&quot;: false,
+    &quot;expirationDate&quot;: &quot;2024-06-30&quot;,
+    &quot;blockingType&quot;: {
+      &quot;code&quot;: &quot;T&quot;,
+      &quot;description&quot;: &quot;PREVENCION FRAU&quot;
+    },
+    &quot;seedGenerationSchema&quot;: {
+      &quot;code&quot;: &quot;3&quot;,
+      &quot;description&quot;: &quot;DIFERENTE AL NUMERO DE CUENTA&quot;
+    },
+    &quot;creditAccountInformation&quot;: {
+      &quot;creditAccountId&quot;: &quot; 0004634010094858003&quot;,
+      &quot;openingDate&quot;: &quot;2018-06-14&quot;,
+      &quot;status&quot;: {
+        &quot;code&quot;: &quot;A&quot;,
+        &quot;description&quot;: &quot;ACTIVA&quot;
+      },
+      &quot;baseCurrency&quot;: {
+        &quot;code&quot;: &quot;PEN&quot;
+      },
+      &quot;creditLine&quot;: {
+        &quot;lineAmount&quot;: 2000
+      },
+      &quot;product&quot;: {
+        &quot;logoCode&quot;: &quot;205&quot;,
+        &quot;brand&quot;: {
+          &quot;code&quot;: &quot;V&quot;,
+          &quot;description&quot;: &quot;VISA&quot;
+        }
+      },
+      &quot;penInformation&quot;: {
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 150.23,
+          &quot;creditLineAvailableAmount&quot;: 2309
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 1
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 59.99,
+            &quot;cashWithdrawalRate&quot;: 81.5,
+            &quot;installmentBuyingRate&quot;: 59.99
+          }
+        }
+      },
+      &quot;usdInformation&quot;: {
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 59.99,
+            &quot;cashWithdrawalRate&quot;: 66.0,
+            &quot;installmentBuyingRate&quot;: 59.99
+          }
+        }
+      }
+    },
+    &quot;creditCardType&quot;: {
+      &quot;code&quot;: &quot;F&quot;,
+      &quot;description&quot;: &quot;DEL STOCK&quot;
+    },
+    &quot;creditCardHolderType&quot;: {
+      &quot;code&quot;: &quot;1&quot;,
+      &quot;description&quot;: &quot;TITULAR&quot;
+    },
+    &quot;blockedDate&quot;: &quot;2019-03-11&quot;
+  },
+  {
+    &quot;creditCardId&quot;: &quot;0004634010094931016&quot;,
+    &quot;activationRequired&quot;: true,
+    &quot;expirationDate&quot;: &quot;2021-09-30&quot;,
+    &quot;blockingType&quot;: {
+      &quot;code&quot;: &quot;I&quot;,
+      &quot;description&quot;: &quot;ANULADA X COB.&quot;
+    },
+    &quot;seedGenerationSchema&quot;: {
+      &quot;code&quot;: &quot;3&quot;,
+      &quot;description&quot;: &quot;DIFERENTE AL NUMERO DE CUENTA&quot;
+    },
+    &quot;creditAccountInformation&quot;: {
+      &quot;creditAccountId&quot;: &quot; 0004634010094931008&quot;,
+      &quot;openingDate&quot;: &quot;2018-09-25&quot;,
+      &quot;status&quot;: {
+        &quot;code&quot;: &quot;D&quot;,
+        &quot;description&quot;: &quot;DORMIDA&quot;
+      },
+      &quot;baseCurrency&quot;: {
+        &quot;code&quot;: &quot;PEN&quot;
+      },
+      &quot;creditLine&quot;: {
+        &quot;lineAmount&quot;: 20000
+      },
+      &quot;product&quot;: {
+        &quot;logoCode&quot;: &quot;205&quot;,
+        &quot;brand&quot;: {
+          &quot;code&quot;: &quot;V&quot;,
+          &quot;description&quot;: &quot;VISA&quot;
+        }
+      },
+      &quot;penInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0,
+          &quot;creditLineAvailableAmount&quot;: 24600
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 9
+              },
+              {
+                &quot;rangeNumber&quot;: 9
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 42.41,
+            &quot;cashWithdrawalRate&quot;: 138.18,
+            &quot;installmentBuyingRate&quot;: 42.41
+          }
+        }
+      },
+      &quot;usdInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 42.41,
+            &quot;cashWithdrawalRate&quot;: 66.0,
+            &quot;installmentBuyingRate&quot;: 42.41
+          }
+        }
+      }
+    },
+    &quot;creditCardType&quot;: {
+      &quot;code&quot;: &quot;F&quot;,
+      &quot;description&quot;: &quot;DEL STOCK&quot;
+    },
+    &quot;creditCardHolderType&quot;: {
+      &quot;code&quot;: &quot;1&quot;,
+      &quot;description&quot;: &quot;TITULAR&quot;
+    },
+    &quot;blockedDate&quot;: &quot;2020-03-19&quot;
+  },
+  {
+    &quot;creditCardId&quot;: &quot;0004634010094976011&quot;,
+    &quot;activationRequired&quot;: false,
+    &quot;expirationDate&quot;: &quot;2021-12-31&quot;,
+    &quot;blockingType&quot;: {
+      &quot;code&quot;: &quot;X&quot;,
+      &quot;description&quot;: &quot;ROBO&quot;
+    },
+    &quot;seedGenerationSchema&quot;: {
+      &quot;code&quot;: &quot;3&quot;,
+      &quot;description&quot;: &quot;DIFERENTE AL NUMERO DE CUENTA&quot;
+    },
+    &quot;creditAccountInformation&quot;: {
+      &quot;creditAccountId&quot;: &quot; 0004634010094976003&quot;,
+      &quot;openingDate&quot;: &quot;2018-12-05&quot;,
+      &quot;status&quot;: {
+        &quot;code&quot;: &quot;T&quot;,
+        &quot;description&quot;: &quot;TRANSFERIDA&quot;
+      },
+      &quot;baseCurrency&quot;: {
+        &quot;code&quot;: &quot;PEN&quot;
+      },
+      &quot;creditLine&quot;: {
+        &quot;lineAmount&quot;: 0
+      },
+      &quot;product&quot;: {
+        &quot;logoCode&quot;: &quot;205&quot;,
+        &quot;brand&quot;: {
+          &quot;code&quot;: &quot;V&quot;,
+          &quot;description&quot;: &quot;VISA&quot;
+        }
+      },
+      &quot;penInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;B&quot;,
+          &quot;description&quot;: &quot;CANJE DE TJTA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0,
+          &quot;creditLineAvailableAmount&quot;: 0
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 42.41,
+            &quot;cashWithdrawalRate&quot;: 138.18,
+            &quot;installmentBuyingRate&quot;: 42.41
+          }
+        }
+      },
+      &quot;usdInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;B&quot;,
+          &quot;description&quot;: &quot;CANJE DE TJTA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 42.41,
+            &quot;cashWithdrawalRate&quot;: 66.0,
+            &quot;installmentBuyingRate&quot;: 42.41
+          }
+        }
+      }
+    },
+    &quot;creditCardType&quot;: {
+      &quot;code&quot;: &quot;F&quot;,
+      &quot;description&quot;: &quot;DEL STOCK&quot;
+    },
+    &quot;creditCardHolderType&quot;: {
+      &quot;code&quot;: &quot;1&quot;,
+      &quot;description&quot;: &quot;TITULAR&quot;
+    },
+    &quot;blockedDate&quot;: &quot;2019-12-11&quot;
+  },
+  {
+    &quot;creditCardId&quot;: &quot;0004634010094977019&quot;,
+    &quot;activationRequired&quot;: false,
+    &quot;expirationDate&quot;: &quot;2021-12-31&quot;,
+    &quot;blockingType&quot;: {
+      &quot;code&quot;: &quot;I&quot;,
+      &quot;description&quot;: &quot;ANULADA X COB.&quot;
+    },
+    &quot;seedGenerationSchema&quot;: {
+      &quot;code&quot;: &quot;3&quot;,
+      &quot;description&quot;: &quot;DIFERENTE AL NUMERO DE CUENTA&quot;
+    },
+    &quot;creditAccountInformation&quot;: {
+      &quot;creditAccountId&quot;: &quot; 0004634010094977001&quot;,
+      &quot;openingDate&quot;: &quot;2018-12-05&quot;,
+      &quot;status&quot;: {
+        &quot;code&quot;: &quot;D&quot;,
+        &quot;description&quot;: &quot;DORMIDA&quot;
+      },
+      &quot;baseCurrency&quot;: {
+        &quot;code&quot;: &quot;PEN&quot;
+      },
+      &quot;creditLine&quot;: {
+        &quot;lineAmount&quot;: 20000
+      },
+      &quot;product&quot;: {
+        &quot;logoCode&quot;: &quot;205&quot;,
+        &quot;brand&quot;: {
+          &quot;code&quot;: &quot;V&quot;,
+          &quot;description&quot;: &quot;VISA&quot;
+        }
+      },
+      &quot;penInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0,
+          &quot;creditLineAvailableAmount&quot;: 24600
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 42.41,
+            &quot;cashWithdrawalRate&quot;: 138.18,
+            &quot;installmentBuyingRate&quot;: 42.41
+          }
+        }
+      },
+      &quot;usdInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 42.41,
+            &quot;cashWithdrawalRate&quot;: 66.0,
+            &quot;installmentBuyingRate&quot;: 42.41
+          }
+        }
+      }
+    },
+    &quot;creditCardType&quot;: {
+      &quot;code&quot;: &quot;F&quot;,
+      &quot;description&quot;: &quot;DEL STOCK&quot;
+    },
+    &quot;creditCardHolderType&quot;: {
+      &quot;code&quot;: &quot;1&quot;,
+      &quot;description&quot;: &quot;TITULAR&quot;
+    },
+    &quot;blockedDate&quot;: &quot;2020-03-06&quot;
+  },
+  {
+    &quot;creditCardId&quot;: &quot;0004634010094977209&quot;,
+    &quot;activationRequired&quot;: false,
+    &quot;expirationDate&quot;: &quot;2021-12-31&quot;,
+    &quot;blockingType&quot;: {
+      &quot;code&quot;: &quot;I&quot;,
+      &quot;description&quot;: &quot;ANULADA X COB.&quot;
+    },
+    &quot;seedGenerationSchema&quot;: {
+      &quot;code&quot;: &quot;3&quot;,
+      &quot;description&quot;: &quot;DIFERENTE AL NUMERO DE CUENTA&quot;
+    },
+    &quot;creditAccountInformation&quot;: {
+      &quot;creditAccountId&quot;: &quot; 0004634010094977001&quot;,
+      &quot;openingDate&quot;: &quot;2018-12-05&quot;,
+      &quot;status&quot;: {
+        &quot;code&quot;: &quot;D&quot;,
+        &quot;description&quot;: &quot;DORMIDA&quot;
+      },
+      &quot;baseCurrency&quot;: {
+        &quot;code&quot;: &quot;PEN&quot;
+      },
+      &quot;creditLine&quot;: {
+        &quot;lineAmount&quot;: 20000
+      },
+      &quot;product&quot;: {
+        &quot;logoCode&quot;: &quot;205&quot;,
+        &quot;brand&quot;: {
+          &quot;code&quot;: &quot;V&quot;,
+          &quot;description&quot;: &quot;VISA&quot;
+        }
+      },
+      &quot;penInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0,
+          &quot;creditLineAvailableAmount&quot;: 24600
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              },
+              {
+                &quot;rangeNumber&quot;: 1
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 42.41,
+            &quot;cashWithdrawalRate&quot;: 138.18,
+            &quot;installmentBuyingRate&quot;: 42.41
+          }
+        }
+      },
+      &quot;usdInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 42.41,
+            &quot;cashWithdrawalRate&quot;: 66.0,
+            &quot;installmentBuyingRate&quot;: 42.41
+          }
+        }
+      }
+    },
+    &quot;creditCardType&quot;: {
+      &quot;code&quot;: &quot;F&quot;,
+      &quot;description&quot;: &quot;DEL STOCK&quot;
+    },
+    &quot;creditCardHolderType&quot;: {
+      &quot;code&quot;: &quot;0&quot;,
+      &quot;description&quot;: &quot;ADICIONAL&quot;
+    },
+    &quot;blockedDate&quot;: &quot;2020-03-06&quot;
+  },
+  {
+    &quot;creditCardId&quot;: &quot;0004634020096280015&quot;,
+    &quot;activationRequired&quot;: false,
+    &quot;expirationDate&quot;: &quot;2021-06-30&quot;,
+    &quot;seedGenerationSchema&quot;: {
+      &quot;code&quot;: &quot;3&quot;,
+      &quot;description&quot;: &quot;DIFERENTE AL NUMERO DE CUENTA&quot;
+    },
+    &quot;creditAccountInformation&quot;: {
+      &quot;creditAccountId&quot;: &quot; 0004634020096762293&quot;,
+      &quot;openingDate&quot;: &quot;2018-06-12&quot;,
+      &quot;status&quot;: {
+        &quot;code&quot;: &quot;D&quot;,
+        &quot;description&quot;: &quot;DORMIDA&quot;
+      },
+      &quot;baseCurrency&quot;: {
+        &quot;code&quot;: &quot;PEN&quot;
+      },
+      &quot;creditLine&quot;: {
+        &quot;lineAmount&quot;: 1500
+      },
+      &quot;product&quot;: {
+        &quot;logoCode&quot;: &quot;405&quot;,
+        &quot;brand&quot;: {
+          &quot;code&quot;: &quot;V&quot;,
+          &quot;description&quot;: &quot;VISA&quot;
+        }
+      },
+      &quot;penInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0,
+          &quot;creditLineAvailableAmount&quot;: 1950
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 9
+              },
+              {
+                &quot;rangeNumber&quot;: 9
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 34.33,
+            &quot;cashWithdrawalRate&quot;: 138.18,
+            &quot;installmentBuyingRate&quot;: 138.18
+          }
+        }
+      },
+      &quot;usdInformation&quot;: {
+        &quot;blockingType&quot;: {
+          &quot;code&quot;: &quot;G&quot;,
+          &quot;description&quot;: &quot;COB.EXTERNA&quot;
+        },
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 9
+              },
+              {
+                &quot;rangeNumber&quot;: 9
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 34.33,
+            &quot;cashWithdrawalRate&quot;: 66.0,
+            &quot;installmentBuyingRate&quot;: 138.18
+          }
+        }
+      }
+    },
+    &quot;creditCardType&quot;: {
+      &quot;code&quot;: &quot;F&quot;,
+      &quot;description&quot;: &quot;DEL STOCK&quot;
+    },
+    &quot;creditCardHolderType&quot;: {
+      &quot;code&quot;: &quot;1&quot;,
+      &quot;description&quot;: &quot;TITULAR&quot;
+    }
+  },
+  {
+    &quot;creditCardId&quot;: &quot;0004634030092534018&quot;,
+    &quot;activationRequired&quot;: false,
+    &quot;expirationDate&quot;: &quot;2021-06-30&quot;,
+    &quot;blockingType&quot;: {
+      &quot;code&quot;: &quot;L&quot;,
+      &quot;description&quot;: &quot;PERDIDA&quot;
+    },
+    &quot;seedGenerationSchema&quot;: {
+      &quot;code&quot;: &quot;3&quot;,
+      &quot;description&quot;: &quot;DIFERENTE AL NUMERO DE CUENTA&quot;
+    },
+    &quot;creditAccountInformation&quot;: {
+      &quot;creditAccountId&quot;: &quot; 0004634030092534000&quot;,
+      &quot;openingDate&quot;: &quot;2018-06-12&quot;,
+      &quot;status&quot;: {
+        &quot;code&quot;: &quot;T&quot;,
+        &quot;description&quot;: &quot;TRANSFERIDA&quot;
+      },
+      &quot;baseCurrency&quot;: {
+        &quot;code&quot;: &quot;PEN&quot;
+      },
+      &quot;creditLine&quot;: {
+        &quot;lineAmount&quot;: 0
+      },
+      &quot;product&quot;: {
+        &quot;logoCode&quot;: &quot;435&quot;,
+        &quot;brand&quot;: {
+          &quot;code&quot;: &quot;V&quot;,
+          &quot;description&quot;: &quot;VISA&quot;
+        }
+      },
+      &quot;penInformation&quot;: {
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0,
+          &quot;creditLineAvailableAmount&quot;: 0
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 21.7,
+            &quot;cashWithdrawalRate&quot;: 60.1,
+            &quot;installmentBuyingRate&quot;: 21.7
+          }
+        }
+      },
+      &quot;usdInformation&quot;: {
+        &quot;balanceInformation&quot;: {
+          &quot;usedCreditLineAmount&quot;: 0.0
+        },
+        &quot;creditCardHistory&quot;: {
+          &quot;defaulterRecords&quot;: {
+            &quot;lastMonths&quot;: [
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              },
+              {
+                &quot;rangeNumber&quot;: 0
+              }
+            ]
+          }
+        },
+        &quot;rates&quot;: {
+          &quot;annualEffectiveRates&quot;: {
+            &quot;purchaseRate&quot;: 21.7,
+            &quot;cashWithdrawalRate&quot;: 60.1,
+            &quot;installmentBuyingRate&quot;: 21.7
+          }
+        }
+      }
+    },
+    &quot;creditCardType&quot;: {
+      &quot;code&quot;: &quot;F&quot;,
+      &quot;description&quot;: &quot;DEL STOCK&quot;
+    },
+    &quot;creditCardHolderType&quot;: {
+      &quot;code&quot;: &quot;1&quot;,
+      &quot;description&quot;: &quot;TITULAR&quot;
+    },
+    &quot;blockedDate&quot;: &quot;2019-03-11&quot;
+  }
+]
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

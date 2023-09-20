@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2}];
+var items = [{"id":1,"group":1,"content":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.1:27]","start":1692300343288,"end":1692300354641,"title":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.1:27] 14:25:43.288-14:25:54.641 consultar datos de una tc"},{"id":2,"group":2,"content":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.2:27]","start":1692300343238,"end":1692300347449,"title":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.2:27] 14:25:43.238-14:25:47.449 consultar datos de una tc"},{"id":3,"group":2,"content":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.3:27]","start":1692300347470,"end":1692300348929,"title":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.3:27] 14:25:47.470-14:25:48.929 consultar datos de una tc"},{"id":4,"group":2,"content":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.4:27]","start":1692300348945,"end":1692300350271,"title":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.4:27] 14:25:48.945-14:25:50.271 consultar datos de una tc"},{"id":5,"group":2,"content":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.5:27]","start":1692300350284,"end":1692300352173,"title":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.5:27] 14:25:50.284-14:25:52.173 consultar datos de una tc"},{"id":6,"group":2,"content":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.6:27]","start":1692300352183,"end":1692300353629,"title":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.6:27] 14:25:52.183-14:25:53.629 consultar datos de una tc"},{"id":7,"group":2,"content":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.7:27]","start":1692300353636,"end":1692300355398,"title":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.7:27] 14:25:53.636-14:25:55.398 consultar datos de una tc"},{"id":8,"group":1,"content":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.8:27]","start":1692300354656,"end":1692300356637,"title":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.8:27] 14:25:54.656-14:25:56.637 consultar datos de una tc"},{"id":9,"group":2,"content":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.9:27]","start":1692300355407,"end":1692300357270,"title":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.9:27] 14:25:55.407-14:25:57.270 consultar datos de una tc"},{"id":10,"group":1,"content":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.10:27]","start":1692300356643,"end":1692300359538,"title":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.10:27] 14:25:56.643-14:25:59.538 consultar datos de una tc"},{"id":11,"group":2,"content":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.11:27]","start":1692300357279,"end":1692300359111,"title":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.11:27] 14:25:57.279-14:25:59.111 consultar datos de una tc"},{"id":12,"group":2,"content":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.12:27]","start":1692300359118,"end":1692300361927,"title":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.12:27] 14:25:59.118-14:26:01.927 consultar datos de una tc"},{"id":13,"group":1,"content":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.13:27]","start":1692300359546,"end":1692300362294,"title":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.13:27] 14:25:59.546-14:26:02.294 consultar datos de una tc"},{"id":14,"group":2,"content":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.14:27]","start":1692300361931,"end":1692300363409,"title":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.14:27] 14:26:01.931-14:26:03.409 consultar datos de una tc"},{"id":15,"group":1,"content":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.15:27]","start":1692300362298,"end":1692300363750,"title":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.15:27] 14:26:02.298-14:26:03.750 consultar datos de una tc"},{"id":16,"group":2,"content":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.16:27]","start":1692300363416,"end":1692300365151,"title":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.16:27] 14:26:03.416-14:26:05.151 consultar datos de una tc"},{"id":17,"group":1,"content":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.17:27]","start":1692300363766,"end":1692300365211,"title":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.17:27] 14:26:03.766-14:26:05.211 consultar datos de una tc"},{"id":18,"group":2,"content":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.18:27]","start":1692300365155,"end":1692300366844,"title":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.18:27] 14:26:05.155-14:26:06.844 consultar datos de una tc"},{"id":19,"group":1,"content":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.19:27]","start":1692300365216,"end":1692300366415,"title":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.19:27] 14:26:05.216-14:26:06.415 consultar datos de una tc"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

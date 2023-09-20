@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2}];
+var items = [{"id":1,"group":1,"content":"src\/test\/resources\/features\/Booker\/Auth[1.1:25]","start":1695053553997,"end":1695053556320,"title":"src\/test\/resources\/features\/Booker\/Auth[1.1:25] 11:12:33.997-11:12:36.320 Obtener token"},{"id":2,"group":2,"content":"src\/test\/resources\/features\/Booker\/Auth[1.2:26]","start":1695053553997,"end":1695053556350,"title":"src\/test\/resources\/features\/Booker\/Auth[1.2:26] 11:12:33.997-11:12:36.350 Obtener token","className":"failed"},{"id":3,"group":1,"content":"src\/test\/resources\/features\/Booker\/Auth[1.3:27]","start":1695053556331,"end":1695053556852,"title":"src\/test\/resources\/features\/Booker\/Auth[1.3:27] 11:12:36.331-11:12:36.852 Obtener token","className":"failed"},{"id":4,"group":2,"content":"src\/test\/resources\/features\/Booker\/Auth[1.4:28]","start":1695053556368,"end":1695053556862,"title":"src\/test\/resources\/features\/Booker\/Auth[1.4:28] 11:12:36.368-11:12:36.862 Obtener token","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

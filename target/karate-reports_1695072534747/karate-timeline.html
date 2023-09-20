@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/resources\/features\/Booker\/Auth[1.1:21]","start":1695072420992,"end":1695072423549,"title":"src\/test\/resources\/features\/Booker\/Auth[1.1:21] 16:27:00.992-16:27:03.549 Obtener token"},{"id":2,"group":1,"content":"src\/test\/resources\/features\/Booker\/Auth[2.1:36]","start":1695072423565,"end":1695072424014,"title":"src\/test\/resources\/features\/Booker\/Auth[2.1:36] 16:27:03.565-16:27:04.014 Password invalido"},{"id":3,"group":1,"content":"src\/test\/resources\/features\/Booker\/Auth[3.1:50]","start":1695072424046,"end":1695072424477,"title":"src\/test\/resources\/features\/Booker\/Auth[3.1:50] 16:27:04.046-16:27:04.477 Usuario invalido"},{"id":4,"group":1,"content":"src\/test\/resources\/features\/Booker\/Auth[4.1:64]","start":1695072424492,"end":1695072424497,"title":"src\/test\/resources\/features\/Booker\/Auth[4.1:64] 16:27:04.492-16:27:04.497 Password vacio","className":"failed"},{"id":5,"group":1,"content":"src\/test\/resources\/features\/Booker\/Auth[5.1:78]","start":1695072424508,"end":1695072424960,"title":"src\/test\/resources\/features\/Booker\/Auth[5.1:78] 16:27:04.508-16:27:04.960 Usuario vacio"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

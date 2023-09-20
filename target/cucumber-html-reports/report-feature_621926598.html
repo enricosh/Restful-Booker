@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: src/test/resources/features/ApiGet/ApiGetVV28.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Cucumber Reports</td>
+      <td>25 jul 2023, 16:25</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">src/test/resources/features/ApiGet/ApiGetVV28.feature</td>
+          <td      class="passed"    >18</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">18</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="4023314500">4.023</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3529932986.html">@consultaVV28</a>
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">src/test/resources/features/ApiGet/ApiGetVV28.feature</span>
+
+
+</div>
+
+        <div class="description indention">consulta tc</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">3.261</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def token = call read('token.feature')</span>
+
+  <span class="lead-duration duration">1.656</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">src/test/resources/features/ApiGet/token.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url domainToken</span>
+
+  <span class="lead-duration duration">0.025</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>16:25:06.707 Se realiza la ejecuci&oacute;n en ambiente:  cert 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">path '/utils/atlas-security/jwt/zconnect'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">headers {'client_id':'cc62369a-f970-4045-9119-7bebaecbfa78','client_secret':'90848163-6a2b-4be7-b783-844efed97443','resource-uri':'/cards/credit-card/v3/credit-cards','http-method':'GET','expiration':'3600000'}</span>
+
+  <span class="lead-duration duration">0.091</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">1.476</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">def authToken = response;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print 'Se capturo el token: ', authToken</span>
+
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>16:25:09.940 [print] Se capturo el token:  eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJDQV9HQVRFV0FZIiwiYXVkIjoiemNlZWNlciIsImFwcENvZGUiOiJZNSIsImV4cCI6MTY5MzkyMDMxMCwiaW50ZXJjZXB0VXJsTWFwIjpbeyJwYXR0ZXJuIjoiXC8qKiJ9LHsicGF0dGVybiI6IlwvY2FyZHNcL2NyZWRpdC1jYXJkXC8qKiJ9LHsicGF0dGVybiI6IlwvYmFsYW5jZXNcL2NyZWRpdC1jYXJkXC8qKiJ9LHsicGF0dGVybiI6IlwvYmFsYW5jZXNcL2NyZWRpdC1jYXJkXC8qKiJ9LHsicGF0dGVybiI6IlwvY2FyZHNcL2NyZWRpdC1jYXJkLW9yZGVyXC8qKiJ9LHsicGF0dGVybiI6IlwvY2FyZHNcL2NyZWRpdC1jYXJkLW1hbmFnZW1lbnRcLyoqIn0seyJwYXR0ZXJuIjoiXC9jYXJkc1wvY3JlZGl0LWNhcmQtb3BlcmF0aW9uYWxcLyoqIn0seyJwYXR0ZXJuIjoiXC92cGx1XC92djI4XC8qKiJ9LHsicGF0dGVybiI6IlwvdnBsdVwvdnYyOVwvKioifSx7InBhdHRlcm4iOiJcL3ZwbHVcL3Z2Y2NcLyoqIn0seyJwYXR0ZXJuIjoiXC92cGx1XC92dmF0XC8qKiJ9LHsicGF0dGVybiI6IlwvdnBsdVwvdnZhY1wvKioifSx7InBhdHRlcm4iOiJcL3ZwbHVcL3Z2YmxcLyoqIn0seyJwYXR0ZXJuIjoiXC92cGx1XC92dnR2XC8qKiJ9LHsicGF0dGVybiI6IlwvdnBsdVwvdnYyN1wvKioifSx7InBhdHRlcm4iOiJcL3ZwbHVcL3Z2ZGZcLyoqIn0seyJwYXR0ZXJuIjoiXC92cGx1XC92dmNlXC8qKiJ9XX0.0XKRW-AFPRkVVPNzMfAArdyOpy_0CPz5K8rYAkv35hnMz8C2vB9unljljUsK_KI_v76JIGKXNYA9bcHl6umrWb2gvynJ5Z1raWQcn0Lfd3LFFv1q8oUDXUHuFbNWwqH9jNgSoQA7_TzWL656D1UrF7mpbtyRQnpemmO5YMDI_30mXCO-IzkZziWV3J0ucD16wkPOLN39CPuagKMiNPC5owMDzS0WbXZSbZcmOE8fT-Fc7coLvMoBBqgkPIwPb0zSvswPJEweH3VnwjgZfzCH5YPpvDbXnwWyFp50-7aAN8nNx0eJsJRNosRb9VAywVw9ZV5c-QSUN_MQm1HzL31mcg 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3529932986.html">@consultaVV28</a>
+</div>
+
+
+  <span class="lead-duration duration">0.761</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">consultar datos de una tc</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-5" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-6">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-6" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url domainConsultaVV28</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path '/bs-credit-card-v3/cards/credit-card/v3/credit-cards/0004280720097031203'</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">headers {'Request-ID':'26b8a7d2-7f78-415e-bb0a-f7da86d5d1fd','app-code':'Y5','app-name':'CRM','agency-code':'077','guild-client':'S','branch-office-code':'310','client-code':'22','user-code':'0U99999','org-code':'1','opn-number':'00000001','opn-code':'13','request-date':'2022-03-24T16:02:07.766-0500','caller-name':'postman','riskAnalyzer':'eyJjb2RlIjogIkMiLCJkZXNjcmlwdGlvbiI6ICJDUkVESVRPIn0=','authserver':'CA','Cache-Control':'no-cache','Ocp-Apim-Subscription-Key':'3a927b31cf514a24b90e74357793802e'}</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def token2 = token.authToken</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Authorization = 'Bearer ' + token2</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.722</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def respuesta = response;</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print 'Informacion de mi consulta: ' ,respuesta</span>
+
+  <span class="lead-duration duration">0.024</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>16:25:10.705 [print] Informacion de mi consulta:  {
+  &quot;creditCardId&quot;: &quot;0004280720097031203&quot;,
+  &quot;blockingType&quot;: {
+    &quot;code&quot;: &quot;I&quot;,
+    &quot;description&quot;: &quot;ANULADA X&quot;
+  },
+  &quot;blockingDate&quot;: &quot;2021-06-07&quot;,
+  &quot;expirationDate&quot;: &quot;2023-09-30&quot;,
+  &quot;activationRequired&quot;: false,
+  &quot;cashWithdrawalAllowed&quot;: &quot;Y&quot;,
+  &quot;seedGenerationSchema&quot;: {
+    &quot;code&quot;: &quot;3&quot;,
+    &quot;description&quot;: &quot;DIFERENTE AL NUMERO DE CUENTA&quot;
+  },
+  &quot;product&quot;: {
+    &quot;logoCode&quot;: 256,
+    &quot;brand&quot;: {
+      &quot;code&quot;: &quot;V&quot;,
+      &quot;description&quot;: &quot;VISA&quot;
+    },
+    &quot;brandProduct&quot;: {
+      &quot;code&quot;: &quot;C&quot;,
+      &quot;description&quot;: &quot;CL&Aacute;SICA&quot;
+    },
+    &quot;tioaux&quot;: {
+      &quot;code&quot;: &quot;TCRCL4&quot;,
+      &quot;description&quot;: &quot;VISA CLASICA&quot;
+    }
+  },
+  &quot;creditAccountInformation&quot;: {
+    &quot;creditAccountId&quot;: &quot;0004280720097031005&quot;,
+    &quot;openingDate&quot;: &quot;2020-09-11&quot;,
+    &quot;baseCurrency&quot;: {
+      &quot;code&quot;: &quot;PEN&quot;,
+      &quot;description&quot;: &quot;SOLES&quot;
+    },
+    &quot;branch&quot;: {
+      &quot;code&quot;: &quot;193&quot;
+    },
+    &quot;agency&quot;: {
+      &quot;code&quot;: &quot;000&quot;
+    },
+    &quot;status&quot;: {
+      &quot;code&quot;: &quot;D&quot;,
+      &quot;description&quot;: &quot;DORMIDA&quot;
+    },
+    &quot;installmentsAllowed&quot;: true,
+    &quot;hasGuarantee&quot;: false,
+    &quot;isDualCurrency&quot;: true,
+    &quot;visaPhoneProgramAffiliated&quot;: false,
+    &quot;loyaltyProgramAffiliated&quot;: false,
+    &quot;accountHolder&quot;: {
+      &quot;personId&quot;: &quot;726206301000&quot;,
+      &quot;fullName&quot;: &quot;PATINO EVER GUILMAR&quot;,
+      &quot;cic&quot;: &quot;11036273&quot;
+    },
+    &quot;billing&quot;: {
+      &quot;billingDay&quot;: &quot;8&quot;,
+      &quot;minimumPaymentAllowed&quot;: true,
+      &quot;paymentDueDate&quot;: &quot;2022-01-10&quot;,
+      &quot;lastBillingDate&quot;: &quot;2022-01-09&quot;,
+      &quot;nextBillingDate&quot;: &quot;2023-08-08&quot;,
+      &quot;gracePeriod&quot;: {
+        &quot;unit&quot;: &quot;D&quot;,
+        &quot;value&quot;: 1
+      },
+      &quot;billedFreightFeeAmount&quot;: 0,
+      &quot;revolvingInstallments&quot;: {
+        &quot;nextInstallmentAmount&quot;: 0.0,
+        &quot;installmentsQuantity&quot;: 0,
+        &quot;remainingInstallmentsQuantity&quot;: 0
+      }
+    },
+    &quot;creditLine&quot;: {
+      &quot;lineAmount&quot;: 49000,
+      &quot;lineOverdraftAmount&quot;: 61250,
+      &quot;exchangeRate&quot;: 3.7411,
+      &quot;lastChangeCreditLineDate&quot;: &quot;2020-09-11&quot;
+    },
+    &quot;penInformation&quot;: {
+      &quot;organizationCode&quot;: 16,
+      &quot;accountScore&quot;: 0,
+      &quot;blockingType&quot;: {
+        &quot;code&quot;: &quot;G&quot;
+      },
+      &quot;blockingDate&quot;: &quot;2021-09-16&quot;,
+      &quot;balanceInformation&quot;: {
+        &quot;creditLineAvailableAmount&quot;: 61250.0,
+        &quot;accruedCurrentBalanceAmount&quot;: 0.0,
+        &quot;accruedPastDueAmount&quot;: 0.0,
+        &quot;accruedPaymentsOnDayAmount&quot;: 0.0,
+        &quot;paymentsOnDayQuantity&quot;: 0,
+        &quot;pendingAuthorizationsQuantity&quot;: 0,
+        &quot;accruedPendingAuthorizationsAmount&quot;: 0.0,
+        &quot;usedCreditLineAmount&quot;: 0.0,
+        &quot;invoiced&quot;: {
+          &quot;initialBalanceAmount&quot;: 0.0,
+          &quot;billedInterestsAmount&quot;: 0.0,
+          &quot;billedMembershipFeeAmount&quot;: 0.0,
+          &quot;billedFeeAmount&quot;: 0.0,
+          &quot;accruedFixedInstallmentsAmount&quot;: 0,
+          &quot;fixedInstallmentsQuantity&quot;: 0,
+          &quot;fixedPayAmount&quot;: 0,
+          &quot;minimumPaymentAmount&quot;: 0.0,
+          &quot;accruedPaymentAmount&quot;: 0.0
+        },
+        &quot;planDetails&quot;: [
+          {
+            &quot;plan&quot;: {
+              &quot;code&quot;: &quot;0&quot;
+            },
+            &quot;currentBalanceAmount&quot;: 0,
+            &quot;accruedInterestAmount&quot;: 0,
+            &quot;deferredInterestsAmount&quot;: 0,
+            &quot;dailyInterestAmount&quot;: 0
+          },
+          {
+            &quot;plan&quot;: {
+              &quot;code&quot;: &quot;0&quot;
+            },
+            &quot;currentBalanceAmount&quot;: 0,
+            &quot;accruedInterestAmount&quot;: 0,
+            &quot;deferredInterestsAmount&quot;: 0,
+            &quot;dailyInterestAmount&quot;: 0
+          },
+          {
+            &quot;plan&quot;: {
+              &quot;code&quot;: &quot;0&quot;
+            },
+            &quot;currentBalanceAmount&quot;: 0,
+            &quot;accruedInterestAmount&quot;: 0,
+            &quot;deferredInterestsAmount&quot;: 0,
+            &quot;dailyInterestAmount&quot;: 0
+          },
+          {
+            &quot;plan&quot;: {
+              &quot;code&quot;: &quot;0&quot;
+            },
+            &quot;currentBalanceAmount&quot;: 0,
+            &quot;accruedInterestAmount&quot;: 0,
+            &quot;deferredInterestsAmount&quot;: 0,
+            &quot;dailyInterestAmount&quot;: 0
+          },
+          {
+            &quot;plan&quot;: {
+              &quot;code&quot;: &quot;0&quot;
+            },
+            &quot;currentBalanceAmount&quot;: 0,
+            &quot;accruedInterestAmount&quot;: 0,
+            &quot;deferredInterestsAmount&quot;: 0,
+            &quot;dailyInterestAmount&quot;: 0
+          },
+          {
+            &quot;plan&quot;: {
+              &quot;code&quot;: &quot;0&quot;
+            },
+            &quot;currentBalanceAmount&quot;: 0,
+            &quot;accruedInterestAmount&quot;: 0,
+            &quot;deferredInterestsAmount&quot;: 0,
+            &quot;dailyInterestAmount&quot;: 0
+          },
+          {
+            &quot;plan&quot;: {
+              &quot;code&quot;: &quot;0&quot;
+            },
+            &quot;currentBalanceAmount&quot;: 0,
+            &quot;accruedInterestAmount&quot;: 0,
+            &quot;deferredInterestsAmount&quot;: 0,
+            &quot;dailyInterestAmount&quot;: 0
+          },
+          {
+            &quot;plan&quot;: {
+              &quot;code&quot;: &quot;0&quot;
+            },
+            &quot;currentBalanceAmount&quot;: 0,
+            &quot;accruedInterestAmount&quot;: 0,
+            &quot;deferredInterestsAmount&quot;: 0,
+            &quot;dailyInterestAmount&quot;: 0
+          },
+          {
+            &quot;plan&quot;: {
+              &quot;code&quot;: &quot;0&quot;
+            },
+            &quot;currentBalanceAmount&quot;: 0,
+            &quot;accruedInterestAmount&quot;: 0,
+            &quot;deferredInterestsAmount&quot;: 0,
+            &quot;dailyInterestAmount&quot;: 0
+          },
+          {
+            &quot;plan&quot;: {
+              &quot;code&quot;: &quot;0&quot;
+            },
+            &quot;currentBalanceAmount&quot;: 0,
+            &quot;accruedInterestAmount&quot;: 0,
+            &quot;deferredInterestsAmount&quot;: 0,
+            &quot;dailyInterestAmount&quot;: 0
+          },
+          {
+            &quot;plan&quot;: {
+              &quot;code&quot;: &quot;0&quot;
+            },
+            &quot;currentBalanceAmount&quot;: 0,
+            &quot;accruedInterestAmount&quot;: 0,
+            &quot;deferredInterestsAmount&quot;: 0,
+            &quot;dailyInterestAmount&quot;: 0
+          },
+          {
+            &quot;plan&quot;: {
+              &quot;code&quot;: &quot;0&quot;
+            },
+            &quot;currentBalanceAmount&quot;: 0,
+            &quot;accruedInterestAmount&quot;: 0,
+            &quot;deferredInterestsAmount&quot;: 0,
+            &quot;dailyInterestAmount&quot;: 0
+          }
+        ]
+      },
+      &quot;creditCardHistory&quot;: {
+        &quot;lastPurchaseDate&quot;: &quot;2021-06-08&quot;,
+        &quot;lastPaymentDate&quot;: &quot;2021-06-08&quot;,
+        &quot;purchasesTransactionQuantity&quot;: 0,
+        &quot;accruedPurchasesTransactionAmount&quot;: 0.0,
+        &quot;cashDisposalTransactionQuantity&quot;: 0,
+        &quot;accruedCashDisposalTransactionAmount&quot;: 0.0,
+        &quot;currentDelinquencyRangeNumber&quot;: 0,
+        &quot;defaulterDaysQuantity&quot;: 0,
+        &quot;paymentsTransactionQuantity&quot;: 0,
+        &quot;accruedPaymentsTransactionAmount&quot;: 0.0,
+        &quot;defaulterRecords&quot;: {
+          &quot;accumulated&quot;: [
+            {
+              &quot;range&quot;: {
+                &quot;from&quot;: &quot;0&quot;,
+                &quot;to&quot;: &quot;0&quot;,
+                &quot;unit&quot;: &quot;D&quot;
+              },
+              &quot;defaulterQuantity&quot;: 0,
+              &quot;defaulterDueAmount&quot;: 0.0
+            },
+            {
+              &quot;range&quot;: {
+                &quot;from&quot;: &quot;1&quot;,
+                &quot;to&quot;: &quot;29&quot;,
+                &quot;unit&quot;: &quot;D&quot;
+              },
+              &quot;defaulterQuantity&quot;: 1,
+              &quot;defaulterDueAmount&quot;: 0.0
+            },
+            {
+              &quot;range&quot;: {
+                &quot;from&quot;: &quot;30&quot;,
+                &quot;to&quot;: &quot;59&quot;,
+                &quot;unit&quot;: &quot;D&quot;
+              },
+              &quot;defaulterQuantity&quot;: 0,
+              &quot;defaulterDueAmount&quot;: 0.0
+            },
+            {
+              &quot;range&quot;: {
+                &quot;from&quot;: &quot;60&quot;,
+                &quot;to&quot;: &quot;89&quot;,
+                &quot;unit&quot;: &quot;D&quot;
+              },
+              &quot;defaulterQuantity&quot;: 0,
+              &quot;defaulterDueAmount&quot;: 0.0
+            },
+            {
+              &quot;range&quot;: {
+                &quot;from&quot;: &quot;90&quot;,
+                &quot;to&quot;: &quot;119&quot;,
+                &quot;unit&quot;: &quot;D&quot;
+              },
+              &quot;defaulterQuantity&quot;: 0,
+              &quot;defaulterDueAmount&quot;: 0.0
+            },
+            {
+              &quot;range&quot;: {
+                &quot;from&quot;: &quot;120&quot;,
+                &quot;to&quot;: &quot;149&quot;,
+                &quot;unit&quot;: &quot;D&quot;
+              },
+              &quot;defaulterQuantity&quot;: 0,
+              &quot;defaulterDueAmount&quot;: 0.0
+            },
+            {
+              &quot;range&quot;: {
+                &quot;from&quot;: &quot;150&quot;,
+                &quot;to&quot;: &quot;179&quot;,
+                &quot;unit&quot;: &quot;D&quot;
+              },
+              &quot;defaulterQuantity&quot;: 0,
+              &quot;defaulterDueAmount&quot;: 0.0
+            },
+            {
+              &quot;range&quot;: {
+                &quot;from&quot;: &quot;180&quot;,
+                &quot;to&quot;: &quot;200&quot;,
+                &quot;unit&quot;: &quot;D&quot;
+              },
+              &quot;defaulterQuantity&quot;: 0,
+              &quot;defaulterDueAmount&quot;: 0.0
+            },
+            {
+              &quot;range&quot;: {
+                &quot;from&quot;: &quot;210&quot;,
+                &quot;to&quot;: &quot;999&quot;,
+                &quot;unit&quot;: &quot;D&quot;
+              },
+              &quot;defaulterQuantity&quot;: 0,
+              &quot;defaulterDueAmount&quot;: 0.0
+            }
+          ],
+          &quot;lastMonths&quot;: [
+            {
+              &quot;rangeNumber&quot;: 0
+            },
+            {
+              &quot;rangeNumber&quot;: 0
+            },
+            {
+              &quot;rangeNumber&quot;: 0
+            },
+            {
+              &quot;rangeNumber&quot;: 0
+            },
+            {
+              &quot;rangeNumber&quot;: 0
+            },
+            {
+              &quot;rangeNumber&quot;: 0
+            },
+            {
+              &quot;rangeNumber&quot;: 0
+            },
+            {
+              &quot;rangeNumber&quot;: 0
+            },
+            {
+              &quot;rangeNumber&quot;: 0
+            },
+            {
+              &quot;rangeNumber&quot;: 0
+            },
+            {
+              &quot;rangeNumber&quot;: 0
+            },
+            {
+              &quot;rangeNumber&quot;: 0
+            }
+          ]
+        }
+      },
+      &quot;rates&quot;: {
+        &quot;processTableCode&quot;: &quot;X42&quot;,
+        &quot;freightFeeAmount&quot;: 10.0,
+        &quot;lifeInsurance&quot;: {
+          &quot;rate&quot;: 0.00285,
+          &quot;calculationType&quot;: {
+            &quot;code&quot;: &quot;P&quot;,
+            &quot;description&quot;: &quot;PORCENTAJE SOBRE EL SALDO&quot;
+          }
+        },
+        &quot;membershipFeeAmount&quot;: 80.0,
+        &quot;annualEffectiveRates&quot;: {
+          &quot;purchaseRate&quot;: 50.93,
+          &quot;cashWithdrawalRate&quot;: 81.5,
+          &quot;installmentBuyingRate&quot;: 50.93
+        },
+        &quot;planDetails&quot;: [
+          {
+            &quot;plan&quot;: {
+              &quot;code&quot;: &quot;10&quot;,
+              &quot;description&quot;: &quot;COMPRAS REVOLVENTES SOLES&quot;
+            },
+            &quot;effectiveRate&quot;: 50.93
+          },
+          {
+            &quot;plan&quot;: {
+              &quot;code&quot;: &quot;15&quot;,
+              &quot;description&quot;: &quot;COMPRA DE DEUD REV BT SOLES&quot;
+            },
+            &quot;effectiveRate&quot;: 0.0
+          },
+          {
+            &quot;plan&quot;: {
+              &quot;code&quot;: &quot;20&quot;,
+              &quot;description&quot;: &quot;DISEF REVOLVENTE SOLES&quot;
+            },
+            &quot;effectiveRate&quot;: 81.5
+          },
+          {
+            &quot;plan&quot;: {
+              &quot;code&quot;: &quot;25&quot;,
+              &quot;description&quot;: &quot;DISEF REVOLV BT GREMIO SOLES&quot;
+            },
+            &quot;effectiveRate&quot;: 12.55
+          },
+          {
+            &quot;plan&quot;: {
+              &quot;code&quot;: &quot;30&quot;,
+              &quot;description&quot;: &quot;COMISIONES FULL SOLES&quot;
+            },
+            &quot;effectiveRate&quot;: 50.93
+          },
+          {
+            &quot;plan&quot;: {
+              &quot;code&quot;: &quot;40&quot;,
+              &quot;description&quot;: &quot;COMPRAS EN CUOTAS SOLES&quot;
+            },
+            &quot;effectiveRate&quot;: 50.93
+          },
+          {
+            &quot;plan&quot;: {
+              &quot;code&quot;: &quot;42&quot;,
+              &quot;description&quot;: &quot;COMPRAS 1 CUOTA TASA 0&quot;
+            },
+            &quot;effectiveRate&quot;: 0.0
+          },
+          {
+            &quot;plan&quot;: {
+              &quot;code&quot;: &quot;44&quot;,
+              &quot;description&quot;: &quot;COMPRAS CUOTAS TASA CERO&quot;
+            },
+            &quot;effectiveRate&quot;: 0.0
+          },
+          {
+            &quot;plan&quot;: {
+              &quot;code&quot;: &quot;45&quot;,
+              &quot;description&quot;: &quot;COMPRAS CUOTS-BAL TRANS SOLES&quot;
+            },
+            &quot;effectiveRate&quot;: 17.18
+          },
+          {
+            &quot;plan&quot;: {
+              &quot;code&quot;: &quot;50&quot;,
+              &quot;description&quot;: &quot;COBRO DE CUOTAS SOLES&quot;
+            },
+            &quot;effectiveRate&quot;: 17.18
+          },
+          {
+            &quot;plan&quot;: {
+              &quot;code&quot;: &quot;60&quot;,
+              &quot;description&quot;: &quot;COMPRS DISEF CUOTAS REVOLV TSN&quot;
+            },
+            &quot;effectiveRate&quot;: 50.93
+          },
+          {
+            &quot;plan&quot;: {
+              &quot;code&quot;: &quot;70&quot;,
+              &quot;description&quot;: &quot;DISP EFECTIVO CUOTAS SOLES&quot;
+            },
+            &quot;effectiveRate&quot;: 81.5
+          }
+        ]
+      }
+    },
+    &quot;usdInformation&quot;: {
+      &quot;organizationCode&quot;: 15,
+      &quot;accountScore&quot;: 0,
+      &quot;blockingType&quot;: {
+        &quot;code&quot;: &quot;G&quot;
+      },
+      &quot;blockingDate&quot;: &quot;2021-09-16&quot;,
+      &quot;balanceInformation&quot;: {
+        &quot;creditLineAvailableAmount&quot;: 0.0,
+        &quot;accruedCurrentBalanceAmount&quot;: 0.0,
+        &quot;accruedPastDueAmount&quot;: 0.0,
+        &quot;accruedPaymentsOnDayAmount&quot;: 0.0,
+        &quot;paymentsOnDayQuantity&quot;: 0,
+        &quot;pendingAuthorizationsQuantity&quot;: 0,
+        &quot;accruedPendingAuthorizationsAmount&quot;: 0.0,
+        &quot;usedCreditLineAmount&quot;: 0.0,
+        &quot;invoiced&quot;: {
+          &quot;initialBalanceAmount&quot;: 0.0,
+          &quot;billedInterestsAmount&quot;: 0.0,
+          &quot;billedMembershipFeeAmount&quot;: 0.0,
+          &quot;billedFeeAmount&quot;: 0.0,
+          &quot;accruedFixedInstallmentsAmount&quot;: 0,
+          &quot;fixedInstallmentsQuantity&quot;: 0,
+          &quot;fixedPayAmount&quot;: 0,
+          &quot;minimumPaymentAmount&quot;: 629.62,
+          &quot;accruedPaymentAmount&quot;: 629.62
+        }
+      },
+      &quot;creditCardHistory&quot;: {
+        &quot;lastPurchaseDate&quot;: &quot;2021-06-08&quot;,
+        &quot;lastPaymentDate&quot;: &quot;2021-06-08&quot;,
+        &quot;purchasesTransactionQuantity&quot;: 0,
+        &quot;accruedPurchasesTransactionAmount&quot;: 0.0,
+        &quot;cashDisposalTransactionQuantity&quot;: 0,
+        &quot;accruedCashDisposalTransactionAmount&quot;: 0.0,
+        &quot;currentDelinquencyRangeNumber&quot;: 0,
+        &quot;defaulterDaysQuantity&quot;: 0,
+        &quot;paymentsTransactionQuantity&quot;: 0,
+        &quot;accruedPaymentsTransactionAmount&quot;: 0.0,
+        &quot;defaulterRecords&quot;: {
+          &quot;accumulated&quot;: [
+            {
+              &quot;range&quot;: {
+                &quot;from&quot;: &quot;0&quot;,
+                &quot;to&quot;: &quot;0&quot;,
+                &quot;unit&quot;: &quot;D&quot;
+              },
+              &quot;defaulterQuantity&quot;: 0,
+              &quot;defaulterDueAmount&quot;: 0.0
+            },
+            {
+              &quot;range&quot;: {
+                &quot;from&quot;: &quot;1&quot;,
+                &quot;to&quot;: &quot;29&quot;,
+                &quot;unit&quot;: &quot;D&quot;
+              },
+              &quot;defaulterQuantity&quot;: 12,
+              &quot;defaulterDueAmount&quot;: 0.0
+            },
+            {
+              &quot;range&quot;: {
+                &quot;from&quot;: &quot;30&quot;,
+                &quot;to&quot;: &quot;59&quot;,
+                &quot;unit&quot;: &quot;D&quot;
+              },
+              &quot;defaulterQuantity&quot;: 9,
+              &quot;defaulterDueAmount&quot;: 0.0
+            },
+            {
+              &quot;range&quot;: {
+                &quot;from&quot;: &quot;60&quot;,
+                &quot;to&quot;: &quot;89&quot;,
+                &quot;unit&quot;: &quot;D&quot;
+              },
+              &quot;defaulterQuantity&quot;: 7,
+              &quot;defaulterDueAmount&quot;: 0.0
+            },
+            {
+              &quot;range&quot;: {
+                &quot;from&quot;: &quot;90&quot;,
+                &quot;to&quot;: &quot;119&quot;,
+                &quot;unit&quot;: &quot;D&quot;
+              },
+              &quot;defaulterQuantity&quot;: 5,
+              &quot;defaulterDueAmount&quot;: 0.0
+            },
+            {
+              &quot;range&quot;: {
+                &quot;from&quot;: &quot;120&quot;,
+                &quot;to&quot;: &quot;149&quot;,
+                &quot;unit&quot;: &quot;D&quot;
+              },
+              &quot;defaulterQuantity&quot;: 4,
+              &quot;defaulterDueAmount&quot;: 0.0
+            },
+            {
+              &quot;range&quot;: {
+                &quot;from&quot;: &quot;150&quot;,
+                &quot;to&quot;: &quot;179&quot;,
+                &quot;unit&quot;: &quot;D&quot;
+              },
+              &quot;defaulterQuantity&quot;: 3,
+              &quot;defaulterDueAmount&quot;: 0.0
+            },
+            {
+              &quot;range&quot;: {
+                &quot;from&quot;: &quot;180&quot;,
+                &quot;to&quot;: &quot;200&quot;,
+                &quot;unit&quot;: &quot;D&quot;
+              },
+              &quot;defaulterQuantity&quot;: 2,
+              &quot;defaulterDueAmount&quot;: 0.0
+            },
+            {
+              &quot;range&quot;: {
+                &quot;from&quot;: &quot;210&quot;,
+                &quot;to&quot;: &quot;999&quot;,
+                &quot;unit&quot;: &quot;D&quot;
+              },
+              &quot;defaulterQuantity&quot;: 1,
+              &quot;defaulterDueAmount&quot;: 0.0
+            }
+          ],
+          &quot;lastMonths&quot;: [
+            {
+              &quot;rangeNumber&quot;: 0
+            },
+            {
+              &quot;rangeNumber&quot;: 0
+            },
+            {
+              &quot;rangeNumber&quot;: 0
+            },
+            {
+              &quot;rangeNumber&quot;: 0
+            },
+            {
+              &quot;rangeNumber&quot;: 0
+            },
+            {
+              &quot;rangeNumber&quot;: 0
+            },
+            {
+              &quot;rangeNumber&quot;: 0
+            },
+            {
+              &quot;rangeNumber&quot;: 0
+            },
+            {
+              &quot;rangeNumber&quot;: 0
+            },
+            {
+              &quot;rangeNumber&quot;: 9
+            },
+            {
+              &quot;rangeNumber&quot;: 9
+            },
+            {
+              &quot;rangeNumber&quot;: 9
+            }
+          ]
+        }
+      },
+      &quot;rates&quot;: {
+        &quot;annualEffectiveRates&quot;: {
+          &quot;purchaseRate&quot;: 50.93,
+          &quot;cashWithdrawalRate&quot;: 66.0,
+          &quot;installmentBuyingRate&quot;: 50.93
+        },
+        &quot;cashDisposalFeesByChannel&quot;: {
+          &quot;tellerUsa&quot;: {
+            &quot;amount&quot;: 3.4
+          },
+          &quot;tellerNonUsa&quot;: {
+            &quot;amount&quot;: 3.4
+          },
+          &quot;atmUsa&quot;: {
+            &quot;amount&quot;: 3.4
+          }
+        },
+        &quot;planDetails&quot;: [
+          {
+            &quot;plan&quot;: {
+              &quot;code&quot;: &quot;10&quot;,
+              &quot;description&quot;: &quot;COMPRAS REVOLVENTES DOLARES&quot;
+            },
+            &quot;effectiveRate&quot;: 50.93
+          },
+          {
+            &quot;plan&quot;: {
+              &quot;code&quot;: &quot;15&quot;,
+              &quot;description&quot;: &quot;COMPRA DE DEUD REV BT DOLRS&quot;
+            },
+            &quot;effectiveRate&quot;: 0.0
+          },
+          {
+            &quot;plan&quot;: {
+              &quot;code&quot;: &quot;20&quot;,
+              &quot;description&quot;: &quot;DISEF REVOLVENTE DOLARES&quot;
+            },
+            &quot;effectiveRate&quot;: 66.0
+          },
+          {
+            &quot;plan&quot;: {
+              &quot;code&quot;: &quot;25&quot;,
+              &quot;description&quot;: &quot;DISEF REVOLVING BT GREMIO DLRS&quot;
+            },
+            &quot;effectiveRate&quot;: 12.55
+          },
+          {
+            &quot;plan&quot;: {
+              &quot;code&quot;: &quot;30&quot;,
+              &quot;description&quot;: &quot;COMISIONES FULL DOLARES&quot;
+            },
+            &quot;effectiveRate&quot;: 50.93
+          },
+          {
+            &quot;plan&quot;: {
+              &quot;code&quot;: &quot;40&quot;,
+              &quot;description&quot;: &quot;COMPRAS EN CUOTAS DOLARES&quot;
+            },
+            &quot;effectiveRate&quot;: 50.93
+          },
+          {
+            &quot;plan&quot;: {
+              &quot;code&quot;: &quot;42&quot;,
+              &quot;description&quot;: &quot;COMPRAS 1 CUOTA TASA 0&quot;
+            },
+            &quot;effectiveRate&quot;: 0.0
+          },
+          {
+            &quot;plan&quot;: {
+              &quot;code&quot;: &quot;44&quot;,
+              &quot;description&quot;: &quot;COMPRAS CUOTAS TASA CERO&quot;
+            },
+            &quot;effectiveRate&quot;: 0.0
+          },
+          {
+            &quot;plan&quot;: {
+              &quot;code&quot;: &quot;45&quot;,
+              &quot;description&quot;: &quot;COMPRAS CUOTS-BAL TRANS DOLRS&quot;
+            },
+            &quot;effectiveRate&quot;: 17.18
+          },
+          {
+            &quot;plan&quot;: {
+              &quot;code&quot;: &quot;50&quot;,
+              &quot;description&quot;: &quot;COBRO DE CUOTAS DOLARES&quot;
+            },
+            &quot;effectiveRate&quot;: 17.18
+          },
+          {
+            &quot;plan&quot;: {
+              &quot;code&quot;: &quot;70&quot;,
+              &quot;description&quot;: &quot;DISP EFECTIVO CUOTAS DOLARES&quot;
+            },
+            &quot;effectiveRate&quot;: 66.0
+          },
+          {
+            &quot;plan&quot;: {
+              &quot;code&quot;: &quot;75&quot;,
+              &quot;description&quot;: &quot;DISEF CUOTAS VENTANILLA DLRS&quot;
+            },
+            &quot;effectiveRate&quot;: 23.99
+          }
+        ]
+      }
+    }
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

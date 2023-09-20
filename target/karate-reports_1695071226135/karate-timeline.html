@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/resources\/features\/Booker\/Auth[1.1:21]","start":1695071126175,"end":1695071128785,"title":"src\/test\/resources\/features\/Booker\/Auth[1.1:21] 16:05:26.175-16:05:28.785 Obtener token"},{"id":2,"group":1,"content":"src\/test\/resources\/features\/Booker\/Auth[2.1:36]","start":1695071128800,"end":1695071129242,"title":"src\/test\/resources\/features\/Booker\/Auth[2.1:36] 16:05:28.800-16:05:29.242 Password invalido","className":"failed"},{"id":3,"group":1,"content":"src\/test\/resources\/features\/Booker\/Auth[3.1:50]","start":1695071129307,"end":1695071129732,"title":"src\/test\/resources\/features\/Booker\/Auth[3.1:50] 16:05:29.307-16:05:29.732 Usuario invalido"},{"id":4,"group":1,"content":"src\/test\/resources\/features\/Booker\/Auth[4.1:64]","start":1695071129745,"end":1695071129767,"title":"src\/test\/resources\/features\/Booker\/Auth[4.1:64] 16:05:29.745-16:05:29.767 Password vacio","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

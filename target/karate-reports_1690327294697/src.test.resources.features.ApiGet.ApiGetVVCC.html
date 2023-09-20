@@ -1,0 +1,2645 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("9fa39931-e0e8-4981-b070-756fea0b0c6e",{name:"S66229"});
+    posthog.capture("report_feature",{karate_version:"1.3.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>src.test.resources.features.ApiGet.ApiGetVVCC</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div>cert</div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2023-07-25 06:20:23 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1.1:20]"><span>[1.1:20]</span> <span>consultar datos de una tc</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/resources/features/ApiGet/ApiGetVVCC.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">consulta tc</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:20]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">consultaVVCC</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:20]</span>
+                <span class="scenario-name">consultar datos de una tc</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:20]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:20]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def token = call read(&#39;token.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.5">18:20:23.602 src/test/resources/features/ApiGet/ApiGetVVCC.feature:5
+* def token = call read(&#39;token.feature&#39;)
+&gt;&gt; src/test/resources/features/ApiGet/ApiGetVVCC.feature:20
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:     var env = karate.env;
+03:     var baseURL = &#39;&#39;
+04:     var encodeURL=&#39;&#39;
+05:     var oauth_token = &#39;/auth/oauth/v2/token&#39;
+06:     var inct_test_ciam_token_client_secret = &#39;&#39;
+07:     var inct_test_ciam_token_client_id = &#39;&#39;
+08:     var authUrl = &#39;&#39;
+09:     var domainToken = &#39;&#39;
+10:     var domainConsultaVV28 = &#39;&#39;
+11:     var domainConsultaVVCC = &#39;&#39;
+12: 
+13: 
+14:     karate.log(&#39;Se realiza la ejecución en ambiente: &#39;, env);
+15: 
+16:     // Declaración de credenciales HV
+17:     karate.configure(&#39;ssl&#39;, true);
+18: 
+19:     inct_test_ciam_token_client_id = karate.properties[&#39;inct-test-ciam-token-client-id&#39;]
+20:     inct_test_ciam_token_client_secret = karate.properties[&#39;inct-test-ciam-token-client-secret&#39;]
+21: 
+22:     if (!env) {
+23:         env = &#39;dev&#39;;
+24:     }
+25:     if (env === &#39;dev&#39;) {
+26:         baseURL = &#39;https://int.apisdevbcp.com&#39;
+27:         encodeURL = &#39;https://int.apisdevbcp.com/utils/jwt/encode&#39;
+28:         authUrl = &#39;https://authservercert.viabcp.com/cas/oidc/authorize?response_type=code&amp;redirect_uri=https://www.minegociobcp-cert.viabcp.com/%23/auth/logged&amp;state=ha3JDet1d6nDF23emECWErVaBQ7McJyiy48uDpzhNsX&amp;client_id=3c4180b1-fde1-4613-b807-545e791dadfc&amp;scope=ux-ppel-landing-v1+ux-ppel-account-opening-v1+ux-ppel-loan-evaluation-v1+ux-ppel-customer-management-v1+ux-ppel-loan-disbursement-v1+ux-ppel-credit-management-v1+ux-ppel-negotiable-invoice-management-v1+ux-ppel-customer-product-invoice-v1+bs-foreign-tax-compliance-declaration-v1+bs-loan-v3+bs-citizen-v2+bs-person-v5+bs-person-address-v2+bs-saving-account-v3+bs-account-v4+bs-product-v4+bs-disbursement-v1+sp-captcha-v3+bs-negotiable-document-worksheet-v1+bs-loan-simulation-v3+bs-user-info-v1+bs-factoring-evaluation-v2+bs-provider-acquirer-evaluation-v1+bs-outstanding-debt-v3+bs-geolocation-v1+ux-ppel-exchange-rate-v1+bs-account-transfer-v2+bs-exchange-rate-v5+bs-notification-v3+bs-financial-power-v1+bs-small-medium-enterprise-evaluation-v1+ux-ppel-one-time-password-v1+ux-ppel-loan-v1+bs-loan-payment-schedule-v1+bs-branch-offices-v2+bs-labor-type-v2+bs-current-account-v1+bs-third-party-relationship-v2+bs-evaluation-v4+bs-operation-number-v1+bs-monetary-operation-v1+bs-monetary-operation-notification-v1+ux-ppel-current-account-v1+ux-ppel-validation-current-account-v1+bs-credit-line-evaluation-v2+bs-product-statement-v2+bs-credit-card-v3+bs-factoring-documents-v1+bs-negotiable-invoice-rate-v1&amp;code_challenge_method=S256&amp;code_challenge=ZTA1Y2M2NzBlZDRjYmI2N2ZiNzVmZGU4YWNhZTAxNGQ5YjJmM2NkN2U2YjUxMjg4MjRkYjk5ZTY5NDBjMWU2Yw&amp;nonce=BzIOkT7rSogLyCQ36swwTDqSPI879tUZQvnIa9YVzll&amp;token=true&#39;
+29:     } else if (env === &#39;cert&#39;) {
+30:         //configure(&#39;ssl&#39;, true);
+31:         //configure ssl = true
+32:         baseURL = &#39;https://int.apiscertbcp.com&#39;
+33:         encodeURL = &#39;https://int.apisqabcp.com/utils/jwt/encode&#39;
+34:         domainToken = &#39;https://int.apisqabcp.com&#39;
+35:         domainConsultaVV28 = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+36:         domainConsultaVVCC = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+37:     }
+38: 
+39:     var config = {
+40:         authUrl: authUrl,
+41:         env: env,
+42:         baseURL: baseURL + oauth_token,
+43:         encodeURL: encodeURL,
+44:         inct_test_ciam_token_client_secret: inct_test_ciam_token_client_secret,
+45:         inct_test_ciam_token_client_id: inct_test_ciam_token_client_id,
+46:         domainToken:domainToken,
+47:         domainConsultaVV28:domainConsultaVV28
+48:         domainConsultaVVCC:domainConsultaVVCC
+49:     }
+50: 
+51:     return config;
+52: }
+53: 
+54: 
+55: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:48:8 Expected comma but found ident
+        domainConsultaVVCC:domainConsultaVVCC
+        ^
+Unnamed:51:4 Expected ) but found return
+    return config;
+    ^
+Unnamed:52:0 Expected eof but found }
+}
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     var env = karate.env;
+03:     var baseURL = &#39;&#39;
+04:     var encodeURL=&#39;&#39;
+05:     var oauth_token = &#39;/auth/oauth/v2/token&#39;
+06:     var inct_test_ciam_token_client_secret = &#39;&#39;
+07:     var inct_test_ciam_token_client_id = &#39;&#39;
+08:     var authUrl = &#39;&#39;
+09:     var domainToken = &#39;&#39;
+10:     var domainConsultaVV28 = &#39;&#39;
+11:     var domainConsultaVVCC = &#39;&#39;
+12: 
+13: 
+14:     karate.log(&#39;Se realiza la ejecución en ambiente: &#39;, env);
+15: 
+16:     // Declaración de credenciales HV
+17:     karate.configure(&#39;ssl&#39;, true);
+18: 
+19:     inct_test_ciam_token_client_id = karate.properties[&#39;inct-test-ciam-token-client-id&#39;]
+20:     inct_test_ciam_token_client_secret = karate.properties[&#39;inct-test-ciam-token-client-secret&#39;]
+21: 
+22:     if (!env) {
+23:         env = &#39;dev&#39;;
+24:     }
+25:     if (env === &#39;dev&#39;) {
+26:         baseURL = &#39;https://int.apisdevbcp.com&#39;
+27:         encodeURL = &#39;https://int.apisdevbcp.com/utils/jwt/encode&#39;
+28:         authUrl = &#39;https://authservercert.viabcp.com/cas/oidc/authorize?response_type=code&amp;redirect_uri=https://www.minegociobcp-cert.viabcp.com/%23/auth/logged&amp;state=ha3JDet1d6nDF23emECWErVaBQ7McJyiy48uDpzhNsX&amp;client_id=3c4180b1-fde1-4613-b807-545e791dadfc&amp;scope=ux-ppel-landing-v1+ux-ppel-account-opening-v1+ux-ppel-loan-evaluation-v1+ux-ppel-customer-management-v1+ux-ppel-loan-disbursement-v1+ux-ppel-credit-management-v1+ux-ppel-negotiable-invoice-management-v1+ux-ppel-customer-product-invoice-v1+bs-foreign-tax-compliance-declaration-v1+bs-loan-v3+bs-citizen-v2+bs-person-v5+bs-person-address-v2+bs-saving-account-v3+bs-account-v4+bs-product-v4+bs-disbursement-v1+sp-captcha-v3+bs-negotiable-document-worksheet-v1+bs-loan-simulation-v3+bs-user-info-v1+bs-factoring-evaluation-v2+bs-provider-acquirer-evaluation-v1+bs-outstanding-debt-v3+bs-geolocation-v1+ux-ppel-exchange-rate-v1+bs-account-transfer-v2+bs-exchange-rate-v5+bs-notification-v3+bs-financial-power-v1+bs-small-medium-enterprise-evaluation-v1+ux-ppel-one-time-password-v1+ux-ppel-loan-v1+bs-loan-payment-schedule-v1+bs-branch-offices-v2+bs-labor-type-v2+bs-current-account-v1+bs-third-party-relationship-v2+bs-evaluation-v4+bs-operation-number-v1+bs-monetary-operation-v1+bs-monetary-operation-notification-v1+ux-ppel-current-account-v1+ux-ppel-validation-current-account-v1+bs-credit-line-evaluation-v2+bs-product-statement-v2+bs-credit-card-v3+bs-factoring-documents-v1+bs-negotiable-invoice-rate-v1&amp;code_challenge_method=S256&amp;code_challenge=ZTA1Y2M2NzBlZDRjYmI2N2ZiNzVmZGU4YWNhZTAxNGQ5YjJmM2NkN2U2YjUxMjg4MjRkYjk5ZTY5NDBjMWU2Yw&amp;nonce=BzIOkT7rSogLyCQ36swwTDqSPI879tUZQvnIa9YVzll&amp;token=true&#39;
+29:     } else if (env === &#39;cert&#39;) {
+30:         //configure(&#39;ssl&#39;, true);
+31:         //configure ssl = true
+32:         baseURL = &#39;https://int.apiscertbcp.com&#39;
+33:         encodeURL = &#39;https://int.apisqabcp.com/utils/jwt/encode&#39;
+34:         domainToken = &#39;https://int.apisqabcp.com&#39;
+35:         domainConsultaVV28 = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+36:         domainConsultaVVCC = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+37:     }
+38: 
+39:     var config = {
+40:         authUrl: authUrl,
+41:         env: env,
+42:         baseURL: baseURL + oauth_token,
+43:         encodeURL: encodeURL,
+44:         inct_test_ciam_token_client_secret: inct_test_ciam_token_client_secret,
+45:         inct_test_ciam_token_client_id: inct_test_ciam_token_client_id,
+46:         domainToken:domainToken,
+47:         domainConsultaVV28:domainConsultaVV28
+48:         domainConsultaVVCC:domainConsultaVVCC
+49:     }
+50: 
+51:     return config;
+52: }
+53: 
+54: 
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:     var env = karate.env;
+03:     var baseURL = &#39;&#39;
+04:     var encodeURL=&#39;&#39;
+05:     var oauth_token = &#39;/auth/oauth/v2/token&#39;
+06:     var inct_test_ciam_token_client_secret = &#39;&#39;
+07:     var inct_test_ciam_token_client_id = &#39;&#39;
+08:     var authUrl = &#39;&#39;
+09:     var domainToken = &#39;&#39;
+10:     var domainConsultaVV28 = &#39;&#39;
+11:     var domainConsultaVVCC = &#39;&#39;
+12: 
+13: 
+14:     karate.log(&#39;Se realiza la ejecución en ambiente: &#39;, env);
+15: 
+16:     // Declaración de credenciales HV
+17:     karate.configure(&#39;ssl&#39;, true);
+18: 
+19:     inct_test_ciam_token_client_id = karate.properties[&#39;inct-test-ciam-token-client-id&#39;]
+20:     inct_test_ciam_token_client_secret = karate.properties[&#39;inct-test-ciam-token-client-secret&#39;]
+21: 
+22:     if (!env) {
+23:         env = &#39;dev&#39;;
+24:     }
+25:     if (env === &#39;dev&#39;) {
+26:         baseURL = &#39;https://int.apisdevbcp.com&#39;
+27:         encodeURL = &#39;https://int.apisdevbcp.com/utils/jwt/encode&#39;
+28:         authUrl = &#39;https://authservercert.viabcp.com/cas/oidc/authorize?response_type=code&amp;redirect_uri=https://www.minegociobcp-cert.viabcp.com/%23/auth/logged&amp;state=ha3JDet1d6nDF23emECWErVaBQ7McJyiy48uDpzhNsX&amp;client_id=3c4180b1-fde1-4613-b807-545e791dadfc&amp;scope=ux-ppel-landing-v1+ux-ppel-account-opening-v1+ux-ppel-loan-evaluation-v1+ux-ppel-customer-management-v1+ux-ppel-loan-disbursement-v1+ux-ppel-credit-management-v1+ux-ppel-negotiable-invoice-management-v1+ux-ppel-customer-product-invoice-v1+bs-foreign-tax-compliance-declaration-v1+bs-loan-v3+bs-citizen-v2+bs-person-v5+bs-person-address-v2+bs-saving-account-v3+bs-account-v4+bs-product-v4+bs-disbursement-v1+sp-captcha-v3+bs-negotiable-document-worksheet-v1+bs-loan-simulation-v3+bs-user-info-v1+bs-factoring-evaluation-v2+bs-provider-acquirer-evaluation-v1+bs-outstanding-debt-v3+bs-geolocation-v1+ux-ppel-exchange-rate-v1+bs-account-transfer-v2+bs-exchange-rate-v5+bs-notification-v3+bs-financial-power-v1+bs-small-medium-enterprise-evaluation-v1+ux-ppel-one-time-password-v1+ux-ppel-loan-v1+bs-loan-payment-schedule-v1+bs-branch-offices-v2+bs-labor-type-v2+bs-current-account-v1+bs-third-party-relationship-v2+bs-evaluation-v4+bs-operation-number-v1+bs-monetary-operation-v1+bs-monetary-operation-notification-v1+ux-ppel-current-account-v1+ux-ppel-validation-current-account-v1+bs-credit-line-evaluation-v2+bs-product-statement-v2+bs-credit-card-v3+bs-factoring-documents-v1+bs-negotiable-invoice-rate-v1&amp;code_challenge_method=S256&amp;code_challenge=ZTA1Y2M2NzBlZDRjYmI2N2ZiNzVmZGU4YWNhZTAxNGQ5YjJmM2NkN2U2YjUxMjg4MjRkYjk5ZTY5NDBjMWU2Yw&amp;nonce=BzIOkT7rSogLyCQ36swwTDqSPI879tUZQvnIa9YVzll&amp;token=true&#39;
+29:     } else if (env === &#39;cert&#39;) {
+30:         //configure(&#39;ssl&#39;, true);
+31:         //configure ssl = true
+32:         baseURL = &#39;https://int.apiscertbcp.com&#39;
+33:         encodeURL = &#39;https://int.apisqabcp.com/utils/jwt/encode&#39;
+34:         domainToken = &#39;https://int.apisqabcp.com&#39;
+35:         domainConsultaVV28 = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+36:         domainConsultaVVCC = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+37:     }
+38: 
+39:     var config = {
+40:         authUrl: authUrl,
+41:         env: env,
+42:         baseURL: baseURL + oauth_token,
+43:         encodeURL: encodeURL,
+44:         inct_test_ciam_token_client_secret: inct_test_ciam_token_client_secret,
+45:         inct_test_ciam_token_client_id: inct_test_ciam_token_client_id,
+46:         domainToken:domainToken,
+47:         domainConsultaVV28:domainConsultaVV28
+48:         domainConsultaVVCC:domainConsultaVVCC
+49:     }
+50: 
+51:     return config;
+52: }
+53: 
+54: 
+55: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:48:8 Expected comma but found ident
+        domainConsultaVVCC:domainConsultaVVCC
+        ^
+Unnamed:51:4 Expected ) but found return
+    return config;
+    ^
+Unnamed:52:0 Expected eof but found }
+}
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- com.intuit.karate.core.FeatureRuntime.access$000(FeatureRuntime.java:44)
+
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:5
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.8">
+      <div class="step-ref failed">8</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>url domainConsultaVVCC</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.8">18:20:23.657 src/test/resources/features/ApiGet/ApiGetVVCC.feature:8
+Given url domainConsultaVVCC
+&gt;&gt; src/test/resources/features/ApiGet/ApiGetVVCC.feature:20
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:     var env = karate.env;
+03:     var baseURL = &#39;&#39;
+04:     var encodeURL=&#39;&#39;
+05:     var oauth_token = &#39;/auth/oauth/v2/token&#39;
+06:     var inct_test_ciam_token_client_secret = &#39;&#39;
+07:     var inct_test_ciam_token_client_id = &#39;&#39;
+08:     var authUrl = &#39;&#39;
+09:     var domainToken = &#39;&#39;
+10:     var domainConsultaVV28 = &#39;&#39;
+11:     var domainConsultaVVCC = &#39;&#39;
+12: 
+13: 
+14:     karate.log(&#39;Se realiza la ejecución en ambiente: &#39;, env);
+15: 
+16:     // Declaración de credenciales HV
+17:     karate.configure(&#39;ssl&#39;, true);
+18: 
+19:     inct_test_ciam_token_client_id = karate.properties[&#39;inct-test-ciam-token-client-id&#39;]
+20:     inct_test_ciam_token_client_secret = karate.properties[&#39;inct-test-ciam-token-client-secret&#39;]
+21: 
+22:     if (!env) {
+23:         env = &#39;dev&#39;;
+24:     }
+25:     if (env === &#39;dev&#39;) {
+26:         baseURL = &#39;https://int.apisdevbcp.com&#39;
+27:         encodeURL = &#39;https://int.apisdevbcp.com/utils/jwt/encode&#39;
+28:         authUrl = &#39;https://authservercert.viabcp.com/cas/oidc/authorize?response_type=code&amp;redirect_uri=https://www.minegociobcp-cert.viabcp.com/%23/auth/logged&amp;state=ha3JDet1d6nDF23emECWErVaBQ7McJyiy48uDpzhNsX&amp;client_id=3c4180b1-fde1-4613-b807-545e791dadfc&amp;scope=ux-ppel-landing-v1+ux-ppel-account-opening-v1+ux-ppel-loan-evaluation-v1+ux-ppel-customer-management-v1+ux-ppel-loan-disbursement-v1+ux-ppel-credit-management-v1+ux-ppel-negotiable-invoice-management-v1+ux-ppel-customer-product-invoice-v1+bs-foreign-tax-compliance-declaration-v1+bs-loan-v3+bs-citizen-v2+bs-person-v5+bs-person-address-v2+bs-saving-account-v3+bs-account-v4+bs-product-v4+bs-disbursement-v1+sp-captcha-v3+bs-negotiable-document-worksheet-v1+bs-loan-simulation-v3+bs-user-info-v1+bs-factoring-evaluation-v2+bs-provider-acquirer-evaluation-v1+bs-outstanding-debt-v3+bs-geolocation-v1+ux-ppel-exchange-rate-v1+bs-account-transfer-v2+bs-exchange-rate-v5+bs-notification-v3+bs-financial-power-v1+bs-small-medium-enterprise-evaluation-v1+ux-ppel-one-time-password-v1+ux-ppel-loan-v1+bs-loan-payment-schedule-v1+bs-branch-offices-v2+bs-labor-type-v2+bs-current-account-v1+bs-third-party-relationship-v2+bs-evaluation-v4+bs-operation-number-v1+bs-monetary-operation-v1+bs-monetary-operation-notification-v1+ux-ppel-current-account-v1+ux-ppel-validation-current-account-v1+bs-credit-line-evaluation-v2+bs-product-statement-v2+bs-credit-card-v3+bs-factoring-documents-v1+bs-negotiable-invoice-rate-v1&amp;code_challenge_method=S256&amp;code_challenge=ZTA1Y2M2NzBlZDRjYmI2N2ZiNzVmZGU4YWNhZTAxNGQ5YjJmM2NkN2U2YjUxMjg4MjRkYjk5ZTY5NDBjMWU2Yw&amp;nonce=BzIOkT7rSogLyCQ36swwTDqSPI879tUZQvnIa9YVzll&amp;token=true&#39;
+29:     } else if (env === &#39;cert&#39;) {
+30:         //configure(&#39;ssl&#39;, true);
+31:         //configure ssl = true
+32:         baseURL = &#39;https://int.apiscertbcp.com&#39;
+33:         encodeURL = &#39;https://int.apisqabcp.com/utils/jwt/encode&#39;
+34:         domainToken = &#39;https://int.apisqabcp.com&#39;
+35:         domainConsultaVV28 = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+36:         domainConsultaVVCC = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+37:     }
+38: 
+39:     var config = {
+40:         authUrl: authUrl,
+41:         env: env,
+42:         baseURL: baseURL + oauth_token,
+43:         encodeURL: encodeURL,
+44:         inct_test_ciam_token_client_secret: inct_test_ciam_token_client_secret,
+45:         inct_test_ciam_token_client_id: inct_test_ciam_token_client_id,
+46:         domainToken:domainToken,
+47:         domainConsultaVV28:domainConsultaVV28
+48:         domainConsultaVVCC:domainConsultaVVCC
+49:     }
+50: 
+51:     return config;
+52: }
+53: 
+54: 
+55: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:48:8 Expected comma but found ident
+        domainConsultaVVCC:domainConsultaVVCC
+        ^
+Unnamed:51:4 Expected ) but found return
+    return config;
+    ^
+Unnamed:52:0 Expected eof but found }
+}
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     var env = karate.env;
+03:     var baseURL = &#39;&#39;
+04:     var encodeURL=&#39;&#39;
+05:     var oauth_token = &#39;/auth/oauth/v2/token&#39;
+06:     var inct_test_ciam_token_client_secret = &#39;&#39;
+07:     var inct_test_ciam_token_client_id = &#39;&#39;
+08:     var authUrl = &#39;&#39;
+09:     var domainToken = &#39;&#39;
+10:     var domainConsultaVV28 = &#39;&#39;
+11:     var domainConsultaVVCC = &#39;&#39;
+12: 
+13: 
+14:     karate.log(&#39;Se realiza la ejecución en ambiente: &#39;, env);
+15: 
+16:     // Declaración de credenciales HV
+17:     karate.configure(&#39;ssl&#39;, true);
+18: 
+19:     inct_test_ciam_token_client_id = karate.properties[&#39;inct-test-ciam-token-client-id&#39;]
+20:     inct_test_ciam_token_client_secret = karate.properties[&#39;inct-test-ciam-token-client-secret&#39;]
+21: 
+22:     if (!env) {
+23:         env = &#39;dev&#39;;
+24:     }
+25:     if (env === &#39;dev&#39;) {
+26:         baseURL = &#39;https://int.apisdevbcp.com&#39;
+27:         encodeURL = &#39;https://int.apisdevbcp.com/utils/jwt/encode&#39;
+28:         authUrl = &#39;https://authservercert.viabcp.com/cas/oidc/authorize?response_type=code&amp;redirect_uri=https://www.minegociobcp-cert.viabcp.com/%23/auth/logged&amp;state=ha3JDet1d6nDF23emECWErVaBQ7McJyiy48uDpzhNsX&amp;client_id=3c4180b1-fde1-4613-b807-545e791dadfc&amp;scope=ux-ppel-landing-v1+ux-ppel-account-opening-v1+ux-ppel-loan-evaluation-v1+ux-ppel-customer-management-v1+ux-ppel-loan-disbursement-v1+ux-ppel-credit-management-v1+ux-ppel-negotiable-invoice-management-v1+ux-ppel-customer-product-invoice-v1+bs-foreign-tax-compliance-declaration-v1+bs-loan-v3+bs-citizen-v2+bs-person-v5+bs-person-address-v2+bs-saving-account-v3+bs-account-v4+bs-product-v4+bs-disbursement-v1+sp-captcha-v3+bs-negotiable-document-worksheet-v1+bs-loan-simulation-v3+bs-user-info-v1+bs-factoring-evaluation-v2+bs-provider-acquirer-evaluation-v1+bs-outstanding-debt-v3+bs-geolocation-v1+ux-ppel-exchange-rate-v1+bs-account-transfer-v2+bs-exchange-rate-v5+bs-notification-v3+bs-financial-power-v1+bs-small-medium-enterprise-evaluation-v1+ux-ppel-one-time-password-v1+ux-ppel-loan-v1+bs-loan-payment-schedule-v1+bs-branch-offices-v2+bs-labor-type-v2+bs-current-account-v1+bs-third-party-relationship-v2+bs-evaluation-v4+bs-operation-number-v1+bs-monetary-operation-v1+bs-monetary-operation-notification-v1+ux-ppel-current-account-v1+ux-ppel-validation-current-account-v1+bs-credit-line-evaluation-v2+bs-product-statement-v2+bs-credit-card-v3+bs-factoring-documents-v1+bs-negotiable-invoice-rate-v1&amp;code_challenge_method=S256&amp;code_challenge=ZTA1Y2M2NzBlZDRjYmI2N2ZiNzVmZGU4YWNhZTAxNGQ5YjJmM2NkN2U2YjUxMjg4MjRkYjk5ZTY5NDBjMWU2Yw&amp;nonce=BzIOkT7rSogLyCQ36swwTDqSPI879tUZQvnIa9YVzll&amp;token=true&#39;
+29:     } else if (env === &#39;cert&#39;) {
+30:         //configure(&#39;ssl&#39;, true);
+31:         //configure ssl = true
+32:         baseURL = &#39;https://int.apiscertbcp.com&#39;
+33:         encodeURL = &#39;https://int.apisqabcp.com/utils/jwt/encode&#39;
+34:         domainToken = &#39;https://int.apisqabcp.com&#39;
+35:         domainConsultaVV28 = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+36:         domainConsultaVVCC = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+37:     }
+38: 
+39:     var config = {
+40:         authUrl: authUrl,
+41:         env: env,
+42:         baseURL: baseURL + oauth_token,
+43:         encodeURL: encodeURL,
+44:         inct_test_ciam_token_client_secret: inct_test_ciam_token_client_secret,
+45:         inct_test_ciam_token_client_id: inct_test_ciam_token_client_id,
+46:         domainToken:domainToken,
+47:         domainConsultaVV28:domainConsultaVV28
+48:         domainConsultaVVCC:domainConsultaVVCC
+49:     }
+50: 
+51:     return config;
+52: }
+53: 
+54: 
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:     var env = karate.env;
+03:     var baseURL = &#39;&#39;
+04:     var encodeURL=&#39;&#39;
+05:     var oauth_token = &#39;/auth/oauth/v2/token&#39;
+06:     var inct_test_ciam_token_client_secret = &#39;&#39;
+07:     var inct_test_ciam_token_client_id = &#39;&#39;
+08:     var authUrl = &#39;&#39;
+09:     var domainToken = &#39;&#39;
+10:     var domainConsultaVV28 = &#39;&#39;
+11:     var domainConsultaVVCC = &#39;&#39;
+12: 
+13: 
+14:     karate.log(&#39;Se realiza la ejecución en ambiente: &#39;, env);
+15: 
+16:     // Declaración de credenciales HV
+17:     karate.configure(&#39;ssl&#39;, true);
+18: 
+19:     inct_test_ciam_token_client_id = karate.properties[&#39;inct-test-ciam-token-client-id&#39;]
+20:     inct_test_ciam_token_client_secret = karate.properties[&#39;inct-test-ciam-token-client-secret&#39;]
+21: 
+22:     if (!env) {
+23:         env = &#39;dev&#39;;
+24:     }
+25:     if (env === &#39;dev&#39;) {
+26:         baseURL = &#39;https://int.apisdevbcp.com&#39;
+27:         encodeURL = &#39;https://int.apisdevbcp.com/utils/jwt/encode&#39;
+28:         authUrl = &#39;https://authservercert.viabcp.com/cas/oidc/authorize?response_type=code&amp;redirect_uri=https://www.minegociobcp-cert.viabcp.com/%23/auth/logged&amp;state=ha3JDet1d6nDF23emECWErVaBQ7McJyiy48uDpzhNsX&amp;client_id=3c4180b1-fde1-4613-b807-545e791dadfc&amp;scope=ux-ppel-landing-v1+ux-ppel-account-opening-v1+ux-ppel-loan-evaluation-v1+ux-ppel-customer-management-v1+ux-ppel-loan-disbursement-v1+ux-ppel-credit-management-v1+ux-ppel-negotiable-invoice-management-v1+ux-ppel-customer-product-invoice-v1+bs-foreign-tax-compliance-declaration-v1+bs-loan-v3+bs-citizen-v2+bs-person-v5+bs-person-address-v2+bs-saving-account-v3+bs-account-v4+bs-product-v4+bs-disbursement-v1+sp-captcha-v3+bs-negotiable-document-worksheet-v1+bs-loan-simulation-v3+bs-user-info-v1+bs-factoring-evaluation-v2+bs-provider-acquirer-evaluation-v1+bs-outstanding-debt-v3+bs-geolocation-v1+ux-ppel-exchange-rate-v1+bs-account-transfer-v2+bs-exchange-rate-v5+bs-notification-v3+bs-financial-power-v1+bs-small-medium-enterprise-evaluation-v1+ux-ppel-one-time-password-v1+ux-ppel-loan-v1+bs-loan-payment-schedule-v1+bs-branch-offices-v2+bs-labor-type-v2+bs-current-account-v1+bs-third-party-relationship-v2+bs-evaluation-v4+bs-operation-number-v1+bs-monetary-operation-v1+bs-monetary-operation-notification-v1+ux-ppel-current-account-v1+ux-ppel-validation-current-account-v1+bs-credit-line-evaluation-v2+bs-product-statement-v2+bs-credit-card-v3+bs-factoring-documents-v1+bs-negotiable-invoice-rate-v1&amp;code_challenge_method=S256&amp;code_challenge=ZTA1Y2M2NzBlZDRjYmI2N2ZiNzVmZGU4YWNhZTAxNGQ5YjJmM2NkN2U2YjUxMjg4MjRkYjk5ZTY5NDBjMWU2Yw&amp;nonce=BzIOkT7rSogLyCQ36swwTDqSPI879tUZQvnIa9YVzll&amp;token=true&#39;
+29:     } else if (env === &#39;cert&#39;) {
+30:         //configure(&#39;ssl&#39;, true);
+31:         //configure ssl = true
+32:         baseURL = &#39;https://int.apiscertbcp.com&#39;
+33:         encodeURL = &#39;https://int.apisqabcp.com/utils/jwt/encode&#39;
+34:         domainToken = &#39;https://int.apisqabcp.com&#39;
+35:         domainConsultaVV28 = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+36:         domainConsultaVVCC = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+37:     }
+38: 
+39:     var config = {
+40:         authUrl: authUrl,
+41:         env: env,
+42:         baseURL: baseURL + oauth_token,
+43:         encodeURL: encodeURL,
+44:         inct_test_ciam_token_client_secret: inct_test_ciam_token_client_secret,
+45:         inct_test_ciam_token_client_id: inct_test_ciam_token_client_id,
+46:         domainToken:domainToken,
+47:         domainConsultaVV28:domainConsultaVV28
+48:         domainConsultaVVCC:domainConsultaVVCC
+49:     }
+50: 
+51:     return config;
+52: }
+53: 
+54: 
+55: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:48:8 Expected comma but found ident
+        domainConsultaVVCC:domainConsultaVVCC
+        ^
+Unnamed:51:4 Expected ) but found return
+    return config;
+    ^
+Unnamed:52:0 Expected eof but found }
+}
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- com.intuit.karate.core.FeatureRuntime.access$000(FeatureRuntime.java:44)
+
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:5
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:8
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
+      <div class="step-ref failed">9</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>path &#39;/bs-credit-card-v3/cards/credit-card/v3/credit-cards?personCic=11044443&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.9">18:20:23.660 src/test/resources/features/ApiGet/ApiGetVVCC.feature:9
+And path &#39;/bs-credit-card-v3/cards/credit-card/v3/credit-cards?personCic=11044443&#39;
+&gt;&gt; src/test/resources/features/ApiGet/ApiGetVVCC.feature:20
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:     var env = karate.env;
+03:     var baseURL = &#39;&#39;
+04:     var encodeURL=&#39;&#39;
+05:     var oauth_token = &#39;/auth/oauth/v2/token&#39;
+06:     var inct_test_ciam_token_client_secret = &#39;&#39;
+07:     var inct_test_ciam_token_client_id = &#39;&#39;
+08:     var authUrl = &#39;&#39;
+09:     var domainToken = &#39;&#39;
+10:     var domainConsultaVV28 = &#39;&#39;
+11:     var domainConsultaVVCC = &#39;&#39;
+12: 
+13: 
+14:     karate.log(&#39;Se realiza la ejecución en ambiente: &#39;, env);
+15: 
+16:     // Declaración de credenciales HV
+17:     karate.configure(&#39;ssl&#39;, true);
+18: 
+19:     inct_test_ciam_token_client_id = karate.properties[&#39;inct-test-ciam-token-client-id&#39;]
+20:     inct_test_ciam_token_client_secret = karate.properties[&#39;inct-test-ciam-token-client-secret&#39;]
+21: 
+22:     if (!env) {
+23:         env = &#39;dev&#39;;
+24:     }
+25:     if (env === &#39;dev&#39;) {
+26:         baseURL = &#39;https://int.apisdevbcp.com&#39;
+27:         encodeURL = &#39;https://int.apisdevbcp.com/utils/jwt/encode&#39;
+28:         authUrl = &#39;https://authservercert.viabcp.com/cas/oidc/authorize?response_type=code&amp;redirect_uri=https://www.minegociobcp-cert.viabcp.com/%23/auth/logged&amp;state=ha3JDet1d6nDF23emECWErVaBQ7McJyiy48uDpzhNsX&amp;client_id=3c4180b1-fde1-4613-b807-545e791dadfc&amp;scope=ux-ppel-landing-v1+ux-ppel-account-opening-v1+ux-ppel-loan-evaluation-v1+ux-ppel-customer-management-v1+ux-ppel-loan-disbursement-v1+ux-ppel-credit-management-v1+ux-ppel-negotiable-invoice-management-v1+ux-ppel-customer-product-invoice-v1+bs-foreign-tax-compliance-declaration-v1+bs-loan-v3+bs-citizen-v2+bs-person-v5+bs-person-address-v2+bs-saving-account-v3+bs-account-v4+bs-product-v4+bs-disbursement-v1+sp-captcha-v3+bs-negotiable-document-worksheet-v1+bs-loan-simulation-v3+bs-user-info-v1+bs-factoring-evaluation-v2+bs-provider-acquirer-evaluation-v1+bs-outstanding-debt-v3+bs-geolocation-v1+ux-ppel-exchange-rate-v1+bs-account-transfer-v2+bs-exchange-rate-v5+bs-notification-v3+bs-financial-power-v1+bs-small-medium-enterprise-evaluation-v1+ux-ppel-one-time-password-v1+ux-ppel-loan-v1+bs-loan-payment-schedule-v1+bs-branch-offices-v2+bs-labor-type-v2+bs-current-account-v1+bs-third-party-relationship-v2+bs-evaluation-v4+bs-operation-number-v1+bs-monetary-operation-v1+bs-monetary-operation-notification-v1+ux-ppel-current-account-v1+ux-ppel-validation-current-account-v1+bs-credit-line-evaluation-v2+bs-product-statement-v2+bs-credit-card-v3+bs-factoring-documents-v1+bs-negotiable-invoice-rate-v1&amp;code_challenge_method=S256&amp;code_challenge=ZTA1Y2M2NzBlZDRjYmI2N2ZiNzVmZGU4YWNhZTAxNGQ5YjJmM2NkN2U2YjUxMjg4MjRkYjk5ZTY5NDBjMWU2Yw&amp;nonce=BzIOkT7rSogLyCQ36swwTDqSPI879tUZQvnIa9YVzll&amp;token=true&#39;
+29:     } else if (env === &#39;cert&#39;) {
+30:         //configure(&#39;ssl&#39;, true);
+31:         //configure ssl = true
+32:         baseURL = &#39;https://int.apiscertbcp.com&#39;
+33:         encodeURL = &#39;https://int.apisqabcp.com/utils/jwt/encode&#39;
+34:         domainToken = &#39;https://int.apisqabcp.com&#39;
+35:         domainConsultaVV28 = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+36:         domainConsultaVVCC = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+37:     }
+38: 
+39:     var config = {
+40:         authUrl: authUrl,
+41:         env: env,
+42:         baseURL: baseURL + oauth_token,
+43:         encodeURL: encodeURL,
+44:         inct_test_ciam_token_client_secret: inct_test_ciam_token_client_secret,
+45:         inct_test_ciam_token_client_id: inct_test_ciam_token_client_id,
+46:         domainToken:domainToken,
+47:         domainConsultaVV28:domainConsultaVV28
+48:         domainConsultaVVCC:domainConsultaVVCC
+49:     }
+50: 
+51:     return config;
+52: }
+53: 
+54: 
+55: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:48:8 Expected comma but found ident
+        domainConsultaVVCC:domainConsultaVVCC
+        ^
+Unnamed:51:4 Expected ) but found return
+    return config;
+    ^
+Unnamed:52:0 Expected eof but found }
+}
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     var env = karate.env;
+03:     var baseURL = &#39;&#39;
+04:     var encodeURL=&#39;&#39;
+05:     var oauth_token = &#39;/auth/oauth/v2/token&#39;
+06:     var inct_test_ciam_token_client_secret = &#39;&#39;
+07:     var inct_test_ciam_token_client_id = &#39;&#39;
+08:     var authUrl = &#39;&#39;
+09:     var domainToken = &#39;&#39;
+10:     var domainConsultaVV28 = &#39;&#39;
+11:     var domainConsultaVVCC = &#39;&#39;
+12: 
+13: 
+14:     karate.log(&#39;Se realiza la ejecución en ambiente: &#39;, env);
+15: 
+16:     // Declaración de credenciales HV
+17:     karate.configure(&#39;ssl&#39;, true);
+18: 
+19:     inct_test_ciam_token_client_id = karate.properties[&#39;inct-test-ciam-token-client-id&#39;]
+20:     inct_test_ciam_token_client_secret = karate.properties[&#39;inct-test-ciam-token-client-secret&#39;]
+21: 
+22:     if (!env) {
+23:         env = &#39;dev&#39;;
+24:     }
+25:     if (env === &#39;dev&#39;) {
+26:         baseURL = &#39;https://int.apisdevbcp.com&#39;
+27:         encodeURL = &#39;https://int.apisdevbcp.com/utils/jwt/encode&#39;
+28:         authUrl = &#39;https://authservercert.viabcp.com/cas/oidc/authorize?response_type=code&amp;redirect_uri=https://www.minegociobcp-cert.viabcp.com/%23/auth/logged&amp;state=ha3JDet1d6nDF23emECWErVaBQ7McJyiy48uDpzhNsX&amp;client_id=3c4180b1-fde1-4613-b807-545e791dadfc&amp;scope=ux-ppel-landing-v1+ux-ppel-account-opening-v1+ux-ppel-loan-evaluation-v1+ux-ppel-customer-management-v1+ux-ppel-loan-disbursement-v1+ux-ppel-credit-management-v1+ux-ppel-negotiable-invoice-management-v1+ux-ppel-customer-product-invoice-v1+bs-foreign-tax-compliance-declaration-v1+bs-loan-v3+bs-citizen-v2+bs-person-v5+bs-person-address-v2+bs-saving-account-v3+bs-account-v4+bs-product-v4+bs-disbursement-v1+sp-captcha-v3+bs-negotiable-document-worksheet-v1+bs-loan-simulation-v3+bs-user-info-v1+bs-factoring-evaluation-v2+bs-provider-acquirer-evaluation-v1+bs-outstanding-debt-v3+bs-geolocation-v1+ux-ppel-exchange-rate-v1+bs-account-transfer-v2+bs-exchange-rate-v5+bs-notification-v3+bs-financial-power-v1+bs-small-medium-enterprise-evaluation-v1+ux-ppel-one-time-password-v1+ux-ppel-loan-v1+bs-loan-payment-schedule-v1+bs-branch-offices-v2+bs-labor-type-v2+bs-current-account-v1+bs-third-party-relationship-v2+bs-evaluation-v4+bs-operation-number-v1+bs-monetary-operation-v1+bs-monetary-operation-notification-v1+ux-ppel-current-account-v1+ux-ppel-validation-current-account-v1+bs-credit-line-evaluation-v2+bs-product-statement-v2+bs-credit-card-v3+bs-factoring-documents-v1+bs-negotiable-invoice-rate-v1&amp;code_challenge_method=S256&amp;code_challenge=ZTA1Y2M2NzBlZDRjYmI2N2ZiNzVmZGU4YWNhZTAxNGQ5YjJmM2NkN2U2YjUxMjg4MjRkYjk5ZTY5NDBjMWU2Yw&amp;nonce=BzIOkT7rSogLyCQ36swwTDqSPI879tUZQvnIa9YVzll&amp;token=true&#39;
+29:     } else if (env === &#39;cert&#39;) {
+30:         //configure(&#39;ssl&#39;, true);
+31:         //configure ssl = true
+32:         baseURL = &#39;https://int.apiscertbcp.com&#39;
+33:         encodeURL = &#39;https://int.apisqabcp.com/utils/jwt/encode&#39;
+34:         domainToken = &#39;https://int.apisqabcp.com&#39;
+35:         domainConsultaVV28 = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+36:         domainConsultaVVCC = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+37:     }
+38: 
+39:     var config = {
+40:         authUrl: authUrl,
+41:         env: env,
+42:         baseURL: baseURL + oauth_token,
+43:         encodeURL: encodeURL,
+44:         inct_test_ciam_token_client_secret: inct_test_ciam_token_client_secret,
+45:         inct_test_ciam_token_client_id: inct_test_ciam_token_client_id,
+46:         domainToken:domainToken,
+47:         domainConsultaVV28:domainConsultaVV28
+48:         domainConsultaVVCC:domainConsultaVVCC
+49:     }
+50: 
+51:     return config;
+52: }
+53: 
+54: 
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:     var env = karate.env;
+03:     var baseURL = &#39;&#39;
+04:     var encodeURL=&#39;&#39;
+05:     var oauth_token = &#39;/auth/oauth/v2/token&#39;
+06:     var inct_test_ciam_token_client_secret = &#39;&#39;
+07:     var inct_test_ciam_token_client_id = &#39;&#39;
+08:     var authUrl = &#39;&#39;
+09:     var domainToken = &#39;&#39;
+10:     var domainConsultaVV28 = &#39;&#39;
+11:     var domainConsultaVVCC = &#39;&#39;
+12: 
+13: 
+14:     karate.log(&#39;Se realiza la ejecución en ambiente: &#39;, env);
+15: 
+16:     // Declaración de credenciales HV
+17:     karate.configure(&#39;ssl&#39;, true);
+18: 
+19:     inct_test_ciam_token_client_id = karate.properties[&#39;inct-test-ciam-token-client-id&#39;]
+20:     inct_test_ciam_token_client_secret = karate.properties[&#39;inct-test-ciam-token-client-secret&#39;]
+21: 
+22:     if (!env) {
+23:         env = &#39;dev&#39;;
+24:     }
+25:     if (env === &#39;dev&#39;) {
+26:         baseURL = &#39;https://int.apisdevbcp.com&#39;
+27:         encodeURL = &#39;https://int.apisdevbcp.com/utils/jwt/encode&#39;
+28:         authUrl = &#39;https://authservercert.viabcp.com/cas/oidc/authorize?response_type=code&amp;redirect_uri=https://www.minegociobcp-cert.viabcp.com/%23/auth/logged&amp;state=ha3JDet1d6nDF23emECWErVaBQ7McJyiy48uDpzhNsX&amp;client_id=3c4180b1-fde1-4613-b807-545e791dadfc&amp;scope=ux-ppel-landing-v1+ux-ppel-account-opening-v1+ux-ppel-loan-evaluation-v1+ux-ppel-customer-management-v1+ux-ppel-loan-disbursement-v1+ux-ppel-credit-management-v1+ux-ppel-negotiable-invoice-management-v1+ux-ppel-customer-product-invoice-v1+bs-foreign-tax-compliance-declaration-v1+bs-loan-v3+bs-citizen-v2+bs-person-v5+bs-person-address-v2+bs-saving-account-v3+bs-account-v4+bs-product-v4+bs-disbursement-v1+sp-captcha-v3+bs-negotiable-document-worksheet-v1+bs-loan-simulation-v3+bs-user-info-v1+bs-factoring-evaluation-v2+bs-provider-acquirer-evaluation-v1+bs-outstanding-debt-v3+bs-geolocation-v1+ux-ppel-exchange-rate-v1+bs-account-transfer-v2+bs-exchange-rate-v5+bs-notification-v3+bs-financial-power-v1+bs-small-medium-enterprise-evaluation-v1+ux-ppel-one-time-password-v1+ux-ppel-loan-v1+bs-loan-payment-schedule-v1+bs-branch-offices-v2+bs-labor-type-v2+bs-current-account-v1+bs-third-party-relationship-v2+bs-evaluation-v4+bs-operation-number-v1+bs-monetary-operation-v1+bs-monetary-operation-notification-v1+ux-ppel-current-account-v1+ux-ppel-validation-current-account-v1+bs-credit-line-evaluation-v2+bs-product-statement-v2+bs-credit-card-v3+bs-factoring-documents-v1+bs-negotiable-invoice-rate-v1&amp;code_challenge_method=S256&amp;code_challenge=ZTA1Y2M2NzBlZDRjYmI2N2ZiNzVmZGU4YWNhZTAxNGQ5YjJmM2NkN2U2YjUxMjg4MjRkYjk5ZTY5NDBjMWU2Yw&amp;nonce=BzIOkT7rSogLyCQ36swwTDqSPI879tUZQvnIa9YVzll&amp;token=true&#39;
+29:     } else if (env === &#39;cert&#39;) {
+30:         //configure(&#39;ssl&#39;, true);
+31:         //configure ssl = true
+32:         baseURL = &#39;https://int.apiscertbcp.com&#39;
+33:         encodeURL = &#39;https://int.apisqabcp.com/utils/jwt/encode&#39;
+34:         domainToken = &#39;https://int.apisqabcp.com&#39;
+35:         domainConsultaVV28 = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+36:         domainConsultaVVCC = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+37:     }
+38: 
+39:     var config = {
+40:         authUrl: authUrl,
+41:         env: env,
+42:         baseURL: baseURL + oauth_token,
+43:         encodeURL: encodeURL,
+44:         inct_test_ciam_token_client_secret: inct_test_ciam_token_client_secret,
+45:         inct_test_ciam_token_client_id: inct_test_ciam_token_client_id,
+46:         domainToken:domainToken,
+47:         domainConsultaVV28:domainConsultaVV28
+48:         domainConsultaVVCC:domainConsultaVVCC
+49:     }
+50: 
+51:     return config;
+52: }
+53: 
+54: 
+55: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:48:8 Expected comma but found ident
+        domainConsultaVVCC:domainConsultaVVCC
+        ^
+Unnamed:51:4 Expected ) but found return
+    return config;
+    ^
+Unnamed:52:0 Expected eof but found }
+}
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- com.intuit.karate.core.FeatureRuntime.access$000(FeatureRuntime.java:44)
+
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:5
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:8
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:9
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.10">
+      <div class="step-ref failed">10</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>headers {&#39;Request-ID&#39;:&#39;823d329d-a311-44d6-9481-d8de84f5db80&#39;,&#39;app-code&#39;:&#39;Y5&#39;,&#39;app-name&#39;:&#39;AVPL&#39;,&#39;agency-code&#39;:&#39;077&#39;,&#39;guild-client&#39;:&#39;S&#39;,&#39;branch-office-code&#39;:&#39;310&#39;,&#39;client-code&#39;:&#39;2&#39;,&#39;user-code&#39;:&#39;0U99999&#39;,&#39;org-code&#39;:&#39;1&#39;,&#39;opn-number&#39;:&#39;00000001&#39;,&#39;opn-code&#39;:&#39;13&#39;,&#39;request-date&#39;:&#39;2022-03-24T16:02:07.766-0500&#39;,&#39;caller-name&#39;:&#39;postman&#39;,&#39;riskAnalyzer&#39;:&#39;test&#39;,&#39;authserver&#39;:&#39;CA&#39;,&#39;Cache-Control&#39;:&#39;no-cache&#39;,&#39;Ocp-Apim-Subscription-Key&#39;:&#39;3a927b31cf514a24b90e74357793802e&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.10">18:20:23.662 src/test/resources/features/ApiGet/ApiGetVVCC.feature:10
+And headers {&#39;Request-ID&#39;:&#39;823d329d-a311-44d6-9481-d8de84f5db80&#39;,&#39;app-code&#39;:&#39;Y5&#39;,&#39;app-name&#39;:&#39;AVPL&#39;,&#39;agency-code&#39;:&#39;077&#39;,&#39;guild-client&#39;:&#39;S&#39;,&#39;branch-office-code&#39;:&#39;310&#39;,&#39;client-code&#39;:&#39;2&#39;,&#39;user-code&#39;:&#39;0U99999&#39;,&#39;org-code&#39;:&#39;1&#39;,&#39;opn-number&#39;:&#39;00000001&#39;,&#39;opn-code&#39;:&#39;13&#39;,&#39;request-date&#39;:&#39;2022-03-24T16:02:07.766-0500&#39;,&#39;caller-name&#39;:&#39;postman&#39;,&#39;riskAnalyzer&#39;:&#39;test&#39;,&#39;authserver&#39;:&#39;CA&#39;,&#39;Cache-Control&#39;:&#39;no-cache&#39;,&#39;Ocp-Apim-Subscription-Key&#39;:&#39;3a927b31cf514a24b90e74357793802e&#39;}
+&gt;&gt; src/test/resources/features/ApiGet/ApiGetVVCC.feature:20
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:     var env = karate.env;
+03:     var baseURL = &#39;&#39;
+04:     var encodeURL=&#39;&#39;
+05:     var oauth_token = &#39;/auth/oauth/v2/token&#39;
+06:     var inct_test_ciam_token_client_secret = &#39;&#39;
+07:     var inct_test_ciam_token_client_id = &#39;&#39;
+08:     var authUrl = &#39;&#39;
+09:     var domainToken = &#39;&#39;
+10:     var domainConsultaVV28 = &#39;&#39;
+11:     var domainConsultaVVCC = &#39;&#39;
+12: 
+13: 
+14:     karate.log(&#39;Se realiza la ejecución en ambiente: &#39;, env);
+15: 
+16:     // Declaración de credenciales HV
+17:     karate.configure(&#39;ssl&#39;, true);
+18: 
+19:     inct_test_ciam_token_client_id = karate.properties[&#39;inct-test-ciam-token-client-id&#39;]
+20:     inct_test_ciam_token_client_secret = karate.properties[&#39;inct-test-ciam-token-client-secret&#39;]
+21: 
+22:     if (!env) {
+23:         env = &#39;dev&#39;;
+24:     }
+25:     if (env === &#39;dev&#39;) {
+26:         baseURL = &#39;https://int.apisdevbcp.com&#39;
+27:         encodeURL = &#39;https://int.apisdevbcp.com/utils/jwt/encode&#39;
+28:         authUrl = &#39;https://authservercert.viabcp.com/cas/oidc/authorize?response_type=code&amp;redirect_uri=https://www.minegociobcp-cert.viabcp.com/%23/auth/logged&amp;state=ha3JDet1d6nDF23emECWErVaBQ7McJyiy48uDpzhNsX&amp;client_id=3c4180b1-fde1-4613-b807-545e791dadfc&amp;scope=ux-ppel-landing-v1+ux-ppel-account-opening-v1+ux-ppel-loan-evaluation-v1+ux-ppel-customer-management-v1+ux-ppel-loan-disbursement-v1+ux-ppel-credit-management-v1+ux-ppel-negotiable-invoice-management-v1+ux-ppel-customer-product-invoice-v1+bs-foreign-tax-compliance-declaration-v1+bs-loan-v3+bs-citizen-v2+bs-person-v5+bs-person-address-v2+bs-saving-account-v3+bs-account-v4+bs-product-v4+bs-disbursement-v1+sp-captcha-v3+bs-negotiable-document-worksheet-v1+bs-loan-simulation-v3+bs-user-info-v1+bs-factoring-evaluation-v2+bs-provider-acquirer-evaluation-v1+bs-outstanding-debt-v3+bs-geolocation-v1+ux-ppel-exchange-rate-v1+bs-account-transfer-v2+bs-exchange-rate-v5+bs-notification-v3+bs-financial-power-v1+bs-small-medium-enterprise-evaluation-v1+ux-ppel-one-time-password-v1+ux-ppel-loan-v1+bs-loan-payment-schedule-v1+bs-branch-offices-v2+bs-labor-type-v2+bs-current-account-v1+bs-third-party-relationship-v2+bs-evaluation-v4+bs-operation-number-v1+bs-monetary-operation-v1+bs-monetary-operation-notification-v1+ux-ppel-current-account-v1+ux-ppel-validation-current-account-v1+bs-credit-line-evaluation-v2+bs-product-statement-v2+bs-credit-card-v3+bs-factoring-documents-v1+bs-negotiable-invoice-rate-v1&amp;code_challenge_method=S256&amp;code_challenge=ZTA1Y2M2NzBlZDRjYmI2N2ZiNzVmZGU4YWNhZTAxNGQ5YjJmM2NkN2U2YjUxMjg4MjRkYjk5ZTY5NDBjMWU2Yw&amp;nonce=BzIOkT7rSogLyCQ36swwTDqSPI879tUZQvnIa9YVzll&amp;token=true&#39;
+29:     } else if (env === &#39;cert&#39;) {
+30:         //configure(&#39;ssl&#39;, true);
+31:         //configure ssl = true
+32:         baseURL = &#39;https://int.apiscertbcp.com&#39;
+33:         encodeURL = &#39;https://int.apisqabcp.com/utils/jwt/encode&#39;
+34:         domainToken = &#39;https://int.apisqabcp.com&#39;
+35:         domainConsultaVV28 = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+36:         domainConsultaVVCC = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+37:     }
+38: 
+39:     var config = {
+40:         authUrl: authUrl,
+41:         env: env,
+42:         baseURL: baseURL + oauth_token,
+43:         encodeURL: encodeURL,
+44:         inct_test_ciam_token_client_secret: inct_test_ciam_token_client_secret,
+45:         inct_test_ciam_token_client_id: inct_test_ciam_token_client_id,
+46:         domainToken:domainToken,
+47:         domainConsultaVV28:domainConsultaVV28
+48:         domainConsultaVVCC:domainConsultaVVCC
+49:     }
+50: 
+51:     return config;
+52: }
+53: 
+54: 
+55: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:48:8 Expected comma but found ident
+        domainConsultaVVCC:domainConsultaVVCC
+        ^
+Unnamed:51:4 Expected ) but found return
+    return config;
+    ^
+Unnamed:52:0 Expected eof but found }
+}
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     var env = karate.env;
+03:     var baseURL = &#39;&#39;
+04:     var encodeURL=&#39;&#39;
+05:     var oauth_token = &#39;/auth/oauth/v2/token&#39;
+06:     var inct_test_ciam_token_client_secret = &#39;&#39;
+07:     var inct_test_ciam_token_client_id = &#39;&#39;
+08:     var authUrl = &#39;&#39;
+09:     var domainToken = &#39;&#39;
+10:     var domainConsultaVV28 = &#39;&#39;
+11:     var domainConsultaVVCC = &#39;&#39;
+12: 
+13: 
+14:     karate.log(&#39;Se realiza la ejecución en ambiente: &#39;, env);
+15: 
+16:     // Declaración de credenciales HV
+17:     karate.configure(&#39;ssl&#39;, true);
+18: 
+19:     inct_test_ciam_token_client_id = karate.properties[&#39;inct-test-ciam-token-client-id&#39;]
+20:     inct_test_ciam_token_client_secret = karate.properties[&#39;inct-test-ciam-token-client-secret&#39;]
+21: 
+22:     if (!env) {
+23:         env = &#39;dev&#39;;
+24:     }
+25:     if (env === &#39;dev&#39;) {
+26:         baseURL = &#39;https://int.apisdevbcp.com&#39;
+27:         encodeURL = &#39;https://int.apisdevbcp.com/utils/jwt/encode&#39;
+28:         authUrl = &#39;https://authservercert.viabcp.com/cas/oidc/authorize?response_type=code&amp;redirect_uri=https://www.minegociobcp-cert.viabcp.com/%23/auth/logged&amp;state=ha3JDet1d6nDF23emECWErVaBQ7McJyiy48uDpzhNsX&amp;client_id=3c4180b1-fde1-4613-b807-545e791dadfc&amp;scope=ux-ppel-landing-v1+ux-ppel-account-opening-v1+ux-ppel-loan-evaluation-v1+ux-ppel-customer-management-v1+ux-ppel-loan-disbursement-v1+ux-ppel-credit-management-v1+ux-ppel-negotiable-invoice-management-v1+ux-ppel-customer-product-invoice-v1+bs-foreign-tax-compliance-declaration-v1+bs-loan-v3+bs-citizen-v2+bs-person-v5+bs-person-address-v2+bs-saving-account-v3+bs-account-v4+bs-product-v4+bs-disbursement-v1+sp-captcha-v3+bs-negotiable-document-worksheet-v1+bs-loan-simulation-v3+bs-user-info-v1+bs-factoring-evaluation-v2+bs-provider-acquirer-evaluation-v1+bs-outstanding-debt-v3+bs-geolocation-v1+ux-ppel-exchange-rate-v1+bs-account-transfer-v2+bs-exchange-rate-v5+bs-notification-v3+bs-financial-power-v1+bs-small-medium-enterprise-evaluation-v1+ux-ppel-one-time-password-v1+ux-ppel-loan-v1+bs-loan-payment-schedule-v1+bs-branch-offices-v2+bs-labor-type-v2+bs-current-account-v1+bs-third-party-relationship-v2+bs-evaluation-v4+bs-operation-number-v1+bs-monetary-operation-v1+bs-monetary-operation-notification-v1+ux-ppel-current-account-v1+ux-ppel-validation-current-account-v1+bs-credit-line-evaluation-v2+bs-product-statement-v2+bs-credit-card-v3+bs-factoring-documents-v1+bs-negotiable-invoice-rate-v1&amp;code_challenge_method=S256&amp;code_challenge=ZTA1Y2M2NzBlZDRjYmI2N2ZiNzVmZGU4YWNhZTAxNGQ5YjJmM2NkN2U2YjUxMjg4MjRkYjk5ZTY5NDBjMWU2Yw&amp;nonce=BzIOkT7rSogLyCQ36swwTDqSPI879tUZQvnIa9YVzll&amp;token=true&#39;
+29:     } else if (env === &#39;cert&#39;) {
+30:         //configure(&#39;ssl&#39;, true);
+31:         //configure ssl = true
+32:         baseURL = &#39;https://int.apiscertbcp.com&#39;
+33:         encodeURL = &#39;https://int.apisqabcp.com/utils/jwt/encode&#39;
+34:         domainToken = &#39;https://int.apisqabcp.com&#39;
+35:         domainConsultaVV28 = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+36:         domainConsultaVVCC = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+37:     }
+38: 
+39:     var config = {
+40:         authUrl: authUrl,
+41:         env: env,
+42:         baseURL: baseURL + oauth_token,
+43:         encodeURL: encodeURL,
+44:         inct_test_ciam_token_client_secret: inct_test_ciam_token_client_secret,
+45:         inct_test_ciam_token_client_id: inct_test_ciam_token_client_id,
+46:         domainToken:domainToken,
+47:         domainConsultaVV28:domainConsultaVV28
+48:         domainConsultaVVCC:domainConsultaVVCC
+49:     }
+50: 
+51:     return config;
+52: }
+53: 
+54: 
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:     var env = karate.env;
+03:     var baseURL = &#39;&#39;
+04:     var encodeURL=&#39;&#39;
+05:     var oauth_token = &#39;/auth/oauth/v2/token&#39;
+06:     var inct_test_ciam_token_client_secret = &#39;&#39;
+07:     var inct_test_ciam_token_client_id = &#39;&#39;
+08:     var authUrl = &#39;&#39;
+09:     var domainToken = &#39;&#39;
+10:     var domainConsultaVV28 = &#39;&#39;
+11:     var domainConsultaVVCC = &#39;&#39;
+12: 
+13: 
+14:     karate.log(&#39;Se realiza la ejecución en ambiente: &#39;, env);
+15: 
+16:     // Declaración de credenciales HV
+17:     karate.configure(&#39;ssl&#39;, true);
+18: 
+19:     inct_test_ciam_token_client_id = karate.properties[&#39;inct-test-ciam-token-client-id&#39;]
+20:     inct_test_ciam_token_client_secret = karate.properties[&#39;inct-test-ciam-token-client-secret&#39;]
+21: 
+22:     if (!env) {
+23:         env = &#39;dev&#39;;
+24:     }
+25:     if (env === &#39;dev&#39;) {
+26:         baseURL = &#39;https://int.apisdevbcp.com&#39;
+27:         encodeURL = &#39;https://int.apisdevbcp.com/utils/jwt/encode&#39;
+28:         authUrl = &#39;https://authservercert.viabcp.com/cas/oidc/authorize?response_type=code&amp;redirect_uri=https://www.minegociobcp-cert.viabcp.com/%23/auth/logged&amp;state=ha3JDet1d6nDF23emECWErVaBQ7McJyiy48uDpzhNsX&amp;client_id=3c4180b1-fde1-4613-b807-545e791dadfc&amp;scope=ux-ppel-landing-v1+ux-ppel-account-opening-v1+ux-ppel-loan-evaluation-v1+ux-ppel-customer-management-v1+ux-ppel-loan-disbursement-v1+ux-ppel-credit-management-v1+ux-ppel-negotiable-invoice-management-v1+ux-ppel-customer-product-invoice-v1+bs-foreign-tax-compliance-declaration-v1+bs-loan-v3+bs-citizen-v2+bs-person-v5+bs-person-address-v2+bs-saving-account-v3+bs-account-v4+bs-product-v4+bs-disbursement-v1+sp-captcha-v3+bs-negotiable-document-worksheet-v1+bs-loan-simulation-v3+bs-user-info-v1+bs-factoring-evaluation-v2+bs-provider-acquirer-evaluation-v1+bs-outstanding-debt-v3+bs-geolocation-v1+ux-ppel-exchange-rate-v1+bs-account-transfer-v2+bs-exchange-rate-v5+bs-notification-v3+bs-financial-power-v1+bs-small-medium-enterprise-evaluation-v1+ux-ppel-one-time-password-v1+ux-ppel-loan-v1+bs-loan-payment-schedule-v1+bs-branch-offices-v2+bs-labor-type-v2+bs-current-account-v1+bs-third-party-relationship-v2+bs-evaluation-v4+bs-operation-number-v1+bs-monetary-operation-v1+bs-monetary-operation-notification-v1+ux-ppel-current-account-v1+ux-ppel-validation-current-account-v1+bs-credit-line-evaluation-v2+bs-product-statement-v2+bs-credit-card-v3+bs-factoring-documents-v1+bs-negotiable-invoice-rate-v1&amp;code_challenge_method=S256&amp;code_challenge=ZTA1Y2M2NzBlZDRjYmI2N2ZiNzVmZGU4YWNhZTAxNGQ5YjJmM2NkN2U2YjUxMjg4MjRkYjk5ZTY5NDBjMWU2Yw&amp;nonce=BzIOkT7rSogLyCQ36swwTDqSPI879tUZQvnIa9YVzll&amp;token=true&#39;
+29:     } else if (env === &#39;cert&#39;) {
+30:         //configure(&#39;ssl&#39;, true);
+31:         //configure ssl = true
+32:         baseURL = &#39;https://int.apiscertbcp.com&#39;
+33:         encodeURL = &#39;https://int.apisqabcp.com/utils/jwt/encode&#39;
+34:         domainToken = &#39;https://int.apisqabcp.com&#39;
+35:         domainConsultaVV28 = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+36:         domainConsultaVVCC = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+37:     }
+38: 
+39:     var config = {
+40:         authUrl: authUrl,
+41:         env: env,
+42:         baseURL: baseURL + oauth_token,
+43:         encodeURL: encodeURL,
+44:         inct_test_ciam_token_client_secret: inct_test_ciam_token_client_secret,
+45:         inct_test_ciam_token_client_id: inct_test_ciam_token_client_id,
+46:         domainToken:domainToken,
+47:         domainConsultaVV28:domainConsultaVV28
+48:         domainConsultaVVCC:domainConsultaVVCC
+49:     }
+50: 
+51:     return config;
+52: }
+53: 
+54: 
+55: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:48:8 Expected comma but found ident
+        domainConsultaVVCC:domainConsultaVVCC
+        ^
+Unnamed:51:4 Expected ) but found return
+    return config;
+    ^
+Unnamed:52:0 Expected eof but found }
+}
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- com.intuit.karate.core.FeatureRuntime.access$000(FeatureRuntime.java:44)
+
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:5
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:8
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:9
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:10
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.11">
+      <div class="step-ref failed">11</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def token2 = token.authToken</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.11">18:20:23.665 src/test/resources/features/ApiGet/ApiGetVVCC.feature:11
+* def token2 = token.authToken
+&gt;&gt; src/test/resources/features/ApiGet/ApiGetVVCC.feature:20
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:     var env = karate.env;
+03:     var baseURL = &#39;&#39;
+04:     var encodeURL=&#39;&#39;
+05:     var oauth_token = &#39;/auth/oauth/v2/token&#39;
+06:     var inct_test_ciam_token_client_secret = &#39;&#39;
+07:     var inct_test_ciam_token_client_id = &#39;&#39;
+08:     var authUrl = &#39;&#39;
+09:     var domainToken = &#39;&#39;
+10:     var domainConsultaVV28 = &#39;&#39;
+11:     var domainConsultaVVCC = &#39;&#39;
+12: 
+13: 
+14:     karate.log(&#39;Se realiza la ejecución en ambiente: &#39;, env);
+15: 
+16:     // Declaración de credenciales HV
+17:     karate.configure(&#39;ssl&#39;, true);
+18: 
+19:     inct_test_ciam_token_client_id = karate.properties[&#39;inct-test-ciam-token-client-id&#39;]
+20:     inct_test_ciam_token_client_secret = karate.properties[&#39;inct-test-ciam-token-client-secret&#39;]
+21: 
+22:     if (!env) {
+23:         env = &#39;dev&#39;;
+24:     }
+25:     if (env === &#39;dev&#39;) {
+26:         baseURL = &#39;https://int.apisdevbcp.com&#39;
+27:         encodeURL = &#39;https://int.apisdevbcp.com/utils/jwt/encode&#39;
+28:         authUrl = &#39;https://authservercert.viabcp.com/cas/oidc/authorize?response_type=code&amp;redirect_uri=https://www.minegociobcp-cert.viabcp.com/%23/auth/logged&amp;state=ha3JDet1d6nDF23emECWErVaBQ7McJyiy48uDpzhNsX&amp;client_id=3c4180b1-fde1-4613-b807-545e791dadfc&amp;scope=ux-ppel-landing-v1+ux-ppel-account-opening-v1+ux-ppel-loan-evaluation-v1+ux-ppel-customer-management-v1+ux-ppel-loan-disbursement-v1+ux-ppel-credit-management-v1+ux-ppel-negotiable-invoice-management-v1+ux-ppel-customer-product-invoice-v1+bs-foreign-tax-compliance-declaration-v1+bs-loan-v3+bs-citizen-v2+bs-person-v5+bs-person-address-v2+bs-saving-account-v3+bs-account-v4+bs-product-v4+bs-disbursement-v1+sp-captcha-v3+bs-negotiable-document-worksheet-v1+bs-loan-simulation-v3+bs-user-info-v1+bs-factoring-evaluation-v2+bs-provider-acquirer-evaluation-v1+bs-outstanding-debt-v3+bs-geolocation-v1+ux-ppel-exchange-rate-v1+bs-account-transfer-v2+bs-exchange-rate-v5+bs-notification-v3+bs-financial-power-v1+bs-small-medium-enterprise-evaluation-v1+ux-ppel-one-time-password-v1+ux-ppel-loan-v1+bs-loan-payment-schedule-v1+bs-branch-offices-v2+bs-labor-type-v2+bs-current-account-v1+bs-third-party-relationship-v2+bs-evaluation-v4+bs-operation-number-v1+bs-monetary-operation-v1+bs-monetary-operation-notification-v1+ux-ppel-current-account-v1+ux-ppel-validation-current-account-v1+bs-credit-line-evaluation-v2+bs-product-statement-v2+bs-credit-card-v3+bs-factoring-documents-v1+bs-negotiable-invoice-rate-v1&amp;code_challenge_method=S256&amp;code_challenge=ZTA1Y2M2NzBlZDRjYmI2N2ZiNzVmZGU4YWNhZTAxNGQ5YjJmM2NkN2U2YjUxMjg4MjRkYjk5ZTY5NDBjMWU2Yw&amp;nonce=BzIOkT7rSogLyCQ36swwTDqSPI879tUZQvnIa9YVzll&amp;token=true&#39;
+29:     } else if (env === &#39;cert&#39;) {
+30:         //configure(&#39;ssl&#39;, true);
+31:         //configure ssl = true
+32:         baseURL = &#39;https://int.apiscertbcp.com&#39;
+33:         encodeURL = &#39;https://int.apisqabcp.com/utils/jwt/encode&#39;
+34:         domainToken = &#39;https://int.apisqabcp.com&#39;
+35:         domainConsultaVV28 = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+36:         domainConsultaVVCC = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+37:     }
+38: 
+39:     var config = {
+40:         authUrl: authUrl,
+41:         env: env,
+42:         baseURL: baseURL + oauth_token,
+43:         encodeURL: encodeURL,
+44:         inct_test_ciam_token_client_secret: inct_test_ciam_token_client_secret,
+45:         inct_test_ciam_token_client_id: inct_test_ciam_token_client_id,
+46:         domainToken:domainToken,
+47:         domainConsultaVV28:domainConsultaVV28
+48:         domainConsultaVVCC:domainConsultaVVCC
+49:     }
+50: 
+51:     return config;
+52: }
+53: 
+54: 
+55: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:48:8 Expected comma but found ident
+        domainConsultaVVCC:domainConsultaVVCC
+        ^
+Unnamed:51:4 Expected ) but found return
+    return config;
+    ^
+Unnamed:52:0 Expected eof but found }
+}
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     var env = karate.env;
+03:     var baseURL = &#39;&#39;
+04:     var encodeURL=&#39;&#39;
+05:     var oauth_token = &#39;/auth/oauth/v2/token&#39;
+06:     var inct_test_ciam_token_client_secret = &#39;&#39;
+07:     var inct_test_ciam_token_client_id = &#39;&#39;
+08:     var authUrl = &#39;&#39;
+09:     var domainToken = &#39;&#39;
+10:     var domainConsultaVV28 = &#39;&#39;
+11:     var domainConsultaVVCC = &#39;&#39;
+12: 
+13: 
+14:     karate.log(&#39;Se realiza la ejecución en ambiente: &#39;, env);
+15: 
+16:     // Declaración de credenciales HV
+17:     karate.configure(&#39;ssl&#39;, true);
+18: 
+19:     inct_test_ciam_token_client_id = karate.properties[&#39;inct-test-ciam-token-client-id&#39;]
+20:     inct_test_ciam_token_client_secret = karate.properties[&#39;inct-test-ciam-token-client-secret&#39;]
+21: 
+22:     if (!env) {
+23:         env = &#39;dev&#39;;
+24:     }
+25:     if (env === &#39;dev&#39;) {
+26:         baseURL = &#39;https://int.apisdevbcp.com&#39;
+27:         encodeURL = &#39;https://int.apisdevbcp.com/utils/jwt/encode&#39;
+28:         authUrl = &#39;https://authservercert.viabcp.com/cas/oidc/authorize?response_type=code&amp;redirect_uri=https://www.minegociobcp-cert.viabcp.com/%23/auth/logged&amp;state=ha3JDet1d6nDF23emECWErVaBQ7McJyiy48uDpzhNsX&amp;client_id=3c4180b1-fde1-4613-b807-545e791dadfc&amp;scope=ux-ppel-landing-v1+ux-ppel-account-opening-v1+ux-ppel-loan-evaluation-v1+ux-ppel-customer-management-v1+ux-ppel-loan-disbursement-v1+ux-ppel-credit-management-v1+ux-ppel-negotiable-invoice-management-v1+ux-ppel-customer-product-invoice-v1+bs-foreign-tax-compliance-declaration-v1+bs-loan-v3+bs-citizen-v2+bs-person-v5+bs-person-address-v2+bs-saving-account-v3+bs-account-v4+bs-product-v4+bs-disbursement-v1+sp-captcha-v3+bs-negotiable-document-worksheet-v1+bs-loan-simulation-v3+bs-user-info-v1+bs-factoring-evaluation-v2+bs-provider-acquirer-evaluation-v1+bs-outstanding-debt-v3+bs-geolocation-v1+ux-ppel-exchange-rate-v1+bs-account-transfer-v2+bs-exchange-rate-v5+bs-notification-v3+bs-financial-power-v1+bs-small-medium-enterprise-evaluation-v1+ux-ppel-one-time-password-v1+ux-ppel-loan-v1+bs-loan-payment-schedule-v1+bs-branch-offices-v2+bs-labor-type-v2+bs-current-account-v1+bs-third-party-relationship-v2+bs-evaluation-v4+bs-operation-number-v1+bs-monetary-operation-v1+bs-monetary-operation-notification-v1+ux-ppel-current-account-v1+ux-ppel-validation-current-account-v1+bs-credit-line-evaluation-v2+bs-product-statement-v2+bs-credit-card-v3+bs-factoring-documents-v1+bs-negotiable-invoice-rate-v1&amp;code_challenge_method=S256&amp;code_challenge=ZTA1Y2M2NzBlZDRjYmI2N2ZiNzVmZGU4YWNhZTAxNGQ5YjJmM2NkN2U2YjUxMjg4MjRkYjk5ZTY5NDBjMWU2Yw&amp;nonce=BzIOkT7rSogLyCQ36swwTDqSPI879tUZQvnIa9YVzll&amp;token=true&#39;
+29:     } else if (env === &#39;cert&#39;) {
+30:         //configure(&#39;ssl&#39;, true);
+31:         //configure ssl = true
+32:         baseURL = &#39;https://int.apiscertbcp.com&#39;
+33:         encodeURL = &#39;https://int.apisqabcp.com/utils/jwt/encode&#39;
+34:         domainToken = &#39;https://int.apisqabcp.com&#39;
+35:         domainConsultaVV28 = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+36:         domainConsultaVVCC = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+37:     }
+38: 
+39:     var config = {
+40:         authUrl: authUrl,
+41:         env: env,
+42:         baseURL: baseURL + oauth_token,
+43:         encodeURL: encodeURL,
+44:         inct_test_ciam_token_client_secret: inct_test_ciam_token_client_secret,
+45:         inct_test_ciam_token_client_id: inct_test_ciam_token_client_id,
+46:         domainToken:domainToken,
+47:         domainConsultaVV28:domainConsultaVV28
+48:         domainConsultaVVCC:domainConsultaVVCC
+49:     }
+50: 
+51:     return config;
+52: }
+53: 
+54: 
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:     var env = karate.env;
+03:     var baseURL = &#39;&#39;
+04:     var encodeURL=&#39;&#39;
+05:     var oauth_token = &#39;/auth/oauth/v2/token&#39;
+06:     var inct_test_ciam_token_client_secret = &#39;&#39;
+07:     var inct_test_ciam_token_client_id = &#39;&#39;
+08:     var authUrl = &#39;&#39;
+09:     var domainToken = &#39;&#39;
+10:     var domainConsultaVV28 = &#39;&#39;
+11:     var domainConsultaVVCC = &#39;&#39;
+12: 
+13: 
+14:     karate.log(&#39;Se realiza la ejecución en ambiente: &#39;, env);
+15: 
+16:     // Declaración de credenciales HV
+17:     karate.configure(&#39;ssl&#39;, true);
+18: 
+19:     inct_test_ciam_token_client_id = karate.properties[&#39;inct-test-ciam-token-client-id&#39;]
+20:     inct_test_ciam_token_client_secret = karate.properties[&#39;inct-test-ciam-token-client-secret&#39;]
+21: 
+22:     if (!env) {
+23:         env = &#39;dev&#39;;
+24:     }
+25:     if (env === &#39;dev&#39;) {
+26:         baseURL = &#39;https://int.apisdevbcp.com&#39;
+27:         encodeURL = &#39;https://int.apisdevbcp.com/utils/jwt/encode&#39;
+28:         authUrl = &#39;https://authservercert.viabcp.com/cas/oidc/authorize?response_type=code&amp;redirect_uri=https://www.minegociobcp-cert.viabcp.com/%23/auth/logged&amp;state=ha3JDet1d6nDF23emECWErVaBQ7McJyiy48uDpzhNsX&amp;client_id=3c4180b1-fde1-4613-b807-545e791dadfc&amp;scope=ux-ppel-landing-v1+ux-ppel-account-opening-v1+ux-ppel-loan-evaluation-v1+ux-ppel-customer-management-v1+ux-ppel-loan-disbursement-v1+ux-ppel-credit-management-v1+ux-ppel-negotiable-invoice-management-v1+ux-ppel-customer-product-invoice-v1+bs-foreign-tax-compliance-declaration-v1+bs-loan-v3+bs-citizen-v2+bs-person-v5+bs-person-address-v2+bs-saving-account-v3+bs-account-v4+bs-product-v4+bs-disbursement-v1+sp-captcha-v3+bs-negotiable-document-worksheet-v1+bs-loan-simulation-v3+bs-user-info-v1+bs-factoring-evaluation-v2+bs-provider-acquirer-evaluation-v1+bs-outstanding-debt-v3+bs-geolocation-v1+ux-ppel-exchange-rate-v1+bs-account-transfer-v2+bs-exchange-rate-v5+bs-notification-v3+bs-financial-power-v1+bs-small-medium-enterprise-evaluation-v1+ux-ppel-one-time-password-v1+ux-ppel-loan-v1+bs-loan-payment-schedule-v1+bs-branch-offices-v2+bs-labor-type-v2+bs-current-account-v1+bs-third-party-relationship-v2+bs-evaluation-v4+bs-operation-number-v1+bs-monetary-operation-v1+bs-monetary-operation-notification-v1+ux-ppel-current-account-v1+ux-ppel-validation-current-account-v1+bs-credit-line-evaluation-v2+bs-product-statement-v2+bs-credit-card-v3+bs-factoring-documents-v1+bs-negotiable-invoice-rate-v1&amp;code_challenge_method=S256&amp;code_challenge=ZTA1Y2M2NzBlZDRjYmI2N2ZiNzVmZGU4YWNhZTAxNGQ5YjJmM2NkN2U2YjUxMjg4MjRkYjk5ZTY5NDBjMWU2Yw&amp;nonce=BzIOkT7rSogLyCQ36swwTDqSPI879tUZQvnIa9YVzll&amp;token=true&#39;
+29:     } else if (env === &#39;cert&#39;) {
+30:         //configure(&#39;ssl&#39;, true);
+31:         //configure ssl = true
+32:         baseURL = &#39;https://int.apiscertbcp.com&#39;
+33:         encodeURL = &#39;https://int.apisqabcp.com/utils/jwt/encode&#39;
+34:         domainToken = &#39;https://int.apisqabcp.com&#39;
+35:         domainConsultaVV28 = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+36:         domainConsultaVVCC = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+37:     }
+38: 
+39:     var config = {
+40:         authUrl: authUrl,
+41:         env: env,
+42:         baseURL: baseURL + oauth_token,
+43:         encodeURL: encodeURL,
+44:         inct_test_ciam_token_client_secret: inct_test_ciam_token_client_secret,
+45:         inct_test_ciam_token_client_id: inct_test_ciam_token_client_id,
+46:         domainToken:domainToken,
+47:         domainConsultaVV28:domainConsultaVV28
+48:         domainConsultaVVCC:domainConsultaVVCC
+49:     }
+50: 
+51:     return config;
+52: }
+53: 
+54: 
+55: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:48:8 Expected comma but found ident
+        domainConsultaVVCC:domainConsultaVVCC
+        ^
+Unnamed:51:4 Expected ) but found return
+    return config;
+    ^
+Unnamed:52:0 Expected eof but found }
+}
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- com.intuit.karate.core.FeatureRuntime.access$000(FeatureRuntime.java:44)
+
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:5
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:8
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:9
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:10
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:11
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.12">
+      <div class="step-ref failed">12</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + token2</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.12">18:20:23.666 src/test/resources/features/ApiGet/ApiGetVVCC.feature:12
+And header Authorization = &#39;Bearer &#39; + token2
+&gt;&gt; src/test/resources/features/ApiGet/ApiGetVVCC.feature:20
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:     var env = karate.env;
+03:     var baseURL = &#39;&#39;
+04:     var encodeURL=&#39;&#39;
+05:     var oauth_token = &#39;/auth/oauth/v2/token&#39;
+06:     var inct_test_ciam_token_client_secret = &#39;&#39;
+07:     var inct_test_ciam_token_client_id = &#39;&#39;
+08:     var authUrl = &#39;&#39;
+09:     var domainToken = &#39;&#39;
+10:     var domainConsultaVV28 = &#39;&#39;
+11:     var domainConsultaVVCC = &#39;&#39;
+12: 
+13: 
+14:     karate.log(&#39;Se realiza la ejecución en ambiente: &#39;, env);
+15: 
+16:     // Declaración de credenciales HV
+17:     karate.configure(&#39;ssl&#39;, true);
+18: 
+19:     inct_test_ciam_token_client_id = karate.properties[&#39;inct-test-ciam-token-client-id&#39;]
+20:     inct_test_ciam_token_client_secret = karate.properties[&#39;inct-test-ciam-token-client-secret&#39;]
+21: 
+22:     if (!env) {
+23:         env = &#39;dev&#39;;
+24:     }
+25:     if (env === &#39;dev&#39;) {
+26:         baseURL = &#39;https://int.apisdevbcp.com&#39;
+27:         encodeURL = &#39;https://int.apisdevbcp.com/utils/jwt/encode&#39;
+28:         authUrl = &#39;https://authservercert.viabcp.com/cas/oidc/authorize?response_type=code&amp;redirect_uri=https://www.minegociobcp-cert.viabcp.com/%23/auth/logged&amp;state=ha3JDet1d6nDF23emECWErVaBQ7McJyiy48uDpzhNsX&amp;client_id=3c4180b1-fde1-4613-b807-545e791dadfc&amp;scope=ux-ppel-landing-v1+ux-ppel-account-opening-v1+ux-ppel-loan-evaluation-v1+ux-ppel-customer-management-v1+ux-ppel-loan-disbursement-v1+ux-ppel-credit-management-v1+ux-ppel-negotiable-invoice-management-v1+ux-ppel-customer-product-invoice-v1+bs-foreign-tax-compliance-declaration-v1+bs-loan-v3+bs-citizen-v2+bs-person-v5+bs-person-address-v2+bs-saving-account-v3+bs-account-v4+bs-product-v4+bs-disbursement-v1+sp-captcha-v3+bs-negotiable-document-worksheet-v1+bs-loan-simulation-v3+bs-user-info-v1+bs-factoring-evaluation-v2+bs-provider-acquirer-evaluation-v1+bs-outstanding-debt-v3+bs-geolocation-v1+ux-ppel-exchange-rate-v1+bs-account-transfer-v2+bs-exchange-rate-v5+bs-notification-v3+bs-financial-power-v1+bs-small-medium-enterprise-evaluation-v1+ux-ppel-one-time-password-v1+ux-ppel-loan-v1+bs-loan-payment-schedule-v1+bs-branch-offices-v2+bs-labor-type-v2+bs-current-account-v1+bs-third-party-relationship-v2+bs-evaluation-v4+bs-operation-number-v1+bs-monetary-operation-v1+bs-monetary-operation-notification-v1+ux-ppel-current-account-v1+ux-ppel-validation-current-account-v1+bs-credit-line-evaluation-v2+bs-product-statement-v2+bs-credit-card-v3+bs-factoring-documents-v1+bs-negotiable-invoice-rate-v1&amp;code_challenge_method=S256&amp;code_challenge=ZTA1Y2M2NzBlZDRjYmI2N2ZiNzVmZGU4YWNhZTAxNGQ5YjJmM2NkN2U2YjUxMjg4MjRkYjk5ZTY5NDBjMWU2Yw&amp;nonce=BzIOkT7rSogLyCQ36swwTDqSPI879tUZQvnIa9YVzll&amp;token=true&#39;
+29:     } else if (env === &#39;cert&#39;) {
+30:         //configure(&#39;ssl&#39;, true);
+31:         //configure ssl = true
+32:         baseURL = &#39;https://int.apiscertbcp.com&#39;
+33:         encodeURL = &#39;https://int.apisqabcp.com/utils/jwt/encode&#39;
+34:         domainToken = &#39;https://int.apisqabcp.com&#39;
+35:         domainConsultaVV28 = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+36:         domainConsultaVVCC = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+37:     }
+38: 
+39:     var config = {
+40:         authUrl: authUrl,
+41:         env: env,
+42:         baseURL: baseURL + oauth_token,
+43:         encodeURL: encodeURL,
+44:         inct_test_ciam_token_client_secret: inct_test_ciam_token_client_secret,
+45:         inct_test_ciam_token_client_id: inct_test_ciam_token_client_id,
+46:         domainToken:domainToken,
+47:         domainConsultaVV28:domainConsultaVV28
+48:         domainConsultaVVCC:domainConsultaVVCC
+49:     }
+50: 
+51:     return config;
+52: }
+53: 
+54: 
+55: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:48:8 Expected comma but found ident
+        domainConsultaVVCC:domainConsultaVVCC
+        ^
+Unnamed:51:4 Expected ) but found return
+    return config;
+    ^
+Unnamed:52:0 Expected eof but found }
+}
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     var env = karate.env;
+03:     var baseURL = &#39;&#39;
+04:     var encodeURL=&#39;&#39;
+05:     var oauth_token = &#39;/auth/oauth/v2/token&#39;
+06:     var inct_test_ciam_token_client_secret = &#39;&#39;
+07:     var inct_test_ciam_token_client_id = &#39;&#39;
+08:     var authUrl = &#39;&#39;
+09:     var domainToken = &#39;&#39;
+10:     var domainConsultaVV28 = &#39;&#39;
+11:     var domainConsultaVVCC = &#39;&#39;
+12: 
+13: 
+14:     karate.log(&#39;Se realiza la ejecución en ambiente: &#39;, env);
+15: 
+16:     // Declaración de credenciales HV
+17:     karate.configure(&#39;ssl&#39;, true);
+18: 
+19:     inct_test_ciam_token_client_id = karate.properties[&#39;inct-test-ciam-token-client-id&#39;]
+20:     inct_test_ciam_token_client_secret = karate.properties[&#39;inct-test-ciam-token-client-secret&#39;]
+21: 
+22:     if (!env) {
+23:         env = &#39;dev&#39;;
+24:     }
+25:     if (env === &#39;dev&#39;) {
+26:         baseURL = &#39;https://int.apisdevbcp.com&#39;
+27:         encodeURL = &#39;https://int.apisdevbcp.com/utils/jwt/encode&#39;
+28:         authUrl = &#39;https://authservercert.viabcp.com/cas/oidc/authorize?response_type=code&amp;redirect_uri=https://www.minegociobcp-cert.viabcp.com/%23/auth/logged&amp;state=ha3JDet1d6nDF23emECWErVaBQ7McJyiy48uDpzhNsX&amp;client_id=3c4180b1-fde1-4613-b807-545e791dadfc&amp;scope=ux-ppel-landing-v1+ux-ppel-account-opening-v1+ux-ppel-loan-evaluation-v1+ux-ppel-customer-management-v1+ux-ppel-loan-disbursement-v1+ux-ppel-credit-management-v1+ux-ppel-negotiable-invoice-management-v1+ux-ppel-customer-product-invoice-v1+bs-foreign-tax-compliance-declaration-v1+bs-loan-v3+bs-citizen-v2+bs-person-v5+bs-person-address-v2+bs-saving-account-v3+bs-account-v4+bs-product-v4+bs-disbursement-v1+sp-captcha-v3+bs-negotiable-document-worksheet-v1+bs-loan-simulation-v3+bs-user-info-v1+bs-factoring-evaluation-v2+bs-provider-acquirer-evaluation-v1+bs-outstanding-debt-v3+bs-geolocation-v1+ux-ppel-exchange-rate-v1+bs-account-transfer-v2+bs-exchange-rate-v5+bs-notification-v3+bs-financial-power-v1+bs-small-medium-enterprise-evaluation-v1+ux-ppel-one-time-password-v1+ux-ppel-loan-v1+bs-loan-payment-schedule-v1+bs-branch-offices-v2+bs-labor-type-v2+bs-current-account-v1+bs-third-party-relationship-v2+bs-evaluation-v4+bs-operation-number-v1+bs-monetary-operation-v1+bs-monetary-operation-notification-v1+ux-ppel-current-account-v1+ux-ppel-validation-current-account-v1+bs-credit-line-evaluation-v2+bs-product-statement-v2+bs-credit-card-v3+bs-factoring-documents-v1+bs-negotiable-invoice-rate-v1&amp;code_challenge_method=S256&amp;code_challenge=ZTA1Y2M2NzBlZDRjYmI2N2ZiNzVmZGU4YWNhZTAxNGQ5YjJmM2NkN2U2YjUxMjg4MjRkYjk5ZTY5NDBjMWU2Yw&amp;nonce=BzIOkT7rSogLyCQ36swwTDqSPI879tUZQvnIa9YVzll&amp;token=true&#39;
+29:     } else if (env === &#39;cert&#39;) {
+30:         //configure(&#39;ssl&#39;, true);
+31:         //configure ssl = true
+32:         baseURL = &#39;https://int.apiscertbcp.com&#39;
+33:         encodeURL = &#39;https://int.apisqabcp.com/utils/jwt/encode&#39;
+34:         domainToken = &#39;https://int.apisqabcp.com&#39;
+35:         domainConsultaVV28 = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+36:         domainConsultaVVCC = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+37:     }
+38: 
+39:     var config = {
+40:         authUrl: authUrl,
+41:         env: env,
+42:         baseURL: baseURL + oauth_token,
+43:         encodeURL: encodeURL,
+44:         inct_test_ciam_token_client_secret: inct_test_ciam_token_client_secret,
+45:         inct_test_ciam_token_client_id: inct_test_ciam_token_client_id,
+46:         domainToken:domainToken,
+47:         domainConsultaVV28:domainConsultaVV28
+48:         domainConsultaVVCC:domainConsultaVVCC
+49:     }
+50: 
+51:     return config;
+52: }
+53: 
+54: 
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:     var env = karate.env;
+03:     var baseURL = &#39;&#39;
+04:     var encodeURL=&#39;&#39;
+05:     var oauth_token = &#39;/auth/oauth/v2/token&#39;
+06:     var inct_test_ciam_token_client_secret = &#39;&#39;
+07:     var inct_test_ciam_token_client_id = &#39;&#39;
+08:     var authUrl = &#39;&#39;
+09:     var domainToken = &#39;&#39;
+10:     var domainConsultaVV28 = &#39;&#39;
+11:     var domainConsultaVVCC = &#39;&#39;
+12: 
+13: 
+14:     karate.log(&#39;Se realiza la ejecución en ambiente: &#39;, env);
+15: 
+16:     // Declaración de credenciales HV
+17:     karate.configure(&#39;ssl&#39;, true);
+18: 
+19:     inct_test_ciam_token_client_id = karate.properties[&#39;inct-test-ciam-token-client-id&#39;]
+20:     inct_test_ciam_token_client_secret = karate.properties[&#39;inct-test-ciam-token-client-secret&#39;]
+21: 
+22:     if (!env) {
+23:         env = &#39;dev&#39;;
+24:     }
+25:     if (env === &#39;dev&#39;) {
+26:         baseURL = &#39;https://int.apisdevbcp.com&#39;
+27:         encodeURL = &#39;https://int.apisdevbcp.com/utils/jwt/encode&#39;
+28:         authUrl = &#39;https://authservercert.viabcp.com/cas/oidc/authorize?response_type=code&amp;redirect_uri=https://www.minegociobcp-cert.viabcp.com/%23/auth/logged&amp;state=ha3JDet1d6nDF23emECWErVaBQ7McJyiy48uDpzhNsX&amp;client_id=3c4180b1-fde1-4613-b807-545e791dadfc&amp;scope=ux-ppel-landing-v1+ux-ppel-account-opening-v1+ux-ppel-loan-evaluation-v1+ux-ppel-customer-management-v1+ux-ppel-loan-disbursement-v1+ux-ppel-credit-management-v1+ux-ppel-negotiable-invoice-management-v1+ux-ppel-customer-product-invoice-v1+bs-foreign-tax-compliance-declaration-v1+bs-loan-v3+bs-citizen-v2+bs-person-v5+bs-person-address-v2+bs-saving-account-v3+bs-account-v4+bs-product-v4+bs-disbursement-v1+sp-captcha-v3+bs-negotiable-document-worksheet-v1+bs-loan-simulation-v3+bs-user-info-v1+bs-factoring-evaluation-v2+bs-provider-acquirer-evaluation-v1+bs-outstanding-debt-v3+bs-geolocation-v1+ux-ppel-exchange-rate-v1+bs-account-transfer-v2+bs-exchange-rate-v5+bs-notification-v3+bs-financial-power-v1+bs-small-medium-enterprise-evaluation-v1+ux-ppel-one-time-password-v1+ux-ppel-loan-v1+bs-loan-payment-schedule-v1+bs-branch-offices-v2+bs-labor-type-v2+bs-current-account-v1+bs-third-party-relationship-v2+bs-evaluation-v4+bs-operation-number-v1+bs-monetary-operation-v1+bs-monetary-operation-notification-v1+ux-ppel-current-account-v1+ux-ppel-validation-current-account-v1+bs-credit-line-evaluation-v2+bs-product-statement-v2+bs-credit-card-v3+bs-factoring-documents-v1+bs-negotiable-invoice-rate-v1&amp;code_challenge_method=S256&amp;code_challenge=ZTA1Y2M2NzBlZDRjYmI2N2ZiNzVmZGU4YWNhZTAxNGQ5YjJmM2NkN2U2YjUxMjg4MjRkYjk5ZTY5NDBjMWU2Yw&amp;nonce=BzIOkT7rSogLyCQ36swwTDqSPI879tUZQvnIa9YVzll&amp;token=true&#39;
+29:     } else if (env === &#39;cert&#39;) {
+30:         //configure(&#39;ssl&#39;, true);
+31:         //configure ssl = true
+32:         baseURL = &#39;https://int.apiscertbcp.com&#39;
+33:         encodeURL = &#39;https://int.apisqabcp.com/utils/jwt/encode&#39;
+34:         domainToken = &#39;https://int.apisqabcp.com&#39;
+35:         domainConsultaVV28 = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+36:         domainConsultaVVCC = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+37:     }
+38: 
+39:     var config = {
+40:         authUrl: authUrl,
+41:         env: env,
+42:         baseURL: baseURL + oauth_token,
+43:         encodeURL: encodeURL,
+44:         inct_test_ciam_token_client_secret: inct_test_ciam_token_client_secret,
+45:         inct_test_ciam_token_client_id: inct_test_ciam_token_client_id,
+46:         domainToken:domainToken,
+47:         domainConsultaVV28:domainConsultaVV28
+48:         domainConsultaVVCC:domainConsultaVVCC
+49:     }
+50: 
+51:     return config;
+52: }
+53: 
+54: 
+55: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:48:8 Expected comma but found ident
+        domainConsultaVVCC:domainConsultaVVCC
+        ^
+Unnamed:51:4 Expected ) but found return
+    return config;
+    ^
+Unnamed:52:0 Expected eof but found }
+}
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- com.intuit.karate.core.FeatureRuntime.access$000(FeatureRuntime.java:44)
+
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:5
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:8
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:9
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:10
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:11
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:12
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref failed">13</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.13">18:20:23.668 src/test/resources/features/ApiGet/ApiGetVVCC.feature:13
+When method get
+&gt;&gt; src/test/resources/features/ApiGet/ApiGetVVCC.feature:20
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:     var env = karate.env;
+03:     var baseURL = &#39;&#39;
+04:     var encodeURL=&#39;&#39;
+05:     var oauth_token = &#39;/auth/oauth/v2/token&#39;
+06:     var inct_test_ciam_token_client_secret = &#39;&#39;
+07:     var inct_test_ciam_token_client_id = &#39;&#39;
+08:     var authUrl = &#39;&#39;
+09:     var domainToken = &#39;&#39;
+10:     var domainConsultaVV28 = &#39;&#39;
+11:     var domainConsultaVVCC = &#39;&#39;
+12: 
+13: 
+14:     karate.log(&#39;Se realiza la ejecución en ambiente: &#39;, env);
+15: 
+16:     // Declaración de credenciales HV
+17:     karate.configure(&#39;ssl&#39;, true);
+18: 
+19:     inct_test_ciam_token_client_id = karate.properties[&#39;inct-test-ciam-token-client-id&#39;]
+20:     inct_test_ciam_token_client_secret = karate.properties[&#39;inct-test-ciam-token-client-secret&#39;]
+21: 
+22:     if (!env) {
+23:         env = &#39;dev&#39;;
+24:     }
+25:     if (env === &#39;dev&#39;) {
+26:         baseURL = &#39;https://int.apisdevbcp.com&#39;
+27:         encodeURL = &#39;https://int.apisdevbcp.com/utils/jwt/encode&#39;
+28:         authUrl = &#39;https://authservercert.viabcp.com/cas/oidc/authorize?response_type=code&amp;redirect_uri=https://www.minegociobcp-cert.viabcp.com/%23/auth/logged&amp;state=ha3JDet1d6nDF23emECWErVaBQ7McJyiy48uDpzhNsX&amp;client_id=3c4180b1-fde1-4613-b807-545e791dadfc&amp;scope=ux-ppel-landing-v1+ux-ppel-account-opening-v1+ux-ppel-loan-evaluation-v1+ux-ppel-customer-management-v1+ux-ppel-loan-disbursement-v1+ux-ppel-credit-management-v1+ux-ppel-negotiable-invoice-management-v1+ux-ppel-customer-product-invoice-v1+bs-foreign-tax-compliance-declaration-v1+bs-loan-v3+bs-citizen-v2+bs-person-v5+bs-person-address-v2+bs-saving-account-v3+bs-account-v4+bs-product-v4+bs-disbursement-v1+sp-captcha-v3+bs-negotiable-document-worksheet-v1+bs-loan-simulation-v3+bs-user-info-v1+bs-factoring-evaluation-v2+bs-provider-acquirer-evaluation-v1+bs-outstanding-debt-v3+bs-geolocation-v1+ux-ppel-exchange-rate-v1+bs-account-transfer-v2+bs-exchange-rate-v5+bs-notification-v3+bs-financial-power-v1+bs-small-medium-enterprise-evaluation-v1+ux-ppel-one-time-password-v1+ux-ppel-loan-v1+bs-loan-payment-schedule-v1+bs-branch-offices-v2+bs-labor-type-v2+bs-current-account-v1+bs-third-party-relationship-v2+bs-evaluation-v4+bs-operation-number-v1+bs-monetary-operation-v1+bs-monetary-operation-notification-v1+ux-ppel-current-account-v1+ux-ppel-validation-current-account-v1+bs-credit-line-evaluation-v2+bs-product-statement-v2+bs-credit-card-v3+bs-factoring-documents-v1+bs-negotiable-invoice-rate-v1&amp;code_challenge_method=S256&amp;code_challenge=ZTA1Y2M2NzBlZDRjYmI2N2ZiNzVmZGU4YWNhZTAxNGQ5YjJmM2NkN2U2YjUxMjg4MjRkYjk5ZTY5NDBjMWU2Yw&amp;nonce=BzIOkT7rSogLyCQ36swwTDqSPI879tUZQvnIa9YVzll&amp;token=true&#39;
+29:     } else if (env === &#39;cert&#39;) {
+30:         //configure(&#39;ssl&#39;, true);
+31:         //configure ssl = true
+32:         baseURL = &#39;https://int.apiscertbcp.com&#39;
+33:         encodeURL = &#39;https://int.apisqabcp.com/utils/jwt/encode&#39;
+34:         domainToken = &#39;https://int.apisqabcp.com&#39;
+35:         domainConsultaVV28 = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+36:         domainConsultaVVCC = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+37:     }
+38: 
+39:     var config = {
+40:         authUrl: authUrl,
+41:         env: env,
+42:         baseURL: baseURL + oauth_token,
+43:         encodeURL: encodeURL,
+44:         inct_test_ciam_token_client_secret: inct_test_ciam_token_client_secret,
+45:         inct_test_ciam_token_client_id: inct_test_ciam_token_client_id,
+46:         domainToken:domainToken,
+47:         domainConsultaVV28:domainConsultaVV28
+48:         domainConsultaVVCC:domainConsultaVVCC
+49:     }
+50: 
+51:     return config;
+52: }
+53: 
+54: 
+55: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:48:8 Expected comma but found ident
+        domainConsultaVVCC:domainConsultaVVCC
+        ^
+Unnamed:51:4 Expected ) but found return
+    return config;
+    ^
+Unnamed:52:0 Expected eof but found }
+}
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     var env = karate.env;
+03:     var baseURL = &#39;&#39;
+04:     var encodeURL=&#39;&#39;
+05:     var oauth_token = &#39;/auth/oauth/v2/token&#39;
+06:     var inct_test_ciam_token_client_secret = &#39;&#39;
+07:     var inct_test_ciam_token_client_id = &#39;&#39;
+08:     var authUrl = &#39;&#39;
+09:     var domainToken = &#39;&#39;
+10:     var domainConsultaVV28 = &#39;&#39;
+11:     var domainConsultaVVCC = &#39;&#39;
+12: 
+13: 
+14:     karate.log(&#39;Se realiza la ejecución en ambiente: &#39;, env);
+15: 
+16:     // Declaración de credenciales HV
+17:     karate.configure(&#39;ssl&#39;, true);
+18: 
+19:     inct_test_ciam_token_client_id = karate.properties[&#39;inct-test-ciam-token-client-id&#39;]
+20:     inct_test_ciam_token_client_secret = karate.properties[&#39;inct-test-ciam-token-client-secret&#39;]
+21: 
+22:     if (!env) {
+23:         env = &#39;dev&#39;;
+24:     }
+25:     if (env === &#39;dev&#39;) {
+26:         baseURL = &#39;https://int.apisdevbcp.com&#39;
+27:         encodeURL = &#39;https://int.apisdevbcp.com/utils/jwt/encode&#39;
+28:         authUrl = &#39;https://authservercert.viabcp.com/cas/oidc/authorize?response_type=code&amp;redirect_uri=https://www.minegociobcp-cert.viabcp.com/%23/auth/logged&amp;state=ha3JDet1d6nDF23emECWErVaBQ7McJyiy48uDpzhNsX&amp;client_id=3c4180b1-fde1-4613-b807-545e791dadfc&amp;scope=ux-ppel-landing-v1+ux-ppel-account-opening-v1+ux-ppel-loan-evaluation-v1+ux-ppel-customer-management-v1+ux-ppel-loan-disbursement-v1+ux-ppel-credit-management-v1+ux-ppel-negotiable-invoice-management-v1+ux-ppel-customer-product-invoice-v1+bs-foreign-tax-compliance-declaration-v1+bs-loan-v3+bs-citizen-v2+bs-person-v5+bs-person-address-v2+bs-saving-account-v3+bs-account-v4+bs-product-v4+bs-disbursement-v1+sp-captcha-v3+bs-negotiable-document-worksheet-v1+bs-loan-simulation-v3+bs-user-info-v1+bs-factoring-evaluation-v2+bs-provider-acquirer-evaluation-v1+bs-outstanding-debt-v3+bs-geolocation-v1+ux-ppel-exchange-rate-v1+bs-account-transfer-v2+bs-exchange-rate-v5+bs-notification-v3+bs-financial-power-v1+bs-small-medium-enterprise-evaluation-v1+ux-ppel-one-time-password-v1+ux-ppel-loan-v1+bs-loan-payment-schedule-v1+bs-branch-offices-v2+bs-labor-type-v2+bs-current-account-v1+bs-third-party-relationship-v2+bs-evaluation-v4+bs-operation-number-v1+bs-monetary-operation-v1+bs-monetary-operation-notification-v1+ux-ppel-current-account-v1+ux-ppel-validation-current-account-v1+bs-credit-line-evaluation-v2+bs-product-statement-v2+bs-credit-card-v3+bs-factoring-documents-v1+bs-negotiable-invoice-rate-v1&amp;code_challenge_method=S256&amp;code_challenge=ZTA1Y2M2NzBlZDRjYmI2N2ZiNzVmZGU4YWNhZTAxNGQ5YjJmM2NkN2U2YjUxMjg4MjRkYjk5ZTY5NDBjMWU2Yw&amp;nonce=BzIOkT7rSogLyCQ36swwTDqSPI879tUZQvnIa9YVzll&amp;token=true&#39;
+29:     } else if (env === &#39;cert&#39;) {
+30:         //configure(&#39;ssl&#39;, true);
+31:         //configure ssl = true
+32:         baseURL = &#39;https://int.apiscertbcp.com&#39;
+33:         encodeURL = &#39;https://int.apisqabcp.com/utils/jwt/encode&#39;
+34:         domainToken = &#39;https://int.apisqabcp.com&#39;
+35:         domainConsultaVV28 = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+36:         domainConsultaVVCC = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+37:     }
+38: 
+39:     var config = {
+40:         authUrl: authUrl,
+41:         env: env,
+42:         baseURL: baseURL + oauth_token,
+43:         encodeURL: encodeURL,
+44:         inct_test_ciam_token_client_secret: inct_test_ciam_token_client_secret,
+45:         inct_test_ciam_token_client_id: inct_test_ciam_token_client_id,
+46:         domainToken:domainToken,
+47:         domainConsultaVV28:domainConsultaVV28
+48:         domainConsultaVVCC:domainConsultaVVCC
+49:     }
+50: 
+51:     return config;
+52: }
+53: 
+54: 
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:     var env = karate.env;
+03:     var baseURL = &#39;&#39;
+04:     var encodeURL=&#39;&#39;
+05:     var oauth_token = &#39;/auth/oauth/v2/token&#39;
+06:     var inct_test_ciam_token_client_secret = &#39;&#39;
+07:     var inct_test_ciam_token_client_id = &#39;&#39;
+08:     var authUrl = &#39;&#39;
+09:     var domainToken = &#39;&#39;
+10:     var domainConsultaVV28 = &#39;&#39;
+11:     var domainConsultaVVCC = &#39;&#39;
+12: 
+13: 
+14:     karate.log(&#39;Se realiza la ejecución en ambiente: &#39;, env);
+15: 
+16:     // Declaración de credenciales HV
+17:     karate.configure(&#39;ssl&#39;, true);
+18: 
+19:     inct_test_ciam_token_client_id = karate.properties[&#39;inct-test-ciam-token-client-id&#39;]
+20:     inct_test_ciam_token_client_secret = karate.properties[&#39;inct-test-ciam-token-client-secret&#39;]
+21: 
+22:     if (!env) {
+23:         env = &#39;dev&#39;;
+24:     }
+25:     if (env === &#39;dev&#39;) {
+26:         baseURL = &#39;https://int.apisdevbcp.com&#39;
+27:         encodeURL = &#39;https://int.apisdevbcp.com/utils/jwt/encode&#39;
+28:         authUrl = &#39;https://authservercert.viabcp.com/cas/oidc/authorize?response_type=code&amp;redirect_uri=https://www.minegociobcp-cert.viabcp.com/%23/auth/logged&amp;state=ha3JDet1d6nDF23emECWErVaBQ7McJyiy48uDpzhNsX&amp;client_id=3c4180b1-fde1-4613-b807-545e791dadfc&amp;scope=ux-ppel-landing-v1+ux-ppel-account-opening-v1+ux-ppel-loan-evaluation-v1+ux-ppel-customer-management-v1+ux-ppel-loan-disbursement-v1+ux-ppel-credit-management-v1+ux-ppel-negotiable-invoice-management-v1+ux-ppel-customer-product-invoice-v1+bs-foreign-tax-compliance-declaration-v1+bs-loan-v3+bs-citizen-v2+bs-person-v5+bs-person-address-v2+bs-saving-account-v3+bs-account-v4+bs-product-v4+bs-disbursement-v1+sp-captcha-v3+bs-negotiable-document-worksheet-v1+bs-loan-simulation-v3+bs-user-info-v1+bs-factoring-evaluation-v2+bs-provider-acquirer-evaluation-v1+bs-outstanding-debt-v3+bs-geolocation-v1+ux-ppel-exchange-rate-v1+bs-account-transfer-v2+bs-exchange-rate-v5+bs-notification-v3+bs-financial-power-v1+bs-small-medium-enterprise-evaluation-v1+ux-ppel-one-time-password-v1+ux-ppel-loan-v1+bs-loan-payment-schedule-v1+bs-branch-offices-v2+bs-labor-type-v2+bs-current-account-v1+bs-third-party-relationship-v2+bs-evaluation-v4+bs-operation-number-v1+bs-monetary-operation-v1+bs-monetary-operation-notification-v1+ux-ppel-current-account-v1+ux-ppel-validation-current-account-v1+bs-credit-line-evaluation-v2+bs-product-statement-v2+bs-credit-card-v3+bs-factoring-documents-v1+bs-negotiable-invoice-rate-v1&amp;code_challenge_method=S256&amp;code_challenge=ZTA1Y2M2NzBlZDRjYmI2N2ZiNzVmZGU4YWNhZTAxNGQ5YjJmM2NkN2U2YjUxMjg4MjRkYjk5ZTY5NDBjMWU2Yw&amp;nonce=BzIOkT7rSogLyCQ36swwTDqSPI879tUZQvnIa9YVzll&amp;token=true&#39;
+29:     } else if (env === &#39;cert&#39;) {
+30:         //configure(&#39;ssl&#39;, true);
+31:         //configure ssl = true
+32:         baseURL = &#39;https://int.apiscertbcp.com&#39;
+33:         encodeURL = &#39;https://int.apisqabcp.com/utils/jwt/encode&#39;
+34:         domainToken = &#39;https://int.apisqabcp.com&#39;
+35:         domainConsultaVV28 = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+36:         domainConsultaVVCC = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+37:     }
+38: 
+39:     var config = {
+40:         authUrl: authUrl,
+41:         env: env,
+42:         baseURL: baseURL + oauth_token,
+43:         encodeURL: encodeURL,
+44:         inct_test_ciam_token_client_secret: inct_test_ciam_token_client_secret,
+45:         inct_test_ciam_token_client_id: inct_test_ciam_token_client_id,
+46:         domainToken:domainToken,
+47:         domainConsultaVV28:domainConsultaVV28
+48:         domainConsultaVVCC:domainConsultaVVCC
+49:     }
+50: 
+51:     return config;
+52: }
+53: 
+54: 
+55: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:48:8 Expected comma but found ident
+        domainConsultaVVCC:domainConsultaVVCC
+        ^
+Unnamed:51:4 Expected ) but found return
+    return config;
+    ^
+Unnamed:52:0 Expected eof but found }
+}
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- com.intuit.karate.core.FeatureRuntime.access$000(FeatureRuntime.java:44)
+
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:5
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:8
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:9
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:10
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:11
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:12
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:13
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref failed">14</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.14">18:20:23.672 src/test/resources/features/ApiGet/ApiGetVVCC.feature:14
+Then status 200
+&gt;&gt; src/test/resources/features/ApiGet/ApiGetVVCC.feature:20
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:     var env = karate.env;
+03:     var baseURL = &#39;&#39;
+04:     var encodeURL=&#39;&#39;
+05:     var oauth_token = &#39;/auth/oauth/v2/token&#39;
+06:     var inct_test_ciam_token_client_secret = &#39;&#39;
+07:     var inct_test_ciam_token_client_id = &#39;&#39;
+08:     var authUrl = &#39;&#39;
+09:     var domainToken = &#39;&#39;
+10:     var domainConsultaVV28 = &#39;&#39;
+11:     var domainConsultaVVCC = &#39;&#39;
+12: 
+13: 
+14:     karate.log(&#39;Se realiza la ejecución en ambiente: &#39;, env);
+15: 
+16:     // Declaración de credenciales HV
+17:     karate.configure(&#39;ssl&#39;, true);
+18: 
+19:     inct_test_ciam_token_client_id = karate.properties[&#39;inct-test-ciam-token-client-id&#39;]
+20:     inct_test_ciam_token_client_secret = karate.properties[&#39;inct-test-ciam-token-client-secret&#39;]
+21: 
+22:     if (!env) {
+23:         env = &#39;dev&#39;;
+24:     }
+25:     if (env === &#39;dev&#39;) {
+26:         baseURL = &#39;https://int.apisdevbcp.com&#39;
+27:         encodeURL = &#39;https://int.apisdevbcp.com/utils/jwt/encode&#39;
+28:         authUrl = &#39;https://authservercert.viabcp.com/cas/oidc/authorize?response_type=code&amp;redirect_uri=https://www.minegociobcp-cert.viabcp.com/%23/auth/logged&amp;state=ha3JDet1d6nDF23emECWErVaBQ7McJyiy48uDpzhNsX&amp;client_id=3c4180b1-fde1-4613-b807-545e791dadfc&amp;scope=ux-ppel-landing-v1+ux-ppel-account-opening-v1+ux-ppel-loan-evaluation-v1+ux-ppel-customer-management-v1+ux-ppel-loan-disbursement-v1+ux-ppel-credit-management-v1+ux-ppel-negotiable-invoice-management-v1+ux-ppel-customer-product-invoice-v1+bs-foreign-tax-compliance-declaration-v1+bs-loan-v3+bs-citizen-v2+bs-person-v5+bs-person-address-v2+bs-saving-account-v3+bs-account-v4+bs-product-v4+bs-disbursement-v1+sp-captcha-v3+bs-negotiable-document-worksheet-v1+bs-loan-simulation-v3+bs-user-info-v1+bs-factoring-evaluation-v2+bs-provider-acquirer-evaluation-v1+bs-outstanding-debt-v3+bs-geolocation-v1+ux-ppel-exchange-rate-v1+bs-account-transfer-v2+bs-exchange-rate-v5+bs-notification-v3+bs-financial-power-v1+bs-small-medium-enterprise-evaluation-v1+ux-ppel-one-time-password-v1+ux-ppel-loan-v1+bs-loan-payment-schedule-v1+bs-branch-offices-v2+bs-labor-type-v2+bs-current-account-v1+bs-third-party-relationship-v2+bs-evaluation-v4+bs-operation-number-v1+bs-monetary-operation-v1+bs-monetary-operation-notification-v1+ux-ppel-current-account-v1+ux-ppel-validation-current-account-v1+bs-credit-line-evaluation-v2+bs-product-statement-v2+bs-credit-card-v3+bs-factoring-documents-v1+bs-negotiable-invoice-rate-v1&amp;code_challenge_method=S256&amp;code_challenge=ZTA1Y2M2NzBlZDRjYmI2N2ZiNzVmZGU4YWNhZTAxNGQ5YjJmM2NkN2U2YjUxMjg4MjRkYjk5ZTY5NDBjMWU2Yw&amp;nonce=BzIOkT7rSogLyCQ36swwTDqSPI879tUZQvnIa9YVzll&amp;token=true&#39;
+29:     } else if (env === &#39;cert&#39;) {
+30:         //configure(&#39;ssl&#39;, true);
+31:         //configure ssl = true
+32:         baseURL = &#39;https://int.apiscertbcp.com&#39;
+33:         encodeURL = &#39;https://int.apisqabcp.com/utils/jwt/encode&#39;
+34:         domainToken = &#39;https://int.apisqabcp.com&#39;
+35:         domainConsultaVV28 = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+36:         domainConsultaVVCC = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+37:     }
+38: 
+39:     var config = {
+40:         authUrl: authUrl,
+41:         env: env,
+42:         baseURL: baseURL + oauth_token,
+43:         encodeURL: encodeURL,
+44:         inct_test_ciam_token_client_secret: inct_test_ciam_token_client_secret,
+45:         inct_test_ciam_token_client_id: inct_test_ciam_token_client_id,
+46:         domainToken:domainToken,
+47:         domainConsultaVV28:domainConsultaVV28
+48:         domainConsultaVVCC:domainConsultaVVCC
+49:     }
+50: 
+51:     return config;
+52: }
+53: 
+54: 
+55: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:48:8 Expected comma but found ident
+        domainConsultaVVCC:domainConsultaVVCC
+        ^
+Unnamed:51:4 Expected ) but found return
+    return config;
+    ^
+Unnamed:52:0 Expected eof but found }
+}
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     var env = karate.env;
+03:     var baseURL = &#39;&#39;
+04:     var encodeURL=&#39;&#39;
+05:     var oauth_token = &#39;/auth/oauth/v2/token&#39;
+06:     var inct_test_ciam_token_client_secret = &#39;&#39;
+07:     var inct_test_ciam_token_client_id = &#39;&#39;
+08:     var authUrl = &#39;&#39;
+09:     var domainToken = &#39;&#39;
+10:     var domainConsultaVV28 = &#39;&#39;
+11:     var domainConsultaVVCC = &#39;&#39;
+12: 
+13: 
+14:     karate.log(&#39;Se realiza la ejecución en ambiente: &#39;, env);
+15: 
+16:     // Declaración de credenciales HV
+17:     karate.configure(&#39;ssl&#39;, true);
+18: 
+19:     inct_test_ciam_token_client_id = karate.properties[&#39;inct-test-ciam-token-client-id&#39;]
+20:     inct_test_ciam_token_client_secret = karate.properties[&#39;inct-test-ciam-token-client-secret&#39;]
+21: 
+22:     if (!env) {
+23:         env = &#39;dev&#39;;
+24:     }
+25:     if (env === &#39;dev&#39;) {
+26:         baseURL = &#39;https://int.apisdevbcp.com&#39;
+27:         encodeURL = &#39;https://int.apisdevbcp.com/utils/jwt/encode&#39;
+28:         authUrl = &#39;https://authservercert.viabcp.com/cas/oidc/authorize?response_type=code&amp;redirect_uri=https://www.minegociobcp-cert.viabcp.com/%23/auth/logged&amp;state=ha3JDet1d6nDF23emECWErVaBQ7McJyiy48uDpzhNsX&amp;client_id=3c4180b1-fde1-4613-b807-545e791dadfc&amp;scope=ux-ppel-landing-v1+ux-ppel-account-opening-v1+ux-ppel-loan-evaluation-v1+ux-ppel-customer-management-v1+ux-ppel-loan-disbursement-v1+ux-ppel-credit-management-v1+ux-ppel-negotiable-invoice-management-v1+ux-ppel-customer-product-invoice-v1+bs-foreign-tax-compliance-declaration-v1+bs-loan-v3+bs-citizen-v2+bs-person-v5+bs-person-address-v2+bs-saving-account-v3+bs-account-v4+bs-product-v4+bs-disbursement-v1+sp-captcha-v3+bs-negotiable-document-worksheet-v1+bs-loan-simulation-v3+bs-user-info-v1+bs-factoring-evaluation-v2+bs-provider-acquirer-evaluation-v1+bs-outstanding-debt-v3+bs-geolocation-v1+ux-ppel-exchange-rate-v1+bs-account-transfer-v2+bs-exchange-rate-v5+bs-notification-v3+bs-financial-power-v1+bs-small-medium-enterprise-evaluation-v1+ux-ppel-one-time-password-v1+ux-ppel-loan-v1+bs-loan-payment-schedule-v1+bs-branch-offices-v2+bs-labor-type-v2+bs-current-account-v1+bs-third-party-relationship-v2+bs-evaluation-v4+bs-operation-number-v1+bs-monetary-operation-v1+bs-monetary-operation-notification-v1+ux-ppel-current-account-v1+ux-ppel-validation-current-account-v1+bs-credit-line-evaluation-v2+bs-product-statement-v2+bs-credit-card-v3+bs-factoring-documents-v1+bs-negotiable-invoice-rate-v1&amp;code_challenge_method=S256&amp;code_challenge=ZTA1Y2M2NzBlZDRjYmI2N2ZiNzVmZGU4YWNhZTAxNGQ5YjJmM2NkN2U2YjUxMjg4MjRkYjk5ZTY5NDBjMWU2Yw&amp;nonce=BzIOkT7rSogLyCQ36swwTDqSPI879tUZQvnIa9YVzll&amp;token=true&#39;
+29:     } else if (env === &#39;cert&#39;) {
+30:         //configure(&#39;ssl&#39;, true);
+31:         //configure ssl = true
+32:         baseURL = &#39;https://int.apiscertbcp.com&#39;
+33:         encodeURL = &#39;https://int.apisqabcp.com/utils/jwt/encode&#39;
+34:         domainToken = &#39;https://int.apisqabcp.com&#39;
+35:         domainConsultaVV28 = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+36:         domainConsultaVVCC = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+37:     }
+38: 
+39:     var config = {
+40:         authUrl: authUrl,
+41:         env: env,
+42:         baseURL: baseURL + oauth_token,
+43:         encodeURL: encodeURL,
+44:         inct_test_ciam_token_client_secret: inct_test_ciam_token_client_secret,
+45:         inct_test_ciam_token_client_id: inct_test_ciam_token_client_id,
+46:         domainToken:domainToken,
+47:         domainConsultaVV28:domainConsultaVV28
+48:         domainConsultaVVCC:domainConsultaVVCC
+49:     }
+50: 
+51:     return config;
+52: }
+53: 
+54: 
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:     var env = karate.env;
+03:     var baseURL = &#39;&#39;
+04:     var encodeURL=&#39;&#39;
+05:     var oauth_token = &#39;/auth/oauth/v2/token&#39;
+06:     var inct_test_ciam_token_client_secret = &#39;&#39;
+07:     var inct_test_ciam_token_client_id = &#39;&#39;
+08:     var authUrl = &#39;&#39;
+09:     var domainToken = &#39;&#39;
+10:     var domainConsultaVV28 = &#39;&#39;
+11:     var domainConsultaVVCC = &#39;&#39;
+12: 
+13: 
+14:     karate.log(&#39;Se realiza la ejecución en ambiente: &#39;, env);
+15: 
+16:     // Declaración de credenciales HV
+17:     karate.configure(&#39;ssl&#39;, true);
+18: 
+19:     inct_test_ciam_token_client_id = karate.properties[&#39;inct-test-ciam-token-client-id&#39;]
+20:     inct_test_ciam_token_client_secret = karate.properties[&#39;inct-test-ciam-token-client-secret&#39;]
+21: 
+22:     if (!env) {
+23:         env = &#39;dev&#39;;
+24:     }
+25:     if (env === &#39;dev&#39;) {
+26:         baseURL = &#39;https://int.apisdevbcp.com&#39;
+27:         encodeURL = &#39;https://int.apisdevbcp.com/utils/jwt/encode&#39;
+28:         authUrl = &#39;https://authservercert.viabcp.com/cas/oidc/authorize?response_type=code&amp;redirect_uri=https://www.minegociobcp-cert.viabcp.com/%23/auth/logged&amp;state=ha3JDet1d6nDF23emECWErVaBQ7McJyiy48uDpzhNsX&amp;client_id=3c4180b1-fde1-4613-b807-545e791dadfc&amp;scope=ux-ppel-landing-v1+ux-ppel-account-opening-v1+ux-ppel-loan-evaluation-v1+ux-ppel-customer-management-v1+ux-ppel-loan-disbursement-v1+ux-ppel-credit-management-v1+ux-ppel-negotiable-invoice-management-v1+ux-ppel-customer-product-invoice-v1+bs-foreign-tax-compliance-declaration-v1+bs-loan-v3+bs-citizen-v2+bs-person-v5+bs-person-address-v2+bs-saving-account-v3+bs-account-v4+bs-product-v4+bs-disbursement-v1+sp-captcha-v3+bs-negotiable-document-worksheet-v1+bs-loan-simulation-v3+bs-user-info-v1+bs-factoring-evaluation-v2+bs-provider-acquirer-evaluation-v1+bs-outstanding-debt-v3+bs-geolocation-v1+ux-ppel-exchange-rate-v1+bs-account-transfer-v2+bs-exchange-rate-v5+bs-notification-v3+bs-financial-power-v1+bs-small-medium-enterprise-evaluation-v1+ux-ppel-one-time-password-v1+ux-ppel-loan-v1+bs-loan-payment-schedule-v1+bs-branch-offices-v2+bs-labor-type-v2+bs-current-account-v1+bs-third-party-relationship-v2+bs-evaluation-v4+bs-operation-number-v1+bs-monetary-operation-v1+bs-monetary-operation-notification-v1+ux-ppel-current-account-v1+ux-ppel-validation-current-account-v1+bs-credit-line-evaluation-v2+bs-product-statement-v2+bs-credit-card-v3+bs-factoring-documents-v1+bs-negotiable-invoice-rate-v1&amp;code_challenge_method=S256&amp;code_challenge=ZTA1Y2M2NzBlZDRjYmI2N2ZiNzVmZGU4YWNhZTAxNGQ5YjJmM2NkN2U2YjUxMjg4MjRkYjk5ZTY5NDBjMWU2Yw&amp;nonce=BzIOkT7rSogLyCQ36swwTDqSPI879tUZQvnIa9YVzll&amp;token=true&#39;
+29:     } else if (env === &#39;cert&#39;) {
+30:         //configure(&#39;ssl&#39;, true);
+31:         //configure ssl = true
+32:         baseURL = &#39;https://int.apiscertbcp.com&#39;
+33:         encodeURL = &#39;https://int.apisqabcp.com/utils/jwt/encode&#39;
+34:         domainToken = &#39;https://int.apisqabcp.com&#39;
+35:         domainConsultaVV28 = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+36:         domainConsultaVVCC = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+37:     }
+38: 
+39:     var config = {
+40:         authUrl: authUrl,
+41:         env: env,
+42:         baseURL: baseURL + oauth_token,
+43:         encodeURL: encodeURL,
+44:         inct_test_ciam_token_client_secret: inct_test_ciam_token_client_secret,
+45:         inct_test_ciam_token_client_id: inct_test_ciam_token_client_id,
+46:         domainToken:domainToken,
+47:         domainConsultaVV28:domainConsultaVV28
+48:         domainConsultaVVCC:domainConsultaVVCC
+49:     }
+50: 
+51:     return config;
+52: }
+53: 
+54: 
+55: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:48:8 Expected comma but found ident
+        domainConsultaVVCC:domainConsultaVVCC
+        ^
+Unnamed:51:4 Expected ) but found return
+    return config;
+    ^
+Unnamed:52:0 Expected eof but found }
+}
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- com.intuit.karate.core.FeatureRuntime.access$000(FeatureRuntime.java:44)
+
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:5
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:8
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:9
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:10
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:11
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:12
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:13
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:14
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.15">
+      <div class="step-ref failed">15</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>def respuesta = response;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.15">18:20:23.673 src/test/resources/features/ApiGet/ApiGetVVCC.feature:15
+And def respuesta = response;
+&gt;&gt; src/test/resources/features/ApiGet/ApiGetVVCC.feature:20
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:     var env = karate.env;
+03:     var baseURL = &#39;&#39;
+04:     var encodeURL=&#39;&#39;
+05:     var oauth_token = &#39;/auth/oauth/v2/token&#39;
+06:     var inct_test_ciam_token_client_secret = &#39;&#39;
+07:     var inct_test_ciam_token_client_id = &#39;&#39;
+08:     var authUrl = &#39;&#39;
+09:     var domainToken = &#39;&#39;
+10:     var domainConsultaVV28 = &#39;&#39;
+11:     var domainConsultaVVCC = &#39;&#39;
+12: 
+13: 
+14:     karate.log(&#39;Se realiza la ejecución en ambiente: &#39;, env);
+15: 
+16:     // Declaración de credenciales HV
+17:     karate.configure(&#39;ssl&#39;, true);
+18: 
+19:     inct_test_ciam_token_client_id = karate.properties[&#39;inct-test-ciam-token-client-id&#39;]
+20:     inct_test_ciam_token_client_secret = karate.properties[&#39;inct-test-ciam-token-client-secret&#39;]
+21: 
+22:     if (!env) {
+23:         env = &#39;dev&#39;;
+24:     }
+25:     if (env === &#39;dev&#39;) {
+26:         baseURL = &#39;https://int.apisdevbcp.com&#39;
+27:         encodeURL = &#39;https://int.apisdevbcp.com/utils/jwt/encode&#39;
+28:         authUrl = &#39;https://authservercert.viabcp.com/cas/oidc/authorize?response_type=code&amp;redirect_uri=https://www.minegociobcp-cert.viabcp.com/%23/auth/logged&amp;state=ha3JDet1d6nDF23emECWErVaBQ7McJyiy48uDpzhNsX&amp;client_id=3c4180b1-fde1-4613-b807-545e791dadfc&amp;scope=ux-ppel-landing-v1+ux-ppel-account-opening-v1+ux-ppel-loan-evaluation-v1+ux-ppel-customer-management-v1+ux-ppel-loan-disbursement-v1+ux-ppel-credit-management-v1+ux-ppel-negotiable-invoice-management-v1+ux-ppel-customer-product-invoice-v1+bs-foreign-tax-compliance-declaration-v1+bs-loan-v3+bs-citizen-v2+bs-person-v5+bs-person-address-v2+bs-saving-account-v3+bs-account-v4+bs-product-v4+bs-disbursement-v1+sp-captcha-v3+bs-negotiable-document-worksheet-v1+bs-loan-simulation-v3+bs-user-info-v1+bs-factoring-evaluation-v2+bs-provider-acquirer-evaluation-v1+bs-outstanding-debt-v3+bs-geolocation-v1+ux-ppel-exchange-rate-v1+bs-account-transfer-v2+bs-exchange-rate-v5+bs-notification-v3+bs-financial-power-v1+bs-small-medium-enterprise-evaluation-v1+ux-ppel-one-time-password-v1+ux-ppel-loan-v1+bs-loan-payment-schedule-v1+bs-branch-offices-v2+bs-labor-type-v2+bs-current-account-v1+bs-third-party-relationship-v2+bs-evaluation-v4+bs-operation-number-v1+bs-monetary-operation-v1+bs-monetary-operation-notification-v1+ux-ppel-current-account-v1+ux-ppel-validation-current-account-v1+bs-credit-line-evaluation-v2+bs-product-statement-v2+bs-credit-card-v3+bs-factoring-documents-v1+bs-negotiable-invoice-rate-v1&amp;code_challenge_method=S256&amp;code_challenge=ZTA1Y2M2NzBlZDRjYmI2N2ZiNzVmZGU4YWNhZTAxNGQ5YjJmM2NkN2U2YjUxMjg4MjRkYjk5ZTY5NDBjMWU2Yw&amp;nonce=BzIOkT7rSogLyCQ36swwTDqSPI879tUZQvnIa9YVzll&amp;token=true&#39;
+29:     } else if (env === &#39;cert&#39;) {
+30:         //configure(&#39;ssl&#39;, true);
+31:         //configure ssl = true
+32:         baseURL = &#39;https://int.apiscertbcp.com&#39;
+33:         encodeURL = &#39;https://int.apisqabcp.com/utils/jwt/encode&#39;
+34:         domainToken = &#39;https://int.apisqabcp.com&#39;
+35:         domainConsultaVV28 = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+36:         domainConsultaVVCC = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+37:     }
+38: 
+39:     var config = {
+40:         authUrl: authUrl,
+41:         env: env,
+42:         baseURL: baseURL + oauth_token,
+43:         encodeURL: encodeURL,
+44:         inct_test_ciam_token_client_secret: inct_test_ciam_token_client_secret,
+45:         inct_test_ciam_token_client_id: inct_test_ciam_token_client_id,
+46:         domainToken:domainToken,
+47:         domainConsultaVV28:domainConsultaVV28
+48:         domainConsultaVVCC:domainConsultaVVCC
+49:     }
+50: 
+51:     return config;
+52: }
+53: 
+54: 
+55: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:48:8 Expected comma but found ident
+        domainConsultaVVCC:domainConsultaVVCC
+        ^
+Unnamed:51:4 Expected ) but found return
+    return config;
+    ^
+Unnamed:52:0 Expected eof but found }
+}
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     var env = karate.env;
+03:     var baseURL = &#39;&#39;
+04:     var encodeURL=&#39;&#39;
+05:     var oauth_token = &#39;/auth/oauth/v2/token&#39;
+06:     var inct_test_ciam_token_client_secret = &#39;&#39;
+07:     var inct_test_ciam_token_client_id = &#39;&#39;
+08:     var authUrl = &#39;&#39;
+09:     var domainToken = &#39;&#39;
+10:     var domainConsultaVV28 = &#39;&#39;
+11:     var domainConsultaVVCC = &#39;&#39;
+12: 
+13: 
+14:     karate.log(&#39;Se realiza la ejecución en ambiente: &#39;, env);
+15: 
+16:     // Declaración de credenciales HV
+17:     karate.configure(&#39;ssl&#39;, true);
+18: 
+19:     inct_test_ciam_token_client_id = karate.properties[&#39;inct-test-ciam-token-client-id&#39;]
+20:     inct_test_ciam_token_client_secret = karate.properties[&#39;inct-test-ciam-token-client-secret&#39;]
+21: 
+22:     if (!env) {
+23:         env = &#39;dev&#39;;
+24:     }
+25:     if (env === &#39;dev&#39;) {
+26:         baseURL = &#39;https://int.apisdevbcp.com&#39;
+27:         encodeURL = &#39;https://int.apisdevbcp.com/utils/jwt/encode&#39;
+28:         authUrl = &#39;https://authservercert.viabcp.com/cas/oidc/authorize?response_type=code&amp;redirect_uri=https://www.minegociobcp-cert.viabcp.com/%23/auth/logged&amp;state=ha3JDet1d6nDF23emECWErVaBQ7McJyiy48uDpzhNsX&amp;client_id=3c4180b1-fde1-4613-b807-545e791dadfc&amp;scope=ux-ppel-landing-v1+ux-ppel-account-opening-v1+ux-ppel-loan-evaluation-v1+ux-ppel-customer-management-v1+ux-ppel-loan-disbursement-v1+ux-ppel-credit-management-v1+ux-ppel-negotiable-invoice-management-v1+ux-ppel-customer-product-invoice-v1+bs-foreign-tax-compliance-declaration-v1+bs-loan-v3+bs-citizen-v2+bs-person-v5+bs-person-address-v2+bs-saving-account-v3+bs-account-v4+bs-product-v4+bs-disbursement-v1+sp-captcha-v3+bs-negotiable-document-worksheet-v1+bs-loan-simulation-v3+bs-user-info-v1+bs-factoring-evaluation-v2+bs-provider-acquirer-evaluation-v1+bs-outstanding-debt-v3+bs-geolocation-v1+ux-ppel-exchange-rate-v1+bs-account-transfer-v2+bs-exchange-rate-v5+bs-notification-v3+bs-financial-power-v1+bs-small-medium-enterprise-evaluation-v1+ux-ppel-one-time-password-v1+ux-ppel-loan-v1+bs-loan-payment-schedule-v1+bs-branch-offices-v2+bs-labor-type-v2+bs-current-account-v1+bs-third-party-relationship-v2+bs-evaluation-v4+bs-operation-number-v1+bs-monetary-operation-v1+bs-monetary-operation-notification-v1+ux-ppel-current-account-v1+ux-ppel-validation-current-account-v1+bs-credit-line-evaluation-v2+bs-product-statement-v2+bs-credit-card-v3+bs-factoring-documents-v1+bs-negotiable-invoice-rate-v1&amp;code_challenge_method=S256&amp;code_challenge=ZTA1Y2M2NzBlZDRjYmI2N2ZiNzVmZGU4YWNhZTAxNGQ5YjJmM2NkN2U2YjUxMjg4MjRkYjk5ZTY5NDBjMWU2Yw&amp;nonce=BzIOkT7rSogLyCQ36swwTDqSPI879tUZQvnIa9YVzll&amp;token=true&#39;
+29:     } else if (env === &#39;cert&#39;) {
+30:         //configure(&#39;ssl&#39;, true);
+31:         //configure ssl = true
+32:         baseURL = &#39;https://int.apiscertbcp.com&#39;
+33:         encodeURL = &#39;https://int.apisqabcp.com/utils/jwt/encode&#39;
+34:         domainToken = &#39;https://int.apisqabcp.com&#39;
+35:         domainConsultaVV28 = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+36:         domainConsultaVVCC = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+37:     }
+38: 
+39:     var config = {
+40:         authUrl: authUrl,
+41:         env: env,
+42:         baseURL: baseURL + oauth_token,
+43:         encodeURL: encodeURL,
+44:         inct_test_ciam_token_client_secret: inct_test_ciam_token_client_secret,
+45:         inct_test_ciam_token_client_id: inct_test_ciam_token_client_id,
+46:         domainToken:domainToken,
+47:         domainConsultaVV28:domainConsultaVV28
+48:         domainConsultaVVCC:domainConsultaVVCC
+49:     }
+50: 
+51:     return config;
+52: }
+53: 
+54: 
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:     var env = karate.env;
+03:     var baseURL = &#39;&#39;
+04:     var encodeURL=&#39;&#39;
+05:     var oauth_token = &#39;/auth/oauth/v2/token&#39;
+06:     var inct_test_ciam_token_client_secret = &#39;&#39;
+07:     var inct_test_ciam_token_client_id = &#39;&#39;
+08:     var authUrl = &#39;&#39;
+09:     var domainToken = &#39;&#39;
+10:     var domainConsultaVV28 = &#39;&#39;
+11:     var domainConsultaVVCC = &#39;&#39;
+12: 
+13: 
+14:     karate.log(&#39;Se realiza la ejecución en ambiente: &#39;, env);
+15: 
+16:     // Declaración de credenciales HV
+17:     karate.configure(&#39;ssl&#39;, true);
+18: 
+19:     inct_test_ciam_token_client_id = karate.properties[&#39;inct-test-ciam-token-client-id&#39;]
+20:     inct_test_ciam_token_client_secret = karate.properties[&#39;inct-test-ciam-token-client-secret&#39;]
+21: 
+22:     if (!env) {
+23:         env = &#39;dev&#39;;
+24:     }
+25:     if (env === &#39;dev&#39;) {
+26:         baseURL = &#39;https://int.apisdevbcp.com&#39;
+27:         encodeURL = &#39;https://int.apisdevbcp.com/utils/jwt/encode&#39;
+28:         authUrl = &#39;https://authservercert.viabcp.com/cas/oidc/authorize?response_type=code&amp;redirect_uri=https://www.minegociobcp-cert.viabcp.com/%23/auth/logged&amp;state=ha3JDet1d6nDF23emECWErVaBQ7McJyiy48uDpzhNsX&amp;client_id=3c4180b1-fde1-4613-b807-545e791dadfc&amp;scope=ux-ppel-landing-v1+ux-ppel-account-opening-v1+ux-ppel-loan-evaluation-v1+ux-ppel-customer-management-v1+ux-ppel-loan-disbursement-v1+ux-ppel-credit-management-v1+ux-ppel-negotiable-invoice-management-v1+ux-ppel-customer-product-invoice-v1+bs-foreign-tax-compliance-declaration-v1+bs-loan-v3+bs-citizen-v2+bs-person-v5+bs-person-address-v2+bs-saving-account-v3+bs-account-v4+bs-product-v4+bs-disbursement-v1+sp-captcha-v3+bs-negotiable-document-worksheet-v1+bs-loan-simulation-v3+bs-user-info-v1+bs-factoring-evaluation-v2+bs-provider-acquirer-evaluation-v1+bs-outstanding-debt-v3+bs-geolocation-v1+ux-ppel-exchange-rate-v1+bs-account-transfer-v2+bs-exchange-rate-v5+bs-notification-v3+bs-financial-power-v1+bs-small-medium-enterprise-evaluation-v1+ux-ppel-one-time-password-v1+ux-ppel-loan-v1+bs-loan-payment-schedule-v1+bs-branch-offices-v2+bs-labor-type-v2+bs-current-account-v1+bs-third-party-relationship-v2+bs-evaluation-v4+bs-operation-number-v1+bs-monetary-operation-v1+bs-monetary-operation-notification-v1+ux-ppel-current-account-v1+ux-ppel-validation-current-account-v1+bs-credit-line-evaluation-v2+bs-product-statement-v2+bs-credit-card-v3+bs-factoring-documents-v1+bs-negotiable-invoice-rate-v1&amp;code_challenge_method=S256&amp;code_challenge=ZTA1Y2M2NzBlZDRjYmI2N2ZiNzVmZGU4YWNhZTAxNGQ5YjJmM2NkN2U2YjUxMjg4MjRkYjk5ZTY5NDBjMWU2Yw&amp;nonce=BzIOkT7rSogLyCQ36swwTDqSPI879tUZQvnIa9YVzll&amp;token=true&#39;
+29:     } else if (env === &#39;cert&#39;) {
+30:         //configure(&#39;ssl&#39;, true);
+31:         //configure ssl = true
+32:         baseURL = &#39;https://int.apiscertbcp.com&#39;
+33:         encodeURL = &#39;https://int.apisqabcp.com/utils/jwt/encode&#39;
+34:         domainToken = &#39;https://int.apisqabcp.com&#39;
+35:         domainConsultaVV28 = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+36:         domainConsultaVVCC = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+37:     }
+38: 
+39:     var config = {
+40:         authUrl: authUrl,
+41:         env: env,
+42:         baseURL: baseURL + oauth_token,
+43:         encodeURL: encodeURL,
+44:         inct_test_ciam_token_client_secret: inct_test_ciam_token_client_secret,
+45:         inct_test_ciam_token_client_id: inct_test_ciam_token_client_id,
+46:         domainToken:domainToken,
+47:         domainConsultaVV28:domainConsultaVV28
+48:         domainConsultaVVCC:domainConsultaVVCC
+49:     }
+50: 
+51:     return config;
+52: }
+53: 
+54: 
+55: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:48:8 Expected comma but found ident
+        domainConsultaVVCC:domainConsultaVVCC
+        ^
+Unnamed:51:4 Expected ) but found return
+    return config;
+    ^
+Unnamed:52:0 Expected eof but found }
+}
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- com.intuit.karate.core.FeatureRuntime.access$000(FeatureRuntime.java:44)
+
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:5
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:8
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:9
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:10
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:11
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:12
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:13
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:14
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:15
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.16">
+      <div class="step-ref failed">16</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>print &#39;Informacion de mi consulta: &#39; ,respuesta</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.16">18:20:23.803 src/test/resources/features/ApiGet/ApiGetVVCC.feature:16
+And print &#39;Informacion de mi consulta: &#39; ,respuesta
+&gt;&gt; src/test/resources/features/ApiGet/ApiGetVVCC.feature:20
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:     var env = karate.env;
+03:     var baseURL = &#39;&#39;
+04:     var encodeURL=&#39;&#39;
+05:     var oauth_token = &#39;/auth/oauth/v2/token&#39;
+06:     var inct_test_ciam_token_client_secret = &#39;&#39;
+07:     var inct_test_ciam_token_client_id = &#39;&#39;
+08:     var authUrl = &#39;&#39;
+09:     var domainToken = &#39;&#39;
+10:     var domainConsultaVV28 = &#39;&#39;
+11:     var domainConsultaVVCC = &#39;&#39;
+12: 
+13: 
+14:     karate.log(&#39;Se realiza la ejecución en ambiente: &#39;, env);
+15: 
+16:     // Declaración de credenciales HV
+17:     karate.configure(&#39;ssl&#39;, true);
+18: 
+19:     inct_test_ciam_token_client_id = karate.properties[&#39;inct-test-ciam-token-client-id&#39;]
+20:     inct_test_ciam_token_client_secret = karate.properties[&#39;inct-test-ciam-token-client-secret&#39;]
+21: 
+22:     if (!env) {
+23:         env = &#39;dev&#39;;
+24:     }
+25:     if (env === &#39;dev&#39;) {
+26:         baseURL = &#39;https://int.apisdevbcp.com&#39;
+27:         encodeURL = &#39;https://int.apisdevbcp.com/utils/jwt/encode&#39;
+28:         authUrl = &#39;https://authservercert.viabcp.com/cas/oidc/authorize?response_type=code&amp;redirect_uri=https://www.minegociobcp-cert.viabcp.com/%23/auth/logged&amp;state=ha3JDet1d6nDF23emECWErVaBQ7McJyiy48uDpzhNsX&amp;client_id=3c4180b1-fde1-4613-b807-545e791dadfc&amp;scope=ux-ppel-landing-v1+ux-ppel-account-opening-v1+ux-ppel-loan-evaluation-v1+ux-ppel-customer-management-v1+ux-ppel-loan-disbursement-v1+ux-ppel-credit-management-v1+ux-ppel-negotiable-invoice-management-v1+ux-ppel-customer-product-invoice-v1+bs-foreign-tax-compliance-declaration-v1+bs-loan-v3+bs-citizen-v2+bs-person-v5+bs-person-address-v2+bs-saving-account-v3+bs-account-v4+bs-product-v4+bs-disbursement-v1+sp-captcha-v3+bs-negotiable-document-worksheet-v1+bs-loan-simulation-v3+bs-user-info-v1+bs-factoring-evaluation-v2+bs-provider-acquirer-evaluation-v1+bs-outstanding-debt-v3+bs-geolocation-v1+ux-ppel-exchange-rate-v1+bs-account-transfer-v2+bs-exchange-rate-v5+bs-notification-v3+bs-financial-power-v1+bs-small-medium-enterprise-evaluation-v1+ux-ppel-one-time-password-v1+ux-ppel-loan-v1+bs-loan-payment-schedule-v1+bs-branch-offices-v2+bs-labor-type-v2+bs-current-account-v1+bs-third-party-relationship-v2+bs-evaluation-v4+bs-operation-number-v1+bs-monetary-operation-v1+bs-monetary-operation-notification-v1+ux-ppel-current-account-v1+ux-ppel-validation-current-account-v1+bs-credit-line-evaluation-v2+bs-product-statement-v2+bs-credit-card-v3+bs-factoring-documents-v1+bs-negotiable-invoice-rate-v1&amp;code_challenge_method=S256&amp;code_challenge=ZTA1Y2M2NzBlZDRjYmI2N2ZiNzVmZGU4YWNhZTAxNGQ5YjJmM2NkN2U2YjUxMjg4MjRkYjk5ZTY5NDBjMWU2Yw&amp;nonce=BzIOkT7rSogLyCQ36swwTDqSPI879tUZQvnIa9YVzll&amp;token=true&#39;
+29:     } else if (env === &#39;cert&#39;) {
+30:         //configure(&#39;ssl&#39;, true);
+31:         //configure ssl = true
+32:         baseURL = &#39;https://int.apiscertbcp.com&#39;
+33:         encodeURL = &#39;https://int.apisqabcp.com/utils/jwt/encode&#39;
+34:         domainToken = &#39;https://int.apisqabcp.com&#39;
+35:         domainConsultaVV28 = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+36:         domainConsultaVVCC = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+37:     }
+38: 
+39:     var config = {
+40:         authUrl: authUrl,
+41:         env: env,
+42:         baseURL: baseURL + oauth_token,
+43:         encodeURL: encodeURL,
+44:         inct_test_ciam_token_client_secret: inct_test_ciam_token_client_secret,
+45:         inct_test_ciam_token_client_id: inct_test_ciam_token_client_id,
+46:         domainToken:domainToken,
+47:         domainConsultaVV28:domainConsultaVV28
+48:         domainConsultaVVCC:domainConsultaVVCC
+49:     }
+50: 
+51:     return config;
+52: }
+53: 
+54: 
+55: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:48:8 Expected comma but found ident
+        domainConsultaVVCC:domainConsultaVVCC
+        ^
+Unnamed:51:4 Expected ) but found return
+    return config;
+    ^
+Unnamed:52:0 Expected eof but found }
+}
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     var env = karate.env;
+03:     var baseURL = &#39;&#39;
+04:     var encodeURL=&#39;&#39;
+05:     var oauth_token = &#39;/auth/oauth/v2/token&#39;
+06:     var inct_test_ciam_token_client_secret = &#39;&#39;
+07:     var inct_test_ciam_token_client_id = &#39;&#39;
+08:     var authUrl = &#39;&#39;
+09:     var domainToken = &#39;&#39;
+10:     var domainConsultaVV28 = &#39;&#39;
+11:     var domainConsultaVVCC = &#39;&#39;
+12: 
+13: 
+14:     karate.log(&#39;Se realiza la ejecución en ambiente: &#39;, env);
+15: 
+16:     // Declaración de credenciales HV
+17:     karate.configure(&#39;ssl&#39;, true);
+18: 
+19:     inct_test_ciam_token_client_id = karate.properties[&#39;inct-test-ciam-token-client-id&#39;]
+20:     inct_test_ciam_token_client_secret = karate.properties[&#39;inct-test-ciam-token-client-secret&#39;]
+21: 
+22:     if (!env) {
+23:         env = &#39;dev&#39;;
+24:     }
+25:     if (env === &#39;dev&#39;) {
+26:         baseURL = &#39;https://int.apisdevbcp.com&#39;
+27:         encodeURL = &#39;https://int.apisdevbcp.com/utils/jwt/encode&#39;
+28:         authUrl = &#39;https://authservercert.viabcp.com/cas/oidc/authorize?response_type=code&amp;redirect_uri=https://www.minegociobcp-cert.viabcp.com/%23/auth/logged&amp;state=ha3JDet1d6nDF23emECWErVaBQ7McJyiy48uDpzhNsX&amp;client_id=3c4180b1-fde1-4613-b807-545e791dadfc&amp;scope=ux-ppel-landing-v1+ux-ppel-account-opening-v1+ux-ppel-loan-evaluation-v1+ux-ppel-customer-management-v1+ux-ppel-loan-disbursement-v1+ux-ppel-credit-management-v1+ux-ppel-negotiable-invoice-management-v1+ux-ppel-customer-product-invoice-v1+bs-foreign-tax-compliance-declaration-v1+bs-loan-v3+bs-citizen-v2+bs-person-v5+bs-person-address-v2+bs-saving-account-v3+bs-account-v4+bs-product-v4+bs-disbursement-v1+sp-captcha-v3+bs-negotiable-document-worksheet-v1+bs-loan-simulation-v3+bs-user-info-v1+bs-factoring-evaluation-v2+bs-provider-acquirer-evaluation-v1+bs-outstanding-debt-v3+bs-geolocation-v1+ux-ppel-exchange-rate-v1+bs-account-transfer-v2+bs-exchange-rate-v5+bs-notification-v3+bs-financial-power-v1+bs-small-medium-enterprise-evaluation-v1+ux-ppel-one-time-password-v1+ux-ppel-loan-v1+bs-loan-payment-schedule-v1+bs-branch-offices-v2+bs-labor-type-v2+bs-current-account-v1+bs-third-party-relationship-v2+bs-evaluation-v4+bs-operation-number-v1+bs-monetary-operation-v1+bs-monetary-operation-notification-v1+ux-ppel-current-account-v1+ux-ppel-validation-current-account-v1+bs-credit-line-evaluation-v2+bs-product-statement-v2+bs-credit-card-v3+bs-factoring-documents-v1+bs-negotiable-invoice-rate-v1&amp;code_challenge_method=S256&amp;code_challenge=ZTA1Y2M2NzBlZDRjYmI2N2ZiNzVmZGU4YWNhZTAxNGQ5YjJmM2NkN2U2YjUxMjg4MjRkYjk5ZTY5NDBjMWU2Yw&amp;nonce=BzIOkT7rSogLyCQ36swwTDqSPI879tUZQvnIa9YVzll&amp;token=true&#39;
+29:     } else if (env === &#39;cert&#39;) {
+30:         //configure(&#39;ssl&#39;, true);
+31:         //configure ssl = true
+32:         baseURL = &#39;https://int.apiscertbcp.com&#39;
+33:         encodeURL = &#39;https://int.apisqabcp.com/utils/jwt/encode&#39;
+34:         domainToken = &#39;https://int.apisqabcp.com&#39;
+35:         domainConsultaVV28 = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+36:         domainConsultaVVCC = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+37:     }
+38: 
+39:     var config = {
+40:         authUrl: authUrl,
+41:         env: env,
+42:         baseURL: baseURL + oauth_token,
+43:         encodeURL: encodeURL,
+44:         inct_test_ciam_token_client_secret: inct_test_ciam_token_client_secret,
+45:         inct_test_ciam_token_client_id: inct_test_ciam_token_client_id,
+46:         domainToken:domainToken,
+47:         domainConsultaVV28:domainConsultaVV28
+48:         domainConsultaVVCC:domainConsultaVVCC
+49:     }
+50: 
+51:     return config;
+52: }
+53: 
+54: 
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:     var env = karate.env;
+03:     var baseURL = &#39;&#39;
+04:     var encodeURL=&#39;&#39;
+05:     var oauth_token = &#39;/auth/oauth/v2/token&#39;
+06:     var inct_test_ciam_token_client_secret = &#39;&#39;
+07:     var inct_test_ciam_token_client_id = &#39;&#39;
+08:     var authUrl = &#39;&#39;
+09:     var domainToken = &#39;&#39;
+10:     var domainConsultaVV28 = &#39;&#39;
+11:     var domainConsultaVVCC = &#39;&#39;
+12: 
+13: 
+14:     karate.log(&#39;Se realiza la ejecución en ambiente: &#39;, env);
+15: 
+16:     // Declaración de credenciales HV
+17:     karate.configure(&#39;ssl&#39;, true);
+18: 
+19:     inct_test_ciam_token_client_id = karate.properties[&#39;inct-test-ciam-token-client-id&#39;]
+20:     inct_test_ciam_token_client_secret = karate.properties[&#39;inct-test-ciam-token-client-secret&#39;]
+21: 
+22:     if (!env) {
+23:         env = &#39;dev&#39;;
+24:     }
+25:     if (env === &#39;dev&#39;) {
+26:         baseURL = &#39;https://int.apisdevbcp.com&#39;
+27:         encodeURL = &#39;https://int.apisdevbcp.com/utils/jwt/encode&#39;
+28:         authUrl = &#39;https://authservercert.viabcp.com/cas/oidc/authorize?response_type=code&amp;redirect_uri=https://www.minegociobcp-cert.viabcp.com/%23/auth/logged&amp;state=ha3JDet1d6nDF23emECWErVaBQ7McJyiy48uDpzhNsX&amp;client_id=3c4180b1-fde1-4613-b807-545e791dadfc&amp;scope=ux-ppel-landing-v1+ux-ppel-account-opening-v1+ux-ppel-loan-evaluation-v1+ux-ppel-customer-management-v1+ux-ppel-loan-disbursement-v1+ux-ppel-credit-management-v1+ux-ppel-negotiable-invoice-management-v1+ux-ppel-customer-product-invoice-v1+bs-foreign-tax-compliance-declaration-v1+bs-loan-v3+bs-citizen-v2+bs-person-v5+bs-person-address-v2+bs-saving-account-v3+bs-account-v4+bs-product-v4+bs-disbursement-v1+sp-captcha-v3+bs-negotiable-document-worksheet-v1+bs-loan-simulation-v3+bs-user-info-v1+bs-factoring-evaluation-v2+bs-provider-acquirer-evaluation-v1+bs-outstanding-debt-v3+bs-geolocation-v1+ux-ppel-exchange-rate-v1+bs-account-transfer-v2+bs-exchange-rate-v5+bs-notification-v3+bs-financial-power-v1+bs-small-medium-enterprise-evaluation-v1+ux-ppel-one-time-password-v1+ux-ppel-loan-v1+bs-loan-payment-schedule-v1+bs-branch-offices-v2+bs-labor-type-v2+bs-current-account-v1+bs-third-party-relationship-v2+bs-evaluation-v4+bs-operation-number-v1+bs-monetary-operation-v1+bs-monetary-operation-notification-v1+ux-ppel-current-account-v1+ux-ppel-validation-current-account-v1+bs-credit-line-evaluation-v2+bs-product-statement-v2+bs-credit-card-v3+bs-factoring-documents-v1+bs-negotiable-invoice-rate-v1&amp;code_challenge_method=S256&amp;code_challenge=ZTA1Y2M2NzBlZDRjYmI2N2ZiNzVmZGU4YWNhZTAxNGQ5YjJmM2NkN2U2YjUxMjg4MjRkYjk5ZTY5NDBjMWU2Yw&amp;nonce=BzIOkT7rSogLyCQ36swwTDqSPI879tUZQvnIa9YVzll&amp;token=true&#39;
+29:     } else if (env === &#39;cert&#39;) {
+30:         //configure(&#39;ssl&#39;, true);
+31:         //configure ssl = true
+32:         baseURL = &#39;https://int.apiscertbcp.com&#39;
+33:         encodeURL = &#39;https://int.apisqabcp.com/utils/jwt/encode&#39;
+34:         domainToken = &#39;https://int.apisqabcp.com&#39;
+35:         domainConsultaVV28 = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+36:         domainConsultaVVCC = &#39;https://apibsqa.lima.bcp.com.pe&#39;
+37:     }
+38: 
+39:     var config = {
+40:         authUrl: authUrl,
+41:         env: env,
+42:         baseURL: baseURL + oauth_token,
+43:         encodeURL: encodeURL,
+44:         inct_test_ciam_token_client_secret: inct_test_ciam_token_client_secret,
+45:         inct_test_ciam_token_client_id: inct_test_ciam_token_client_id,
+46:         domainToken:domainToken,
+47:         domainConsultaVV28:domainConsultaVV28
+48:         domainConsultaVVCC:domainConsultaVVCC
+49:     }
+50: 
+51:     return config;
+52: }
+53: 
+54: 
+55: )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:48:8 Expected comma but found ident
+        domainConsultaVVCC:domainConsultaVVCC
+        ^
+Unnamed:51:4 Expected ) but found return
+    return config;
+    ^
+Unnamed:52:0 Expected eof but found }
+}
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- com.intuit.karate.core.FeatureRuntime.access$000(FeatureRuntime.java:44)
+
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:5
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:8
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:9
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:10
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:11
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:12
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:13
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:14
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:15
+src/test/resources/features/ApiGet/ApiGetVVCC.feature:16
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2}];
+var items = [{"id":1,"group":1,"content":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.1:22]","start":1692299558872,"end":1692299563492,"title":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.1:22] 14:12:38.872-14:12:43.492 consultar datos de una tc","className":"failed"},{"id":2,"group":2,"content":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.2:22]","start":1692299558796,"end":1692299563087,"title":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.2:22] 14:12:38.796-14:12:43.087 consultar datos de una tc","className":"failed"},{"id":3,"group":2,"content":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.3:22]","start":1692299563106,"end":1692299564595,"title":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.3:22] 14:12:43.106-14:12:44.595 consultar datos de una tc","className":"failed"},{"id":4,"group":1,"content":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.4:22]","start":1692299563502,"end":1692299565038,"title":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.4:22] 14:12:43.502-14:12:45.038 consultar datos de una tc","className":"failed"},{"id":5,"group":2,"content":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.5:22]","start":1692299564605,"end":1692299566188,"title":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.5:22] 14:12:44.605-14:12:46.188 consultar datos de una tc","className":"failed"},{"id":6,"group":1,"content":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.6:22]","start":1692299565053,"end":1692299566569,"title":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.6:22] 14:12:45.053-14:12:46.569 consultar datos de una tc","className":"failed"},{"id":7,"group":2,"content":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.7:22]","start":1692299566209,"end":1692299567775,"title":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.7:22] 14:12:46.209-14:12:47.775 consultar datos de una tc","className":"failed"},{"id":8,"group":1,"content":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.8:22]","start":1692299566590,"end":1692299570065,"title":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.8:22] 14:12:46.590-14:12:50.065 consultar datos de una tc","className":"failed"},{"id":9,"group":2,"content":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.9:22]","start":1692299567784,"end":1692299569361,"title":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.9:22] 14:12:47.784-14:12:49.361 consultar datos de una tc","className":"failed"},{"id":10,"group":2,"content":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.10:22]","start":1692299569368,"end":1692299571521,"title":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.10:22] 14:12:49.368-14:12:51.521 consultar datos de una tc","className":"failed"},{"id":11,"group":1,"content":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.11:22]","start":1692299570071,"end":1692299571678,"title":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.11:22] 14:12:50.071-14:12:51.678 consultar datos de una tc","className":"failed"},{"id":12,"group":2,"content":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.12:22]","start":1692299571531,"end":1692299573132,"title":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.12:22] 14:12:51.531-14:12:53.132 consultar datos de una tc","className":"failed"},{"id":13,"group":1,"content":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.13:22]","start":1692299571686,"end":1692299573203,"title":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.13:22] 14:12:51.686-14:12:53.203 consultar datos de una tc","className":"failed"},{"id":14,"group":2,"content":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.14:22]","start":1692299573144,"end":1692299574760,"title":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.14:22] 14:12:53.144-14:12:54.760 consultar datos de una tc","className":"failed"},{"id":15,"group":1,"content":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.15:22]","start":1692299573210,"end":1692299574972,"title":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.15:22] 14:12:53.210-14:12:54.972 consultar datos de una tc","className":"failed"},{"id":16,"group":2,"content":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.16:22]","start":1692299574774,"end":1692299576160,"title":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.16:22] 14:12:54.774-14:12:56.160 consultar datos de una tc","className":"failed"},{"id":17,"group":1,"content":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.17:22]","start":1692299575028,"end":1692299576286,"title":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.17:22] 14:12:55.028-14:12:56.286 consultar datos de una tc","className":"failed"},{"id":18,"group":2,"content":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.18:22]","start":1692299576164,"end":1692299578014,"title":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.18:22] 14:12:56.164-14:12:58.014 consultar datos de una tc","className":"failed"},{"id":19,"group":1,"content":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.19:22]","start":1692299576290,"end":1692299577836,"title":"src\/test\/resources\/features\/ApiGet\/ApiGetVVCC[1.19:22] 14:12:56.290-14:12:57.836 consultar datos de una tc","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
