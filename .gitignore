@@ -1,0 +1,12 @@
+#Directory
+target
+target/
+*/target/
+.idea
+/.idea/
+/target
+response/
+
+#Files
+*.iml
+debug.log

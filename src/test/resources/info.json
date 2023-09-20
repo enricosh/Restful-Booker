@@ -1,0 +1,40 @@
+{
+  "fields": {
+    "assignee": {
+      "name": "t10287"
+    },
+    "customfield_11024": {
+      "//Codigo de Aplicacion": "Ingresar codigo de 4 digitos",
+      "value": "INCT"
+    },
+    "customfield_13802": {
+      "//Automatizable": "Si, No",
+      "value": "Si"
+    },
+    "customfield_11707": {
+      "//Automatizado": "Si, No",
+      "value": "Si"
+    },
+    "customfield_11402": {
+      "//Test Type BCP": "API, Seguridad, Performance, Web, Api, C/S, Mobil, KarateAPI, KarateWEB, KarateE2E",
+      "value": "KarateAPI"
+    },
+    "customfield_13800": {
+      "//Regresion": "Si,No",
+      "value": "Si"
+    },
+    "customfield_13805": {
+      "//Critico": "Si, No",
+      "value": "Si"
+    },
+    "customfield_14001": {
+      "//Complejidad": "Baja,Media,Alta",
+      "value": "Baja"
+    },
+    "customfield_13803": {
+      "//Estado del Test": "Activo, Por actualizar, Inactivo",
+      "value": "Activo"
+    },
+    "customfield_11320": "/karate/demo"
+  }
+}
